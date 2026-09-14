@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scan workstation/displays and write catalog/displays.json."""
+"""Scan workstation/displays and write displays/catalog.json for the Pages site."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DISPLAYS = ROOT.parent / "workstation" / "displays"
-OUT = ROOT / "catalog" / "displays.json"
+OUT = ROOT / "displays" / "catalog.json"
 SKIP = {"storage", "storage_finished"}
 PANELS = {"amoled", "tft", "lcd", "oled", "epd"}
 

@@ -1,10 +1,15 @@
-# OSPTEK Product Catalog
+# OSPTEK
 
-Customer index: **https://osptek.github.io/**
+Customer hub: **https://osptek.github.io/**
 
-This repository is the organization GitHub Pages site. It lists product repos; datasheets and examples stay in each product repository.
+This repository is the organization GitHub Pages site.
 
-Phase 1 lists **display modules** only.
+- `/` — home
+- `/displays/` — display module index
+
+Datasheets and examples stay in each product repository. Phase 1 lists **display modules** only.
+
+Do **not** put `catalog.json` in product repos.
 
 ## Update the display list
 
@@ -12,7 +17,7 @@ From this directory:
 
 ```bash
 python3 scripts/build-catalog.py
-git add catalog/displays.json
+git add displays/catalog.json
 git commit -m "docs(catalog): refresh display module index"
 git push github HEAD
 ```
