@@ -1,0 +1,564 @@
+{
+  "generated_from": "workstation/displays",
+  "count": 62,
+  "items": [
+    {
+      "repo": "oled-0.91-128x32-i2c-ssd1306",
+      "panel": "oled",
+      "size": "0.91",
+      "resolution": "128x32",
+      "interface": "i2c",
+      "ic": "ssd1306",
+      "url": "https://github.com/osptek/oled-0.91-128x32-i2c-ssd1306"
+    },
+    {
+      "repo": "amoled-0.95-120x240-spi-sh8501",
+      "panel": "amoled",
+      "size": "0.95",
+      "resolution": "120x240",
+      "interface": "spi",
+      "ic": "sh8501",
+      "url": "https://github.com/osptek/amoled-0.95-120x240-spi-sh8501"
+    },
+    {
+      "repo": "oled-0.96-128x64-i2c-ssd1315",
+      "panel": "oled",
+      "size": "0.96",
+      "resolution": "128x64",
+      "interface": "i2c",
+      "ic": "ssd1315",
+      "url": "https://github.com/osptek/oled-0.96-128x64-i2c-ssd1315"
+    },
+    {
+      "repo": "amoled-1.04-340x340-qspi-co5300",
+      "panel": "amoled",
+      "size": "1.04",
+      "resolution": "340x340",
+      "interface": "qspi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-1.04-340x340-qspi-co5300"
+    },
+    {
+      "repo": "amoled-1.1-126x294-spi-icna3306",
+      "panel": "amoled",
+      "size": "1.1",
+      "resolution": "126x294",
+      "interface": "spi",
+      "ic": "icna3306",
+      "url": "https://github.com/osptek/amoled-1.1-126x294-spi-icna3306"
+    },
+    {
+      "repo": "amoled-1.19-390x390-qspi-co5300",
+      "panel": "amoled",
+      "size": "1.19",
+      "resolution": "390x390",
+      "interface": "qspi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-1.19-390x390-qspi-co5300"
+    },
+    {
+      "repo": "tft-1.28-240x240-spi-gc9a01",
+      "panel": "tft",
+      "size": "1.28",
+      "resolution": "240x240",
+      "interface": "spi",
+      "ic": "gc9a01",
+      "url": "https://github.com/osptek/tft-1.28-240x240-spi-gc9a01"
+    },
+    {
+      "repo": "amoled-1.39-454x454-qspi-sh8601",
+      "panel": "amoled",
+      "size": "1.39",
+      "resolution": "454x454",
+      "interface": "qspi",
+      "ic": "sh8601",
+      "url": "https://github.com/osptek/amoled-1.39-454x454-qspi-sh8601"
+    },
+    {
+      "repo": "tft-1.47-172x320-i80-st7789",
+      "panel": "tft",
+      "size": "1.47",
+      "resolution": "172x320",
+      "interface": "i80",
+      "ic": "st7789",
+      "url": "https://github.com/osptek/tft-1.47-172x320-i80-st7789"
+    },
+    {
+      "repo": "tft-1.47-172x320-spi-gc9307",
+      "panel": "tft",
+      "size": "1.47",
+      "resolution": "172x320",
+      "interface": "spi",
+      "ic": "gc9307",
+      "url": "https://github.com/osptek/tft-1.47-172x320-spi-gc9307"
+    },
+    {
+      "repo": "tft-1.47-172x320-spi-jd9853",
+      "panel": "tft",
+      "size": "1.47",
+      "resolution": "172x320",
+      "interface": "spi",
+      "ic": "jd9853",
+      "url": "https://github.com/osptek/tft-1.47-172x320-spi-jd9853"
+    },
+    {
+      "repo": "amoled-1.51-466x466-qspi-co5300",
+      "panel": "amoled",
+      "size": "1.51",
+      "resolution": "466x466",
+      "interface": "qspi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-1.51-466x466-qspi-co5300"
+    },
+    {
+      "repo": "oled-1.54-128x64-spi-ssd1309",
+      "panel": "oled",
+      "size": "1.54",
+      "resolution": "128x64",
+      "interface": "spi",
+      "ic": "ssd1309",
+      "url": "https://github.com/osptek/oled-1.54-128x64-spi-ssd1309"
+    },
+    {
+      "repo": "lcd-1.58-128x64-spi-st7567",
+      "panel": "lcd",
+      "size": "1.58",
+      "resolution": "128x64",
+      "interface": "spi",
+      "ic": "st7567",
+      "url": "https://github.com/osptek/lcd-1.58-128x64-spi-st7567"
+    },
+    {
+      "repo": "amoled-1.6-320x360-qspi-co5300",
+      "panel": "amoled",
+      "size": "1.6",
+      "resolution": "320x360",
+      "interface": "qspi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-1.6-320x360-qspi-co5300"
+    },
+    {
+      "repo": "amoled-1.6-480x480-mipi-st7802",
+      "panel": "amoled",
+      "size": "1.6",
+      "resolution": "480x480",
+      "interface": "mipi",
+      "ic": "st7802",
+      "url": "https://github.com/osptek/amoled-1.6-480x480-mipi-st7802"
+    },
+    {
+      "repo": "amoled-1.6-480x480-qspi-ch13613",
+      "panel": "amoled",
+      "size": "1.6",
+      "resolution": "480x480",
+      "interface": "qspi",
+      "ic": "ch13613",
+      "url": "https://github.com/osptek/amoled-1.6-480x480-qspi-ch13613"
+    },
+    {
+      "repo": "tft-1.69-240x280-spi-st7789",
+      "panel": "tft",
+      "size": "1.69",
+      "resolution": "240x280",
+      "interface": "spi",
+      "ic": "st7789",
+      "url": "https://github.com/osptek/tft-1.69-240x280-spi-st7789"
+    },
+    {
+      "repo": "amoled-1.73-466x466-mipi-co5300",
+      "panel": "amoled",
+      "size": "1.73",
+      "resolution": "466x466",
+      "interface": "mipi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-1.73-466x466-mipi-co5300"
+    },
+    {
+      "repo": "amoled-1.73-466x466-qspi-co5300",
+      "panel": "amoled",
+      "size": "1.73",
+      "resolution": "466x466",
+      "interface": "qspi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-1.73-466x466-qspi-co5300"
+    },
+    {
+      "repo": "amoled-1.78-368x448-qspi-co5300",
+      "panel": "amoled",
+      "size": "1.78",
+      "resolution": "368x448",
+      "interface": "qspi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-1.78-368x448-qspi-co5300"
+    },
+    {
+      "repo": "tft-1.8-360x360-qspi-st77916",
+      "panel": "tft",
+      "size": "1.8",
+      "resolution": "360x360",
+      "interface": "qspi",
+      "ic": "st77916",
+      "url": "https://github.com/osptek/tft-1.8-360x360-qspi-st77916"
+    },
+    {
+      "repo": "amoled-1.96-410x502-qspi-co5300",
+      "panel": "amoled",
+      "size": "1.96",
+      "resolution": "410x502",
+      "interface": "qspi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-1.96-410x502-qspi-co5300"
+    },
+    {
+      "repo": "amoled-2.0-460x460-mipi-co5300",
+      "panel": "amoled",
+      "size": "2.0",
+      "resolution": "460x460",
+      "interface": "mipi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-2.0-460x460-mipi-co5300"
+    },
+    {
+      "repo": "amoled-2.0-460x460-qspi-co5300",
+      "panel": "amoled",
+      "size": "2.0",
+      "resolution": "460x460",
+      "interface": "qspi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-2.0-460x460-qspi-co5300"
+    },
+    {
+      "repo": "tft-2.0-240x320-spi-st7789v2",
+      "panel": "tft",
+      "size": "2.0",
+      "resolution": "240x320",
+      "interface": "spi",
+      "ic": "st7789v2",
+      "url": "https://github.com/osptek/tft-2.0-240x320-spi-st7789v2"
+    },
+    {
+      "repo": "amoled-2.01-240x296-qspi-icna3306",
+      "panel": "amoled",
+      "size": "2.01",
+      "resolution": "240x296",
+      "interface": "qspi",
+      "ic": "icna3306",
+      "url": "https://github.com/osptek/amoled-2.01-240x296-qspi-icna3306"
+    },
+    {
+      "repo": "tft-2.1-480x480-mipi-st7701",
+      "panel": "tft",
+      "size": "2.1",
+      "resolution": "480x480",
+      "interface": "mipi",
+      "ic": "st7701",
+      "url": "https://github.com/osptek/tft-2.1-480x480-mipi-st7701"
+    },
+    {
+      "repo": "tft-2.1-480x480-mipi-st77922",
+      "panel": "tft",
+      "size": "2.1",
+      "resolution": "480x480",
+      "interface": "mipi",
+      "ic": "st77922",
+      "url": "https://github.com/osptek/tft-2.1-480x480-mipi-st77922"
+    },
+    {
+      "repo": "amoled-2.13-410x502-mipi-st7801",
+      "panel": "amoled",
+      "size": "2.13",
+      "resolution": "410x502",
+      "interface": "mipi",
+      "ic": "st7801",
+      "url": "https://github.com/osptek/amoled-2.13-410x502-mipi-st7801"
+    },
+    {
+      "repo": "amoled-2.13-410x502-qspi-co5300",
+      "panel": "amoled",
+      "size": "2.13",
+      "resolution": "410x502",
+      "interface": "qspi",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-2.13-410x502-qspi-co5300"
+    },
+    {
+      "repo": "lcd-2.13-122x250-spi-st7305",
+      "panel": "lcd",
+      "size": "2.13",
+      "resolution": "122x250",
+      "interface": "spi",
+      "ic": "st7305",
+      "url": "https://github.com/osptek/lcd-2.13-122x250-spi-st7305"
+    },
+    {
+      "repo": "amoled-2.14-480x480-qspi-st7801",
+      "panel": "amoled",
+      "size": "2.14",
+      "resolution": "480x480",
+      "interface": "qspi",
+      "ic": "st7801",
+      "url": "https://github.com/osptek/amoled-2.14-480x480-qspi-st7801"
+    },
+    {
+      "repo": "amoled-2.4-450x600-mipi-rm690b0",
+      "panel": "amoled",
+      "size": "2.4",
+      "resolution": "450x600",
+      "interface": "mipi",
+      "ic": "rm690b0",
+      "url": "https://github.com/osptek/amoled-2.4-450x600-mipi-rm690b0"
+    },
+    {
+      "repo": "tft-2.76-480x480-mipi-st7701",
+      "panel": "tft",
+      "size": "2.76",
+      "resolution": "480x480",
+      "interface": "mipi",
+      "ic": "st7701",
+      "url": "https://github.com/osptek/tft-2.76-480x480-mipi-st7701"
+    },
+    {
+      "repo": "lcd-2.9-168x384-spi-st7305",
+      "panel": "lcd",
+      "size": "2.9",
+      "resolution": "168x384",
+      "interface": "spi",
+      "ic": "st7305",
+      "url": "https://github.com/osptek/lcd-2.9-168x384-spi-st7305"
+    },
+    {
+      "repo": "tft-2.95-480x854-mipi-st7701",
+      "panel": "tft",
+      "size": "2.95",
+      "resolution": "480x854",
+      "interface": "mipi",
+      "ic": "st7701",
+      "url": "https://github.com/osptek/tft-2.95-480x854-mipi-st7701"
+    },
+    {
+      "repo": "tft-3.02-170x560-qspi-axs15231b",
+      "panel": "tft",
+      "size": "3.02",
+      "resolution": "170x560",
+      "interface": "qspi",
+      "ic": "axs15231b",
+      "url": "https://github.com/osptek/tft-3.02-170x560-qspi-axs15231b"
+    },
+    {
+      "repo": "tft-3.02-170x560-spi-axs15231b",
+      "panel": "tft",
+      "size": "3.02",
+      "resolution": "170x560",
+      "interface": "spi",
+      "ic": "axs15231b",
+      "url": "https://github.com/osptek/tft-3.02-170x560-spi-axs15231b"
+    },
+    {
+      "repo": "tft-3.13-376x960-mipi-gc9503cv",
+      "panel": "tft",
+      "size": "3.13",
+      "resolution": "376x960",
+      "interface": "mipi",
+      "ic": "gc9503cv",
+      "url": "https://github.com/osptek/tft-3.13-376x960-mipi-gc9503cv"
+    },
+    {
+      "repo": "tft-3.13-376x960-rgb-gc9503cv",
+      "panel": "tft",
+      "size": "3.13",
+      "resolution": "376x960",
+      "interface": "rgb",
+      "ic": "gc9503cv",
+      "url": "https://github.com/osptek/tft-3.13-376x960-rgb-gc9503cv"
+    },
+    {
+      "repo": "amoled-3.19-262x928-mipi-co6300",
+      "panel": "amoled",
+      "size": "3.19",
+      "resolution": "262x928",
+      "interface": "mipi",
+      "ic": "co6300",
+      "url": "https://github.com/osptek/amoled-3.19-262x928-mipi-co6300"
+    },
+    {
+      "repo": "tft-3.42-258x960-mipi-axs15231b",
+      "panel": "tft",
+      "size": "3.42",
+      "resolution": "258x960",
+      "interface": "mipi",
+      "ic": "axs15231b",
+      "url": "https://github.com/osptek/tft-3.42-258x960-mipi-axs15231b"
+    },
+    {
+      "repo": "tft-3.48-172x640-qspi-axs15231b",
+      "panel": "tft",
+      "size": "3.48",
+      "resolution": "172x640",
+      "interface": "qspi",
+      "ic": "axs15231b",
+      "url": "https://github.com/osptek/tft-3.48-172x640-qspi-axs15231b"
+    },
+    {
+      "repo": "tft-3.5-320x480-mipi-axs15231",
+      "panel": "tft",
+      "size": "3.5",
+      "resolution": "320x480",
+      "interface": "mipi",
+      "ic": "axs15231",
+      "url": "https://github.com/osptek/tft-3.5-320x480-mipi-axs15231"
+    },
+    {
+      "repo": "epd-3.7-480x720-spi-jd7601",
+      "panel": "epd",
+      "size": "3.7",
+      "resolution": "480x720",
+      "interface": "spi",
+      "ic": "jd7601",
+      "url": "https://github.com/osptek/epd-3.7-480x720-spi-jd7601"
+    },
+    {
+      "repo": "tft-3.82-280x1020-mipi-axs15231b",
+      "panel": "tft",
+      "size": "3.82",
+      "resolution": "280x1020",
+      "interface": "mipi",
+      "ic": "axs15231b",
+      "url": "https://github.com/osptek/tft-3.82-280x1020-mipi-axs15231b"
+    },
+    {
+      "repo": "tft-3.95-480x480-mipi-st7102",
+      "panel": "tft",
+      "size": "3.95",
+      "resolution": "480x480",
+      "interface": "mipi",
+      "ic": "st7102",
+      "url": "https://github.com/osptek/tft-3.95-480x480-mipi-st7102"
+    },
+    {
+      "repo": "tft-3.95-480x480-rgb-st7102",
+      "panel": "tft",
+      "size": "3.95",
+      "resolution": "480x480",
+      "interface": "rgb",
+      "ic": "st7102",
+      "url": "https://github.com/osptek/tft-3.95-480x480-rgb-st7102"
+    },
+    {
+      "repo": "tft-3.95-480x480-rgb-st7701",
+      "panel": "tft",
+      "size": "3.95",
+      "resolution": "480x480",
+      "interface": "rgb",
+      "ic": "st7701",
+      "url": "https://github.com/osptek/tft-3.95-480x480-rgb-st7701"
+    },
+    {
+      "repo": "tft-3.97-480x800-mipi-axs15260",
+      "panel": "tft",
+      "size": "3.97",
+      "resolution": "480x800",
+      "interface": "mipi",
+      "ic": "axs15260",
+      "url": "https://github.com/osptek/tft-3.97-480x800-mipi-axs15260"
+    },
+    {
+      "repo": "tft-3.97-480x800-mipi-gc9503cv",
+      "panel": "tft",
+      "size": "3.97",
+      "resolution": "480x800",
+      "interface": "mipi",
+      "ic": "gc9503cv",
+      "url": "https://github.com/osptek/tft-3.97-480x800-mipi-gc9503cv"
+    },
+    {
+      "repo": "tft-4.0-720x720-mipi-st7703",
+      "panel": "tft",
+      "size": "4.0",
+      "resolution": "720x720",
+      "interface": "mipi",
+      "ic": "st7703",
+      "url": "https://github.com/osptek/tft-4.0-720x720-mipi-st7703"
+    },
+    {
+      "repo": "lcd-4.2-300x400-spi-st7305",
+      "panel": "lcd",
+      "size": "4.2",
+      "resolution": "300x400",
+      "interface": "spi",
+      "ic": "st7305",
+      "url": "https://github.com/osptek/lcd-4.2-300x400-spi-st7305"
+    },
+    {
+      "repo": "lcd-4.2-300x400-spi-st7306",
+      "panel": "lcd",
+      "size": "4.2",
+      "resolution": "300x400",
+      "interface": "spi",
+      "ic": "st7306",
+      "url": "https://github.com/osptek/lcd-4.2-300x400-spi-st7306"
+    },
+    {
+      "repo": "epd-4.26-480x800-spi-ssd1677",
+      "panel": "epd",
+      "size": "4.26",
+      "resolution": "480x800",
+      "interface": "spi",
+      "ic": "ssd1677",
+      "url": "https://github.com/osptek/epd-4.26-480x800-spi-ssd1677"
+    },
+    {
+      "repo": "tft-4.3-480x800-mipi-st7102",
+      "panel": "tft",
+      "size": "4.3",
+      "resolution": "480x800",
+      "interface": "mipi",
+      "ic": "st7102",
+      "url": "https://github.com/osptek/tft-4.3-480x800-mipi-st7102"
+    },
+    {
+      "repo": "tft-4.45-480x854-mipi-gc9503",
+      "panel": "tft",
+      "size": "4.45",
+      "resolution": "480x854",
+      "interface": "mipi",
+      "ic": "gc9503",
+      "url": "https://github.com/osptek/tft-4.45-480x854-mipi-gc9503"
+    },
+    {
+      "repo": "tft-4.58-424x1280-mipi-jd9261",
+      "panel": "tft",
+      "size": "4.58",
+      "resolution": "424x1280",
+      "interface": "mipi",
+      "ic": "jd9261",
+      "url": "https://github.com/osptek/tft-4.58-424x1280-mipi-jd9261"
+    },
+    {
+      "repo": "tft-5.0-720x1280-mipi-jd9365",
+      "panel": "tft",
+      "size": "5.0",
+      "resolution": "720x1280",
+      "interface": "mipi",
+      "ic": "jd9365",
+      "url": "https://github.com/osptek/tft-5.0-720x1280-mipi-jd9365"
+    },
+    {
+      "repo": "epd-7.09-1200x1600-spi-tbd",
+      "panel": "epd",
+      "size": "7.09",
+      "resolution": "1200x1600",
+      "interface": "spi",
+      "ic": "tbd",
+      "url": "https://github.com/osptek/epd-7.09-1200x1600-spi-tbd"
+    },
+    {
+      "repo": "tft-10.1-800x1280-mipi-jd9366",
+      "panel": "tft",
+      "size": "10.1",
+      "resolution": "800x1280",
+      "interface": "mipi",
+      "ic": "jd9366",
+      "url": "https://github.com/osptek/tft-10.1-800x1280-mipi-jd9366"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OSPTEK Product Catalog</title>
+  <meta name="description" content="OSPTEK display module catalog" />
+  <style>
+    :root {
+      --bg: #f4f5f7;
+      --card: #fff;
+      --ink: #1a1d21;
+      --muted: #5c6570;
+      --line: #e2e5ea;
+      --accent: #c0392b;
+      --accent-ink: #fff;
+      --chip: #eef1f4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.5 "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    header {
+      background: #111418;
+      color: #fff;
+      padding: 28px 20px 24px;
+    }
+    header .wrap, main, footer .wrap { max-width: 1100px; margin: 0 auto; }
+    header h1 { margin: 0 0 6px; font-size: 1.55rem; letter-spacing: 0.02em; }
+    header p { margin: 0; color: #c5cad1; }
+    .lang {
+      float: right;
+      background: transparent;
+      color: #fff;
+      border: 1px solid #5a616a;
+      border-radius: 6px;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+    .filters {
+      display: grid;
+      grid-template-columns: 1.4fr repeat(5, 1fr);
+      gap: 10px;
+      margin: 20px 0 16px;
+    }
+    @media (max-width: 900px) {
+      .filters { grid-template-columns: 1fr 1fr; }
+      .lang { float: none; margin-bottom: 10px; }
+    }
+    input, select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--card);
+      font: inherit;
+    }
+    .meta { color: var(--muted); margin: 0 0 12px; }
+    .table-wrap {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: auto;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+    th { background: #fafbfc; font-weight: 600; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+    tr:last-child td { border-bottom: 0; }
+    tbody tr:hover { background: #f8fafb; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .panel {
+      display: inline-block;
+      background: var(--chip);
+      border-radius: 999px;
+      padding: 1px 8px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+    footer {
+      margin-top: 36px;
+      padding: 22px 20px 32px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    footer a { color: inherit; }
+    footer .shops { margin: 8px 0; }
+    footer .shops a { margin-right: 14px; }
+    .empty { padding: 28px 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <button class="lang" type="button" id="langBtn">English</button>
+      <h1 id="title">OSPTEK 产品目录</h1>
+      <p id="subtitle">显示模组 · 按面板、尺寸、分辨率、接口、驱动筛选</p>
+    </div>
+  </header>
+  <main>
+    <div class="filters">
+      <input id="q" type="search" />
+      <select id="panel"></select>
+      <select id="size"></select>
+      <select id="resolution"></select>
+      <select id="iface"></select>
+      <select id="ic"></select>
+    </div>
+    <p class="meta" id="count"></p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-col="panel"></th>
+            <th data-col="size"></th>
+            <th data-col="resolution"></th>
+            <th data-col="interface"></th>
+            <th data-col="ic"></th>
+            <th data-col="repo"></th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="shops">
+        <a href="https://shop110742373.taobao.com/">鱼鹰光电工厂店</a>
+        <a href="https://www.aliexpress.com/store/1105701619">OSPTEK Official Store</a>
+        <a href="https://osptek.com/">osptek.com</a>
+        <a href="mailto:luyu@osptek.com">luyu@osptek.com</a>
+      </div>
+      <div id="footNote"></div>
+    </div>
+  </footer>
+  <script>
+    const I18N = {
+      zh: {
+        title: "OSPTEK 产品目录",
+        subtitle: "显示模组 · 按面板、尺寸、分辨率、接口、驱动筛选",
+        langBtn: "English",
+        q: "搜索仓库名…",
+        all: "全部",
+        count: (n, t) => `显示 ${n} / ${t} 款`,
+        empty: "没有匹配的模组。",
+        cols: { panel: "面板", size: "尺寸", resolution: "分辨率", interface: "接口", ic: "驱动", repo: "仓库" },
+        filters: { panel: "面板", size: "尺寸", resolution: "分辨率", iface: "接口", ic: "驱动" },
+        foot: "资料在各产品仓库。购买只走店铺首页，不含单品链接。"
+      },
+      en: {
+        title: "OSPTEK Product Catalog",
+        subtitle: "Display modules · filter by panel, size, resolution, interface, driver",
+        langBtn: "中文",
+        q: "Search repository name…",
+        all: "All",
+        count: (n, t) => `Showing ${n} / ${t}`,
+        empty: "No modules match.",
+        cols: { panel: "Panel", size: "Size", resolution: "Resolution", interface: "Interface", ic: "Driver", repo: "Repository" },
+        filters: { panel: "Panel", size: "Size", resolution: "Resolution", iface: "Interface", ic: "Driver" },
+        foot: "Datasheets live in each product repo. Store homepages only — no SKU product links."
+      }
+    };
+
+    const PANEL_LABEL = { amoled: "AMOLED", tft: "TFT", lcd: "LCD", oled: "OLED", epd: "EPD" };
+    let lang = "zh";
+    let items = [];
+
+    const $ = (id) => document.getElementById(id);
+
+    function unique(key) {
+      return [...new Set(items.map((x) => x[key]))].sort((a, b) => {
+        if (key === "size") return parseFloat(a) - parseFloat(b);
+        return String(a).localeCompare(String(b), undefined, { numeric: true });
+      });
+    }
+
+    function optionLabel(id, v) {
+      if (id === "panel") return PANEL_LABEL[v] || v.toUpperCase();
+      if (id === "iface" || id === "ic") return v.toUpperCase();
+      if (id === "size") return v + '"';
+      return v;
+    }
+
+    function fillSelect(id, values, label) {
+      const el = $(id);
+      const t = I18N[lang];
+      el.innerHTML = "";
+      const all = document.createElement("option");
+      all.value = "";
+      all.textContent = `${t.filters[label] || t.all} · ${t.all}`;
+      el.appendChild(all);
+      values.forEach((v) => {
+        const o = document.createElement("option");
+        o.value = v;
+        o.textContent = optionLabel(id, v);
+        el.appendChild(o);
+      });
+    }
+
+    function applyI18n() {
+      const t = I18N[lang];
+      document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+      $("title").textContent = t.title;
+      $("subtitle").textContent = t.subtitle;
+      $("langBtn").textContent = t.langBtn;
+      $("q").placeholder = t.q;
+      $("footNote").textContent = t.foot;
+      document.querySelectorAll("th[data-col]").forEach((th) => {
+        th.textContent = t.cols[th.dataset.col];
+      });
+    }
+
+    function render() {
+      const t = I18N[lang];
+      const q = $("q").value.trim().toLowerCase();
+      const panel = $("panel").value;
+      const size = $("size").value;
+      const resolution = $("resolution").value;
+      const iface = $("iface").value;
+      const ic = $("ic").value;
+      const filtered = items.filter((row) => {
+        if (q && !row.repo.toLowerCase().includes(q)) return false;
+        if (panel && row.panel !== panel) return false;
+        if (size && row.size !== size) return false;
+        if (resolution && row.resolution !== resolution) return false;
+        if (iface && row.interface !== iface) return false;
+        if (ic && row.ic !== ic) return false;
+        return true;
+      });
+      $("count").textContent = t.count(filtered.length, items.length);
+      const body = $("rows");
+      body.innerHTML = "";
+      if (!filtered.length) {
+        body.innerHTML = `<tr><td class="empty" colspan="6">${t.empty}</td></tr>`;
+        return;
+      }
+      filtered.forEach((row) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><span class="panel">${PANEL_LABEL[row.panel] || row.panel}</span></td>
+          <td>${row.size}"</td>
+          <td>${row.resolution.replace("x", "×")}</td>
+          <td>${row.interface.toUpperCase()}</td>
+          <td>${row.ic.toUpperCase()}</td>
+          <td><a href="${row.url}">${row.repo}</a></td>`;
+        body.appendChild(tr);
+      });
+    }
+
+    function refreshFilters() {
+      fillSelect("panel", unique("panel"), "panel");
+      fillSelect("size", unique("size"), "size");
+      fillSelect("resolution", unique("resolution"), "resolution");
+      fillSelect("iface", unique("interface"), "iface");
+      fillSelect("ic", unique("ic"), "ic");
+    }
+
+    $("langBtn").addEventListener("click", () => {
+      lang = lang === "zh" ? "en" : "zh";
+      applyI18n();
+      const keep = {
+        panel: $("panel").value,
+        size: $("size").value,
+        resolution: $("resolution").value,
+        iface: $("iface").value,
+        ic: $("ic").value
+      };
+      refreshFilters();
+      Object.entries(keep).forEach(([k, v]) => { $(k).value = v; });
+      render();
+    });
+    ["q", "panel", "size", "resolution", "iface", "ic"].forEach((id) => {
+      $(id).addEventListener("input", render);
+      $(id).addEventListener("change", render);
+    });
+
+    applyI18n();
+    fetch("catalog/displays.json")
+      .then((r) => r.json())
+      .then((data) => {
+        items = data.items || [];
+        refreshFilters();
+        render();
+      });
+  </script>
+</body>
+</html>
