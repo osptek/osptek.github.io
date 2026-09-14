@@ -1,6 +1,6 @@
 {
   "generated_from": "workstation/displays",
-  "count": 63,
+  "count": 64,
   "items": [
     {
       "repo": "oled-0.91-128x32-i2c-ssd1306",
@@ -518,6 +518,18 @@
       ],
       "ic": "co6300",
       "url": "https://github.com/osptek/amoled-3.19-262x928-mipi-co6300"
+    },
+    {
+      "repo": "tft-3.2-240x320-spi-st7789",
+      "panel": "tft",
+      "size": "3.2",
+      "resolution": "240x320",
+      "interface": "spi",
+      "interfaces": [
+        "spi"
+      ],
+      "ic": "st7789",
+      "url": "https://github.com/osptek/tft-3.2-240x320-spi-st7789"
     },
     {
       "repo": "tft-3.42-258x960-mipi-axs15231b",
