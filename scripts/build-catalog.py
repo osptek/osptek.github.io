@@ -17,12 +17,14 @@ def parse(name: str) -> dict | None:
     parts = name.split("-")
     if len(parts) < 5 or parts[0] not in PANELS:
         return None
+    ifaces = [x for x in parts[3].split("_") if x]
     return {
         "repo": name,
         "panel": parts[0],
         "size": parts[1],
         "resolution": parts[2],
         "interface": parts[3],
+        "interfaces": ifaces,
         "ic": "-".join(parts[4:]),
         "url": f"https://github.com/osptek/{name}",
     }

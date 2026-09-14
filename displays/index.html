@@ -95,8 +95,20 @@
     let items = [];
     const $ = (id) => document.getElementById(id);
 
+    function rowIfaces(row) {
+      if (Array.isArray(row.interfaces) && row.interfaces.length) return row.interfaces;
+      return String(row.interface || "").split("_").filter(Boolean);
+    }
+
+    function ifaceLabel(row) {
+      return rowIfaces(row).map((x) => x.toUpperCase()).join(" / ");
+    }
+
     function unique(key) {
-      return [...new Set(items.map((x) => x[key]))].sort((a, b) => {
+      const values = key === "interface"
+        ? items.flatMap(rowIfaces)
+        : items.map((x) => x[key]);
+      return [...new Set(values)].sort((a, b) => {
         if (key === "size") return parseFloat(a) - parseFloat(b);
         return String(a).localeCompare(String(b), undefined, { numeric: true });
       });
@@ -153,7 +165,7 @@
         if (panel && row.panel !== panel) return false;
         if (size && row.size !== size) return false;
         if (resolution && row.resolution !== resolution) return false;
-        if (iface && row.interface !== iface) return false;
+        if (iface && !rowIfaces(row).includes(iface)) return false;
         if (ic && row.ic !== ic) return false;
         return true;
       });
@@ -170,7 +182,7 @@
           <td><span class="panel">${PANEL_LABEL[row.panel] || row.panel}</span></td>
           <td>${row.size}"</td>
           <td>${row.resolution.replace("x", "×")}</td>
-          <td>${row.interface.toUpperCase()}</td>
+          <td>${ifaceLabel(row)}</td>
           <td>${row.ic.toUpperCase()}</td>
           <td><a href="${row.url}">${row.repo}</a></td>`;
         body.appendChild(tr);
