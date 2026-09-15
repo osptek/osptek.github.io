@@ -124,3 +124,22 @@
     else scrambleTo(lines[at]);
   }, HOLD);
 })();
+
+// the category cards ship with the counts of the last build; correct them from
+// the catalogue so nobody has to keep the numbers in the markup up to date
+(() => {
+  const cards = [...document.querySelectorAll('.cat-card[data-cat]')];
+  if (!cards.length) return;
+
+  fetch('products/catalog.json')
+    .then((r) => r.json())
+    .then((data) => {
+      const counts = new Map((data.categories || []).map((c) => [c.key, c.count]));
+      cards.forEach((card) => {
+        const n = counts.get(card.dataset.cat);
+        const slot = card.querySelector('.cat-count');
+        if (n && slot) slot.textContent = n;
+      });
+    })
+    .catch(() => {});
+})();

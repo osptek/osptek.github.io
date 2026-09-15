@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Find a Product — OSPTEK</title>
+  <meta name="description" content="OSPTEK product catalog: displays, core boards, dev boards, panels, cameras and sensors" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/base.css?v=2" />
+  <link rel="stylesheet" href="../assets/find.css?v=10" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="../" aria-label="OSPTEK">osptek</a>
+    <button class="menu" type="button" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+  <main class="finder">
+    <div class="finder-head">
+      <h1>Find a Product</h1>
+      <p class="lede" id="lede">Specs and examples in each repository</p>
+    </div>
+
+    <div class="search">
+      <label class="sr-only" for="q">Search products</label>
+      <input id="q" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Search model, size, interface, driver…" />
+    </div>
+
+    <!-- find.js fills both rows: the categories, then the filters that category offers -->
+    <nav class="cats" id="cats" aria-label="Product category"></nav>
+    <div class="filters" id="filters"></div>
+
+    <p class="tally">
+      <span id="tally"></span>
+      <button class="reset" id="reset" type="button" hidden>Clear</button>
+    </p>
+    <div class="cards" id="cards"></div>
+  </main>
+  <footer class="foot">
+    <div class="foot-in">
+      <a href="https://github.com/osptek">github.com/osptek</a>
+      <a href="https://osptek.com/">osptek.com</a>
+      <a href="https://shop110742373.taobao.com/">鱼鹰光电工厂店</a>
+      <a href="https://www.aliexpress.com/store/1105701619">OSPTEK Official Store</a>
+      <a href="mailto:luyu@osptek.com">luyu@osptek.com</a>
+      <p class="note">Datasheets and examples live in each product repository.</p>
+    </div>
+  </footer>
+  <script src="../assets/topbar.js?v=1"></script>
+  <script src="../assets/find.js?v=10"></script>
+</body>
+</html>

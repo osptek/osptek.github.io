@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/base.css?v=2" />
-  <link rel="stylesheet" href="assets/home.css?v=33" />
+  <link rel="stylesheet" href="assets/home.css?v=34" />
 </head>
 <body>
   <header class="topbar">
@@ -47,11 +47,60 @@
       </span>
     </p>
     <div class="actions">
-      <a class="btn btn-fill" href="displays/">Find a Product</a>
+      <a class="btn btn-fill" href="products/">Find a Product</a>
       <a class="btn btn-ghost" href="https://github.com/osptek" target="_blank" rel="noopener">Browse Repositories</a>
     </div>
   </main>
+
+  <!-- the counts are placeholders: home.js refreshes them from products/catalog.json -->
+  <section class="cats-home" aria-labelledby="cats-title">
+    <h2 class="sr-only" id="cats-title">Product categories</h2>
+    <div class="cat-grid">
+      <a class="cat-card" href="products/?cat=displays" data-cat="displays">
+        <span class="cat-head">
+          <span class="cat-name">Displays</span>
+          <span class="cat-count">65</span>
+        </span>
+        <span class="cat-note">TFT · AMOLED · OLED · LCD · EPD, 0.91" to 10.1"</span>
+      </a>
+      <a class="cat-card" href="products/?cat=core-boards" data-cat="core-boards">
+        <span class="cat-head">
+          <span class="cat-name">Core Boards</span>
+          <span class="cat-count">3</span>
+        </span>
+        <span class="cat-note">ESP32-P4 stamp-hole modules with Flash and PSRAM</span>
+      </a>
+      <a class="cat-card" href="products/?cat=dev-boards" data-cat="dev-boards">
+        <span class="cat-head">
+          <span class="cat-name">Dev Boards</span>
+          <span class="cat-count">4</span>
+        </span>
+        <span class="cat-note">Carriers with MIPI display, camera, audio and USB</span>
+      </a>
+      <a class="cat-card" href="products/?cat=panels" data-cat="panels">
+        <span class="cat-head">
+          <span class="cat-name">Panels</span>
+          <span class="cat-count">1</span>
+        </span>
+        <span class="cat-note">Finished touch panels built around a display</span>
+      </a>
+      <a class="cat-card" href="products/?cat=cameras" data-cat="cameras">
+        <span class="cat-head">
+          <span class="cat-name">Cameras</span>
+          <span class="cat-count">2</span>
+        </span>
+        <span class="cat-note">MIPI CSI camera modules</span>
+      </a>
+      <a class="cat-card" href="products/?cat=sensors" data-cat="sensors">
+        <span class="cat-head">
+          <span class="cat-name">Sensors</span>
+          <span class="cat-count">1</span>
+        </span>
+        <span class="cat-note">Digital pressure sensing over I2C</span>
+      </a>
+    </div>
+  </section>
   <script src="assets/topbar.js?v=1"></script>
-  <script src="assets/home.js?v=12"></script>
+  <script src="assets/home.js?v=13"></script>
 </body>
 </html>

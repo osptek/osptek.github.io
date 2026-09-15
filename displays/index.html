@@ -2,89 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- the display list moved into the all-category finder; keep the old link alive -->
+  <meta http-equiv="refresh" content="0; url=../products/?cat=displays" />
+  <link rel="canonical" href="https://osptek.github.io/products/?cat=displays" />
   <title>Find a Product — OSPTEK</title>
-  <meta name="description" content="OSPTEK display module catalog: search by size, resolution, interface and driver" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/base.css?v=2" />
-  <link rel="stylesheet" href="../assets/find.css?v=8" />
+  <meta name="robots" content="noindex" />
 </head>
 <body>
-  <header class="topbar">
-    <a class="wordmark" href="../" aria-label="OSPTEK">osptek</a>
-    <button class="menu" type="button" aria-label="Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </header>
-  <main class="finder">
-    <div class="finder-head">
-      <h1>Find a Product</h1>
-      <p class="lede" id="lede">Display modules · specs and examples in each repository</p>
-    </div>
-
-    <div class="search">
-      <label class="sr-only" for="q">Search display modules</label>
-      <input id="q" type="search" autocomplete="off" spellcheck="false"
-             placeholder="Search size, resolution, interface, driver…" />
-    </div>
-
-    <!-- each filter keeps its options folded away until its button is pressed -->
-    <div class="filters">
-      <div class="pick" data-group="panel">
-        <button class="pick-btn" type="button" aria-expanded="false">
-          <span>Panel</span>
-          <span class="num" hidden></span>
-          <svg class="caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" /></svg>
-        </button>
-        <div class="pick-menu" role="group" aria-label="Panel" hidden></div>
-      </div>
-      <div class="pick" data-group="iface">
-        <button class="pick-btn" type="button" aria-expanded="false">
-          <span>Interface</span>
-          <span class="num" hidden></span>
-          <svg class="caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" /></svg>
-        </button>
-        <div class="pick-menu" role="group" aria-label="Interface" hidden></div>
-      </div>
-      <div class="pick" data-group="size">
-        <button class="pick-btn" type="button" aria-expanded="false">
-          <span>Size</span>
-          <span class="num" hidden></span>
-          <svg class="caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" /></svg>
-        </button>
-        <div class="pick-menu" role="group" aria-label="Size" hidden></div>
-      </div>
-      <div class="pick" data-group="ic">
-        <button class="pick-btn" type="button" aria-expanded="false">
-          <span>Driver</span>
-          <span class="num" hidden></span>
-          <svg class="caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" /></svg>
-        </button>
-        <div class="pick-menu" role="group" aria-label="Driver" hidden></div>
-      </div>
-    </div>
-
-    <p class="tally">
-      <span id="tally"></span>
-      <button class="reset" id="reset" type="button" hidden>Clear</button>
-    </p>
-    <div class="cards" id="cards"></div>
-  </main>
-  <footer class="foot">
-    <div class="foot-in">
-      <a href="https://github.com/osptek">github.com/osptek</a>
-      <a href="https://osptek.com/">osptek.com</a>
-      <a href="https://shop110742373.taobao.com/">鱼鹰光电工厂店</a>
-      <a href="https://www.aliexpress.com/store/1105701619">OSPTEK Official Store</a>
-      <a href="mailto:luyu@osptek.com">luyu@osptek.com</a>
-      <p class="note">Datasheets and examples live in each product repository.</p>
-    </div>
-  </footer>
-  <script src="../assets/topbar.js?v=1"></script>
-  <script src="../assets/find.js?v=9"></script>
+  <p><a href="../products/?cat=displays">Display modules moved to /products/</a></p>
+  <script>
+    // carry a bookmarked search or filter over to the new address
+    (() => {
+      const p = new URLSearchParams(location.search);
+      p.set('cat', 'displays');
+      location.replace('../products/?' + p);
+    })();
+  </script>
 </body>
 </html>
