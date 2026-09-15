@@ -1,6 +1,6 @@
 {
   "generated_from": "workstation/displays",
-  "count": 64,
+  "count": 65,
   "items": [
     {
       "repo": "oled-0.91-128x32-i2c-ssd1306",
@@ -722,6 +722,18 @@
       ],
       "ic": "gc9503",
       "url": "https://github.com/osptek/tft-4.45-480x854-mipi-gc9503"
+    },
+    {
+      "repo": "tft-4.45-480x854-mipi-st7701",
+      "panel": "tft",
+      "size": "4.45",
+      "resolution": "480x854",
+      "interface": "mipi",
+      "interfaces": [
+        "mipi"
+      ],
+      "ic": "st7701",
+      "url": "https://github.com/osptek/tft-4.45-480x854-mipi-st7701"
     },
     {
       "repo": "tft-4.58-424x1280-mipi-jd9261",
