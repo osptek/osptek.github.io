@@ -1,0 +1,139 @@
+/* shared shell: page colours, type, topbar and pill buttons */
+
+* { box-sizing: border-box; }
+
+:root {
+  --bar: 84px;
+  --page: #f5f5f6;
+  --card: #fff;
+  --ink: #111;
+  --muted: #71717a;
+  --faint: #a1a1aa;
+  --line: #e7e7e9;
+  --edge: #c9c9cf;
+  /* Roboto Mono: plain round zero, no slash or dot through it */
+  --mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  /* off-white so the white edge light reads against the page */
+  background: var(--page);
+  color: var(--ink);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.topbar {
+  /* rides along at the top; bare over the page, panelled once scrolled */
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--bar);
+  padding: 0 36px;
+  background: transparent;
+  /* transparent up front so the line can appear without shifting the layout */
+  border-bottom: 1px solid transparent;
+  transition: background-color 240ms ease, border-color 240ms ease;
+}
+
+.topbar.is-stuck {
+  background-color: rgba(245, 245, 246, 0.72);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom-color: var(--line);
+}
+
+.wordmark {
+  color: var(--ink);
+  text-decoration: none;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.menu {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--ink);
+}
+
+.btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 12px 26px;
+  font: 500 16px/1.2 inherit;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  cursor: default;
+}
+
+/* only the ones that actually go somewhere behave like links */
+a.btn {
+  cursor: pointer;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.btn-fill {
+  border: 0;
+  background: var(--ink);
+  color: #fff;
+}
+
+a.btn-fill:hover {
+  background: #000;
+}
+
+.btn-ghost {
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  color: var(--ink);
+}
+
+a.btn-ghost:hover {
+  border-color: var(--edge);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  :root { --bar: 72px; }
+  .topbar { padding: 0 20px; }
+  .wordmark { font-size: 28px; }
+}

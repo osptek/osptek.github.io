@@ -1,99 +1,57 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>OSPTEK</title>
-  <meta name="description" content="OSPTEK product documentation index" />
-  <link rel="stylesheet" href="assets/site.css" />
+  <meta name="description" content="OSPTEK product documentation" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/base.css?v=2" />
+  <link rel="stylesheet" href="assets/home.css?v=33" />
 </head>
 <body>
-  <header>
-    <div class="wrap header-row">
-      <div>
-        <nav class="nav" aria-label="Primary">
-          <a href="./" class="current" id="navHome">首页</a>
-          <a href="./displays/" id="navDisplays">显示模组</a>
-        </nav>
-        <h1 id="title">OSPTEK</h1>
-        <p id="subtitle">产品资料总站 · 规格书与例程在各产品仓库</p>
-      </div>
-      <button class="lang" type="button" id="langBtn">English</button>
-    </div>
+  <header class="topbar">
+    <a class="wordmark" href="./" aria-label="OSPTEK">osptek</a>
+    <button class="menu" type="button" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
-  <main>
-    <p class="note" id="lead"></p>
-    <div class="cards">
-      <a class="card" href="./displays/">
-        <h2 id="cardDisplayTitle">显示模组</h2>
-        <p id="cardDisplayBody">按面板、尺寸、分辨率、接口、驱动筛选，进入对应 GitHub 仓库。</p>
-        <div class="go" id="cardDisplayGo">进入选型 →</div>
-      </a>
-    </div>
-    <p class="note" id="more"></p>
-  </main>
-  <footer>
-    <div class="wrap">
-      <div class="shops">
-        <a href="https://shop110742373.taobao.com/">鱼鹰光电工厂店</a>
-        <a href="https://www.aliexpress.com/store/1105701619">OSPTEK Official Store</a>
-        <a href="https://osptek.com/">osptek.com</a>
-        <a href="mailto:luyu@osptek.com">luyu@osptek.com</a>
+  <main class="hero">
+    <div class="mark-wrap">
+      <div class="mark-color" aria-hidden="true"></div>
+      <img class="mark" src="assets/mark.svg" alt="" draggable="false" />
+      <div class="mark-glow" aria-hidden="true">
+        <i class="orbit"></i>
       </div>
-      <div id="footNote"></div>
+      <!-- click target: the mark shape itself, with a little slack around the edges -->
+      <svg class="mark-hit" viewBox="10 240 840 440" aria-hidden="true">
+        <g fill="none" stroke="none" stroke-width="44" stroke-linejoin="round">
+          <polygon points="20,446 239,405 393,622" />
+          <polygon points="211,657 488,320 837,257" />
+        </g>
+      </svg>
     </div>
-  </footer>
-  <script>
-    const I18N = {
-      zh: {
-        title: "OSPTEK",
-        subtitle: "产品资料总站 · 规格书与例程在各产品仓库",
-        langBtn: "English",
-        navHome: "首页",
-        navDisplays: "显示模组",
-        lead: "从这里进入各品类索引。购买只走店铺首页。",
-        cardDisplayTitle: "显示模组",
-        cardDisplayBody: "按面板、尺寸、分辨率、接口、驱动筛选，进入对应 GitHub 仓库。",
-        cardDisplayGo: "进入选型 →",
-        more: "核心板、开发板等其它品类有清单后再开入口，不做空列表。",
-        foot: "资料在各产品仓库。购买只走店铺首页，不含单品链接。"
-      },
-      en: {
-        title: "OSPTEK",
-        subtitle: "Product docs hub · datasheets and samples live in each repository",
-        langBtn: "中文",
-        navHome: "Home",
-        navDisplays: "Displays",
-        lead: "Start from a category index. Store homepages only.",
-        cardDisplayTitle: "Display modules",
-        cardDisplayBody: "Filter by panel, size, resolution, interface, and driver, then open the GitHub repo.",
-        cardDisplayGo: "Open catalog →",
-        more: "Core boards and other categories appear here once they have a list. No empty tables.",
-        foot: "Datasheets live in each product repo. Store homepages only — no SKU product links."
-      }
-    };
-    const $ = (id) => document.getElementById(id);
-    let lang = "zh";
-    function apply() {
-      const t = I18N[lang];
-      document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
-      $("title").textContent = t.title;
-      $("subtitle").textContent = t.subtitle;
-      $("langBtn").textContent = t.langBtn;
-      $("navHome").textContent = t.navHome;
-      $("navDisplays").textContent = t.navDisplays;
-      $("lead").textContent = t.lead;
-      $("cardDisplayTitle").textContent = t.cardDisplayTitle;
-      $("cardDisplayBody").textContent = t.cardDisplayBody;
-      $("cardDisplayGo").textContent = t.cardDisplayGo;
-      $("more").textContent = t.more;
-      $("footNote").textContent = t.foot;
-    }
-    $("langBtn").addEventListener("click", () => {
-      lang = lang === "zh" ? "en" : "zh";
-      apply();
-    });
-    apply();
-  </script>
+    <h1 class="title">Embedded<br />Hardware</h1>
+    <p class="sub">
+      <span class="rotator">
+        <span class="phrase">Built for Development</span>
+        <span class="phrase">From Module to System</span>
+        <span class="phrase">Made for Integration</span>
+        <span class="phrase">Hardware for Engineers</span>
+        <span class="phrase">Ready for Prototyping</span>
+        <span class="phrase">From Prototype to Product</span>
+      </span>
+    </p>
+    <div class="actions">
+      <a class="btn btn-fill" href="displays/">Find a Product</a>
+      <a class="btn btn-ghost" href="https://github.com/osptek" target="_blank" rel="noopener">Browse Repositories</a>
+    </div>
+  </main>
+  <script src="assets/topbar.js?v=1"></script>
+  <script src="assets/home.js?v=12"></script>
 </body>
 </html>

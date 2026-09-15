@@ -1,0 +1,191 @@
+/* home hero: the mark, its light, the colour bloom and the headline */
+
+.hero {
+  flex: 1 0 auto;
+  min-height: calc(100svh - var(--bar));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8vh 24px 48px;
+  text-align: center;
+  /* clip the wide bloom sideways, but let it spill up over the topbar */
+  overflow-x: clip;
+}
+
+.mark-wrap {
+  position: relative;
+  width: min(420px, 62vw);
+  user-select: none;
+}
+
+.mark {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  /* decorative: never drag it out as an image */
+  -webkit-user-drag: none;
+  pointer-events: none;
+  /* ambient ring first, then a cast shadow: the ring is what the edge light plays against */
+  filter:
+    drop-shadow(0 0 15px rgba(0, 0, 0, 0.22))
+    drop-shadow(0 20px 36px rgba(0, 0, 0, 0.22));
+}
+
+/* the light is masked to a band hugging the outside of the mark's edges */
+.mark-glow {
+  position: absolute;
+  z-index: 2;
+  inset: -9.545% -5%;
+  overflow: hidden;
+  /* keep the spinning light's box from stretching the page's scroll area */
+  contain: paint;
+  pointer-events: none;
+  mask: url(mark-halo.svg) center / 100% 100% no-repeat;
+  -webkit-mask: url(mark-halo.svg) center / 100% 100% no-repeat;
+}
+
+/* invisible copy of the mark on top: only its geometry takes the click,
+   so the surrounding empty box does nothing */
+.mark-hit {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.mark-hit g {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+/* one light sweeping around: a single bright arc centred on --light-angle,
+   which home.js spins on its own or aims at the pointer */
+.orbit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 200%;
+  aspect-ratio: 1;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #fff 0deg 20deg,
+    rgba(255, 255, 255, 0) 56deg,
+    rgba(255, 255, 255, 0) 304deg,
+    #fff 340deg 360deg
+  );
+  filter: blur(9px);
+  transform: translate(-50%, -50%) rotate(var(--light-angle, 0deg));
+}
+
+/* click the mark and colour blooms out from behind it;
+   click again and it fades back off */
+.mark-color {
+  position: absolute;
+  z-index: 0;
+  inset: -115%;
+  /* strongest around the mark, gone before it reaches the copy */
+  mask: radial-gradient(closest-side, #000 24%, rgba(0, 0, 0, 0) 72%);
+  -webkit-mask: radial-gradient(closest-side, #000 24%, rgba(0, 0, 0, 0) 72%);
+  filter: blur(46px);
+  opacity: 0;
+  transform: scale(0.55);
+  /* the drifting gradient inside spins, so keep its box off the scroll area */
+  contain: paint;
+  /* fading out is a plain fade; the scale only resets once it is invisible */
+  transition: opacity 620ms ease, transform 0ms linear 620ms;
+  pointer-events: none;
+}
+
+.mark-color::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #ff4ec7 0deg,
+    #7c5cff 55deg,
+    #2f8bff 110deg,
+    #22e0e8 160deg,
+    #52e07a 210deg,
+    #ffd23f 260deg,
+    #ff7a45 300deg,
+    #ff4e7a 340deg,
+    #ff4ec7 360deg
+  );
+  animation: hue-drift 24s linear infinite;
+}
+
+.mark-wrap.is-lit .mark-color {
+  opacity: 0.55;
+  transform: scale(1);
+  transition:
+    opacity 520ms ease-out,
+    transform 900ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes hue-drift {
+  to { transform: rotate(360deg); }
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  margin: 36px 0 0;
+  font-size: clamp(42px, 8vw, 84px);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.sub {
+  position: relative;
+  z-index: 1;
+  margin: 18px 0 0;
+  /* monospace like Vercel's: every scrambled letter keeps the line's width */
+  font-family: var(--mono);
+  font-size: clamp(14px, 1.9vw, 18px);
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+/* home.js takes over this slot and scrambles the letters from phrase to
+   phrase; without it, the first phrase simply stands still */
+.rotator {
+  display: inline-block;
+}
+
+.phrase {
+  display: none;
+}
+
+.phrase:first-child {
+  display: inline;
+}
+
+.actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mark-color::before { animation: none; }
+}
+
+@media (max-width: 640px) {
+  .mark-wrap { width: min(280px, 78vw); }
+  .title { margin-top: 28px; }
+}

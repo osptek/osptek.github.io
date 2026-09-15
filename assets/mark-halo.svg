@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 198 924 524">
+  <defs>
+    <mask id="outside" maskUnits="userSpaceOnUse" x="-32" y="198" width="924" height="524">
+      <rect x="-32" y="198" width="924" height="524" fill="#fff"/>
+      <polygon fill="#000" points="20,446 239,405 393,622"/>
+      <polygon fill="#000" points="211,657 488,320 837,257"/>
+    </mask>
+    <filter id="soften" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+  <g mask="url(#outside)" filter="url(#soften)" fill="none" stroke="#000" stroke-width="62" stroke-linejoin="round">
+    <polygon points="20,446 239,405 393,622"/>
+    <polygon points="211,657 488,320 837,257"/>
+  </g>
+</svg>
