@@ -12,21 +12,29 @@ Datasheets and examples stay in each product repository.
 
 Do **not** put `catalog.json` in product repos.
 
-## Refresh the product list
+## Product catalog sync
 
-From this directory:
+`.github/workflows/sync-catalog.yml` refreshes the catalog every six hours. It
+discovers public `osptek` repositories, reads each root `osptek.yml`, rebuilds
+`products/catalog.json`, and commits only when the generated file changed.
+The workflow can also be run manually, or triggered with a `catalog-sync`
+repository dispatch event.
+
+For a local preview from the workstation:
 
 ```bash
 python3 scripts/build-catalog.py
-git add products/catalog.json
-git commit -m "docs(catalog): refresh product index"
-git push github HEAD
 ```
 
-The script reads the workstation category folders. Display rows come from the
-folder name; every other category takes its card copy from the GitHub repository
-description, so keep `gh` signed in — without it the script reuses the copy
-already in `products/catalog.json`. Private repositories are skipped.
+To test the same source used by Actions:
+
+```bash
+python3 scripts/build-catalog.py --source github
+```
+
+GitHub mode requires `GITHUB_TOKEN` or a signed-in `gh` CLI. Repositories that
+do not yet contain `osptek.yml` retain their existing catalog row during the
+migration; new products appear after their metadata file is pushed.
 
 Do not add a `gitee` remote in phase 1.
 
