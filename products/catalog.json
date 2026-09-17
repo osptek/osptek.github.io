@@ -1,11 +1,11 @@
 {
   "generated_from": "workstation",
-  "count": 76,
+  "count": 77,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 65
+      "count": 66
     },
     {
       "key": "core-boards",
@@ -44,6 +44,7 @@
       "interfaces": [
         "i2c"
       ],
+      "shape": "rect",
       "ic": "ssd1306",
       "url": "https://github.com/osptek/oled-0.91-128x32-i2c-ssd1306"
     },
@@ -57,6 +58,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "sh8501",
       "url": "https://github.com/osptek/amoled-0.95-120x240-spi-sh8501"
     },
@@ -70,6 +72,7 @@
       "interfaces": [
         "i2c"
       ],
+      "shape": "rect",
       "ic": "ssd1315",
       "url": "https://github.com/osptek/oled-0.96-128x64-i2c-ssd1315"
     },
@@ -83,6 +86,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "round",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-1.04-340x340-qspi-co5300"
     },
@@ -96,6 +100,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "bar",
       "ic": "icna3306",
       "url": "https://github.com/osptek/amoled-1.1-126x294-spi-icna3306"
     },
@@ -109,6 +114,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "round",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-1.19-390x390-qspi-co5300"
     },
@@ -122,6 +128,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "round",
       "ic": "gc9a01",
       "url": "https://github.com/osptek/tft-1.28-240x240-spi-gc9a01"
     },
@@ -135,6 +142,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "round",
       "ic": "sh8601",
       "url": "https://github.com/osptek/amoled-1.39-454x454-qspi-sh8601"
     },
@@ -148,7 +156,8 @@
       "interfaces": [
         "i80"
       ],
-      "ic": "st7789",
+      "shape": "rect",
+      "ic": "st7789p3",
       "url": "https://github.com/osptek/tft-1.47-172x320-i80-st7789"
     },
     {
@@ -161,6 +170,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "gc9307",
       "url": "https://github.com/osptek/tft-1.47-172x320-spi-gc9307"
     },
@@ -174,6 +184,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "jd9853",
       "url": "https://github.com/osptek/tft-1.47-172x320-spi-jd9853"
     },
@@ -187,6 +198,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "round",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-1.51-466x466-qspi-co5300"
     },
@@ -200,6 +212,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "ssd1309",
       "url": "https://github.com/osptek/oled-1.54-128x64-spi-ssd1309"
     },
@@ -213,6 +226,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "st7567",
       "url": "https://github.com/osptek/lcd-1.58-128x64-spi-st7567"
     },
@@ -226,6 +240,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "rect",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-1.6-320x360-qspi-co5300"
     },
@@ -239,6 +254,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "round",
       "ic": "st7802",
       "url": "https://github.com/osptek/amoled-1.6-480x480-mipi-st7802"
     },
@@ -252,6 +268,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "round",
       "ic": "ch13613",
       "url": "https://github.com/osptek/amoled-1.6-480x480-qspi-ch13613"
     },
@@ -265,7 +282,8 @@
       "interfaces": [
         "spi"
       ],
-      "ic": "st7789",
+      "shape": "rect",
+      "ic": "st7789v3 / st7789p3",
       "url": "https://github.com/osptek/tft-1.69-240x280-spi-st7789"
     },
     {
@@ -278,8 +296,24 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "round",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-1.73-466x466-mipi-co5300"
+    },
+    {
+      "repo": "amoled-1.73-466x466-mipi_qspi-co5300",
+      "category": "displays",
+      "panel": "amoled",
+      "size": "1.73",
+      "resolution": "466x466",
+      "interface": "mipi_qspi",
+      "interfaces": [
+        "mipi",
+        "qspi"
+      ],
+      "shape": "round",
+      "ic": "co5300",
+      "url": "https://github.com/osptek/amoled-1.73-466x466-mipi_qspi-co5300"
     },
     {
       "repo": "amoled-1.73-466x466-qspi-co5300",
@@ -291,6 +325,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "round",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-1.73-466x466-qspi-co5300"
     },
@@ -304,6 +339,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "rect",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-1.78-368x448-qspi-co5300"
     },
@@ -317,6 +353,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "round",
       "ic": "st77916",
       "url": "https://github.com/osptek/tft-1.8-360x360-qspi-st77916"
     },
@@ -331,7 +368,8 @@
         "spi",
         "i80"
       ],
-      "ic": "st7789",
+      "shape": "rect",
+      "ic": "st7789v3",
       "url": "https://github.com/osptek/tft-1.9-170x320-spi_i80-st7789"
     },
     {
@@ -344,6 +382,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "rect",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-1.96-410x502-qspi-co5300"
     },
@@ -357,6 +396,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "rect",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-2.0-460x460-mipi-co5300"
     },
@@ -370,7 +410,8 @@
       "interfaces": [
         "qspi"
       ],
-      "ic": "co5300",
+      "shape": "rect",
+      "ic": "co5300af-16 / co5300",
       "url": "https://github.com/osptek/amoled-2.0-460x460-qspi-co5300"
     },
     {
@@ -383,6 +424,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "st7789v2",
       "url": "https://github.com/osptek/tft-2.0-240x320-spi-st7789v2"
     },
@@ -396,6 +438,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "rect",
       "ic": "icna3306",
       "url": "https://github.com/osptek/amoled-2.01-240x296-qspi-icna3306"
     },
@@ -409,7 +452,8 @@
       "interfaces": [
         "mipi"
       ],
-      "ic": "st7701",
+      "shape": "rect",
+      "ic": "st7701s",
       "url": "https://github.com/osptek/tft-2.1-480x480-mipi-st7701"
     },
     {
@@ -422,6 +466,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "round",
       "ic": "st77922",
       "url": "https://github.com/osptek/tft-2.1-480x480-mipi-st77922"
     },
@@ -435,7 +480,8 @@
       "interfaces": [
         "mipi"
       ],
-      "ic": "st7801",
+      "shape": "rect",
+      "ic": "st7801n",
       "url": "https://github.com/osptek/amoled-2.13-410x502-mipi-st7801"
     },
     {
@@ -448,6 +494,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "rect",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-2.13-410x502-qspi-co5300"
     },
@@ -461,6 +508,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "st7305",
       "url": "https://github.com/osptek/lcd-2.13-122x250-spi-st7305"
     },
@@ -474,6 +522,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "rect",
       "ic": "st7801",
       "url": "https://github.com/osptek/amoled-2.14-480x480-qspi-st7801"
     },
@@ -487,6 +536,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "rect",
       "ic": "rm690b0",
       "url": "https://github.com/osptek/amoled-2.4-450x600-mipi-rm690b0"
     },
@@ -500,7 +550,8 @@
       "interfaces": [
         "mipi"
       ],
-      "ic": "st7701",
+      "shape": "rect",
+      "ic": "st7701s",
       "url": "https://github.com/osptek/tft-2.76-480x480-mipi-st7701"
     },
     {
@@ -513,6 +564,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "st7305",
       "url": "https://github.com/osptek/lcd-2.9-168x384-spi-st7305"
     },
@@ -526,7 +578,8 @@
       "interfaces": [
         "mipi"
       ],
-      "ic": "st7701",
+      "shape": "rect",
+      "ic": "st7701s",
       "url": "https://github.com/osptek/tft-2.95-480x854-mipi-st7701"
     },
     {
@@ -539,6 +592,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "bar",
       "ic": "axs15231b",
       "url": "https://github.com/osptek/tft-3.02-170x560-qspi-axs15231b"
     },
@@ -552,6 +606,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "bar",
       "ic": "axs15231b",
       "url": "https://github.com/osptek/tft-3.02-170x560-spi-axs15231b"
     },
@@ -565,6 +620,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "bar",
       "ic": "gc9503cv",
       "url": "https://github.com/osptek/tft-3.13-376x960-mipi-gc9503cv"
     },
@@ -578,6 +634,7 @@
       "interfaces": [
         "rgb"
       ],
+      "shape": "bar",
       "ic": "gc9503cv",
       "url": "https://github.com/osptek/tft-3.13-376x960-rgb-gc9503cv"
     },
@@ -591,6 +648,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "bar",
       "ic": "co6300",
       "url": "https://github.com/osptek/amoled-3.19-262x928-mipi-co6300"
     },
@@ -604,7 +662,8 @@
       "interfaces": [
         "spi"
       ],
-      "ic": "st7789",
+      "shape": "rect",
+      "ic": "st7789p3",
       "url": "https://github.com/osptek/tft-3.2-240x320-spi-st7789"
     },
     {
@@ -617,6 +676,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "bar",
       "ic": "axs15231b",
       "url": "https://github.com/osptek/tft-3.42-258x960-mipi-axs15231b"
     },
@@ -630,6 +690,7 @@
       "interfaces": [
         "qspi"
       ],
+      "shape": "bar",
       "ic": "axs15231b",
       "url": "https://github.com/osptek/tft-3.48-172x640-qspi-axs15231b"
     },
@@ -643,7 +704,8 @@
       "interfaces": [
         "mipi"
       ],
-      "ic": "axs15231",
+      "shape": "rect",
+      "ic": "axs15231e",
       "url": "https://github.com/osptek/tft-3.5-320x480-mipi-axs15231"
     },
     {
@@ -656,6 +718,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "jd7601",
       "url": "https://github.com/osptek/epd-3.7-480x720-spi-jd7601"
     },
@@ -669,6 +732,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "bar",
       "ic": "axs15231b",
       "url": "https://github.com/osptek/tft-3.82-280x1020-mipi-axs15231b"
     },
@@ -682,6 +746,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "rect",
       "ic": "st7102",
       "url": "https://github.com/osptek/tft-3.95-480x480-mipi-st7102"
     },
@@ -695,6 +760,7 @@
       "interfaces": [
         "rgb"
       ],
+      "shape": "rect",
       "ic": "st7102",
       "url": "https://github.com/osptek/tft-3.95-480x480-rgb-st7102"
     },
@@ -708,7 +774,8 @@
       "interfaces": [
         "rgb"
       ],
-      "ic": "st7701",
+      "shape": "rect",
+      "ic": "st7701s",
       "url": "https://github.com/osptek/tft-3.95-480x480-rgb-st7701"
     },
     {
@@ -721,6 +788,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "rect",
       "ic": "axs15260",
       "url": "https://github.com/osptek/tft-3.97-480x800-mipi-axs15260"
     },
@@ -734,6 +802,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "rect",
       "ic": "gc9503cv",
       "url": "https://github.com/osptek/tft-3.97-480x800-mipi-gc9503cv"
     },
@@ -747,6 +816,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "rect",
       "ic": "st7703",
       "url": "https://github.com/osptek/tft-4.0-720x720-mipi-st7703"
     },
@@ -760,6 +830,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "st7305",
       "url": "https://github.com/osptek/lcd-4.2-300x400-spi-st7305"
     },
@@ -773,6 +844,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "st7306",
       "url": "https://github.com/osptek/lcd-4.2-300x400-spi-st7306"
     },
@@ -786,6 +858,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "ssd1677",
       "url": "https://github.com/osptek/epd-4.26-480x800-spi-ssd1677"
     },
@@ -799,6 +872,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "rect",
       "ic": "st7102",
       "url": "https://github.com/osptek/tft-4.3-480x800-mipi-st7102"
     },
@@ -812,7 +886,8 @@
       "interfaces": [
         "mipi"
       ],
-      "ic": "gc9503",
+      "shape": "rect",
+      "ic": "gc9503cv",
       "url": "https://github.com/osptek/tft-4.45-480x854-mipi-gc9503"
     },
     {
@@ -825,7 +900,8 @@
       "interfaces": [
         "mipi"
       ],
-      "ic": "st7701",
+      "shape": "rect",
+      "ic": "st7701s",
       "url": "https://github.com/osptek/tft-4.45-480x854-mipi-st7701"
     },
     {
@@ -838,7 +914,8 @@
       "interfaces": [
         "mipi"
       ],
-      "ic": "jd9261",
+      "shape": "bar",
+      "ic": "jd9261t",
       "url": "https://github.com/osptek/tft-4.58-424x1280-mipi-jd9261"
     },
     {
@@ -851,6 +928,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "rect",
       "ic": "jd9365",
       "url": "https://github.com/osptek/tft-5.0-720x1280-mipi-jd9365"
     },
@@ -864,6 +942,7 @@
       "interfaces": [
         "spi"
       ],
+      "shape": "rect",
       "ic": "tbd",
       "url": "https://github.com/osptek/epd-7.09-1200x1600-spi-tbd"
     },
@@ -877,6 +956,7 @@
       "interfaces": [
         "mipi"
       ],
+      "shape": "rect",
       "ic": "jd9366",
       "url": "https://github.com/osptek/tft-10.1-800x1280-mipi-jd9366"
     },
@@ -941,7 +1021,7 @@
       "category": "cameras",
       "title": "OV2710",
       "interface": "MIPI CSI",
-      "summary": "",
+      "summary": "MIPI CSI camera module supporting 720p60 and 1080p30 capture.",
       "url": "https://github.com/osptek/camera-mipi-csi-ov2710"
     },
     {
@@ -949,7 +1029,7 @@
       "category": "cameras",
       "title": "SC2336",
       "interface": "MIPI CSI",
-      "summary": "",
+      "summary": "MIPI CSI camera module supporting 720p, 1080p, and 800x800 capture.",
       "url": "https://github.com/osptek/camera-mipi-csi-sc2336"
     },
     {
