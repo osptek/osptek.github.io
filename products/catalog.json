@@ -1,11 +1,11 @@
 {
   "generated_from": "github:osptek.yml",
-  "count": 77,
+  "count": 78,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 66
+      "count": 67
     },
     {
       "key": "core-boards",
@@ -557,6 +557,20 @@
       "url": "https://github.com/osptek/tft-2.76-480x480-mipi-st7701"
     },
     {
+      "repo": "tft-2.79-142x428-spi-nv3007",
+      "category": "displays",
+      "panel": "tft",
+      "size": "2.79",
+      "resolution": "142x428",
+      "interface": "spi",
+      "interfaces": [
+        "spi"
+      ],
+      "shape": "rect",
+      "ic": "nv3007a",
+      "url": "https://github.com/osptek/tft-2.79-142x428-spi-nv3007"
+    },
+    {
       "repo": "lcd-2.9-168x384-spi-st7305",
       "category": "displays",
       "panel": "lcd",
@@ -968,6 +982,12 @@
       "title": "OV2710",
       "interface": "MIPI CSI",
       "summary": "MIPI CSI camera module supporting 720p60 and 1080p30 capture.",
+      "specs": {
+        "sensor": "OV2710",
+        "interface": "MIPI CSI",
+        "configuration": "SCCB/I2C",
+        "output_modes": "1280x720@60, 1920x1080@30"
+      },
       "url": "https://github.com/osptek/camera-mipi-csi-ov2710"
     },
     {
@@ -976,6 +996,12 @@
       "title": "SC2336",
       "interface": "MIPI CSI",
       "summary": "MIPI CSI camera module supporting 720p, 1080p, and 800x800 capture.",
+      "specs": {
+        "sensor": "SC2336",
+        "interface": "MIPI CSI",
+        "configuration": "SCCB/I2C",
+        "output_modes": "1280x720, 1920x1080, 800x800"
+      },
       "url": "https://github.com/osptek/camera-mipi-csi-sc2336"
     },
     {
@@ -983,6 +1009,13 @@
       "category": "core-boards",
       "title": "ESP32-P4",
       "summary": "RISC-V dual-core, 16MB Flash, 32MB PSRAM, compact stamp-hole module.",
+      "specs": {
+        "mcu": "ESP32-P4",
+        "clock": "360 MHz",
+        "flash": "16 MB",
+        "psram": "32 MB",
+        "size": "25x25 mm"
+      },
       "url": "https://github.com/osptek/esp32-p4-core-board"
     },
     {
@@ -990,6 +1023,14 @@
       "category": "core-boards",
       "title": "ESP32-P4C5",
       "summary": "RISC-V dual-core (ESP32-P4 + ESP32-C5), 16MB Flash, 32MB PSRAM, Wi-Fi 6 & Bluetooth 5, compact stamp-hole module.",
+      "specs": {
+        "mcu": "ESP32-P4",
+        "wireless": "ESP32-C5HF4",
+        "clock": "400 MHz",
+        "flash": "16 MB",
+        "psram": "32 MB",
+        "size": "25x25 mm"
+      },
       "url": "https://github.com/osptek/esp32-p4c5-core-board"
     },
     {
@@ -997,6 +1038,13 @@
       "category": "dev-boards",
       "title": "ESP32-P4C5-Module",
       "summary": "Ready-to-use carrier with MIPI display/camera, audio, USB, and full GPIO breakout.",
+      "specs": {
+        "mcu": "ESP32-P4",
+        "wireless": "ESP32-C5HF4",
+        "clock": "400 MHz",
+        "flash": "16 MB",
+        "psram": "32 MB"
+      },
       "url": "https://github.com/osptek/esp32-p4c5-module-dev-board"
     },
     {
@@ -1004,6 +1052,14 @@
       "category": "core-boards",
       "title": "ESP32-P4C6",
       "summary": "RISC-V dual-core (ESP32-P4 + ESP32-C6FH4), 16MB Flash, 32MB PSRAM, compact stamp-hole module.",
+      "specs": {
+        "mcu": "ESP32-P4",
+        "wireless": "ESP32-C6FH4",
+        "clock": "360 MHz",
+        "flash": "16 MB",
+        "psram": "32 MB",
+        "size": "25x25 mm"
+      },
       "url": "https://github.com/osptek/esp32-p4c6-core-board"
     },
     {
@@ -1011,6 +1067,13 @@
       "category": "dev-boards",
       "title": "ESP32-P4C6-Module",
       "summary": "Ready-to-use carrier with MIPI display/camera, audio, USB, and full GPIO breakout.",
+      "specs": {
+        "mcu": "ESP32-P4",
+        "wireless": "ESP32-C6FH4",
+        "clock": "360 MHz",
+        "flash": "16 MB",
+        "psram": "32 MB"
+      },
       "url": "https://github.com/osptek/esp32-p4c6-module-dev-board"
     },
     {
@@ -1018,6 +1081,13 @@
       "category": "dev-boards",
       "title": "ESP32-S3 Demo",
       "summary": "QSPI AMOLED carrier for round display modules.",
+      "specs": {
+        "mcu": "ESP32-S3R8",
+        "wireless": "Wi-Fi + BT LE",
+        "clock": "240 MHz",
+        "flash": "16 MB",
+        "psram": "8 MB"
+      },
       "url": "https://github.com/osptek/esp32-s3-demo-dev-board"
     },
     {
@@ -1025,6 +1095,14 @@
       "category": "dev-boards",
       "title": "ESP32-S3-DevKitC",
       "summary": "Native USB Type-C, 16MB Flash, 8MB PSRAM, full GPIO breakout.",
+      "specs": {
+        "mcu": "ESP32-S3",
+        "module": "ESP32-S3-WROOM-1-N16R8",
+        "wireless": "Wi-Fi + BLE",
+        "clock": "240 MHz",
+        "flash": "16 MB",
+        "psram": "8 MB"
+      },
       "url": "https://github.com/osptek/esp32-s3-devkitc-dev-board"
     },
     {
@@ -1032,6 +1110,12 @@
       "category": "panels",
       "title": "ESP32-S3-Touch-LCD-4",
       "summary": "4\" 480×480 touch panel with ESP32-S3, RS485, and capacitive RGB display.",
+      "specs": {
+        "mcu": "ESP32-S3",
+        "display": "4\" 480×480",
+        "wireless": "Wi-Fi + BLE 5",
+        "interface": "RS485"
+      },
       "url": "https://github.com/osptek/esp32-s3-touch-lcd-4"
     },
     {
@@ -1039,6 +1123,12 @@
       "category": "sensors",
       "title": "YPP8xxD",
       "summary": "Digital differential pressure sensor, I2C, SOP-16.",
+      "specs": {
+        "series": "YPP8xxD",
+        "type": "Differential",
+        "interface": "I2C",
+        "package": "SOP-16"
+      },
       "url": "https://github.com/osptek/ypp8xxd"
     }
   ]
