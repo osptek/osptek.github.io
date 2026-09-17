@@ -527,18 +527,20 @@
       "url": "https://github.com/osptek/amoled-2.14-480x480-qspi-st7801"
     },
     {
-      "repo": "amoled-2.4-450x600-mipi-rm690b0",
+      "repo": "amoled-2.4-450x600-mipi_spi_i80-rm690b0",
       "category": "displays",
       "panel": "amoled",
       "size": "2.4",
       "resolution": "450x600",
-      "interface": "mipi",
+      "interface": "mipi_spi_i80",
       "interfaces": [
-        "mipi"
+        "mipi",
+        "spi",
+        "i80"
       ],
       "shape": "rect",
       "ic": "rm690b0",
-      "url": "https://github.com/osptek/amoled-2.4-450x600-mipi-rm690b0"
+      "url": "https://github.com/osptek/amoled-2.4-450x600-mipi_spi_i80-rm690b0"
     },
     {
       "repo": "tft-2.76-480x480-mipi-st7701",
