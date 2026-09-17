@@ -46,6 +46,7 @@
       ],
       "shape": "rect",
       "ic": "ssd1306",
+      "corner": "sharp",
       "url": "https://github.com/osptek/oled-0.91-128x32-i2c-ssd1306"
     },
     {
@@ -60,6 +61,7 @@
       ],
       "shape": "rect",
       "ic": "sh8501",
+      "corner": "sharp",
       "url": "https://github.com/osptek/amoled-0.95-120x240-spi-sh8501"
     },
     {
@@ -74,6 +76,7 @@
       ],
       "shape": "rect",
       "ic": "ssd1315",
+      "corner": "sharp",
       "url": "https://github.com/osptek/oled-0.96-128x64-i2c-ssd1315"
     },
     {
@@ -102,6 +105,7 @@
       ],
       "shape": "rect",
       "ic": "icna3306",
+      "corner": "rounded",
       "url": "https://github.com/osptek/amoled-1.1-126x294-spi-icna3306"
     },
     {
@@ -158,6 +162,7 @@
       ],
       "shape": "rect",
       "ic": "st7789p3",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-1.47-172x320-i80-st7789"
     },
     {
@@ -172,6 +177,7 @@
       ],
       "shape": "rect",
       "ic": "gc9307",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-1.47-172x320-spi-gc9307"
     },
     {
@@ -186,6 +192,7 @@
       ],
       "shape": "rect",
       "ic": "jd9853",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-1.47-172x320-spi-jd9853"
     },
     {
@@ -214,6 +221,7 @@
       ],
       "shape": "rect",
       "ic": "ssd1309",
+      "corner": "sharp",
       "url": "https://github.com/osptek/oled-1.54-128x64-spi-ssd1309"
     },
     {
@@ -228,6 +236,7 @@
       ],
       "shape": "rect",
       "ic": "st7567",
+      "corner": "sharp",
       "url": "https://github.com/osptek/lcd-1.58-128x64-spi-st7567"
     },
     {
@@ -242,6 +251,7 @@
       ],
       "shape": "rect",
       "ic": "co5300",
+      "corner": "rounded",
       "url": "https://github.com/osptek/amoled-1.6-320x360-qspi-co5300"
     },
     {
@@ -284,6 +294,7 @@
       ],
       "shape": "rect",
       "ic": "st7789v3 / st7789p3",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-1.69-240x280-spi-st7789"
     },
     {
@@ -341,6 +352,7 @@
       ],
       "shape": "rect",
       "ic": "co5300",
+      "corner": "rounded",
       "url": "https://github.com/osptek/amoled-1.78-368x448-qspi-co5300"
     },
     {
@@ -370,6 +382,7 @@
       ],
       "shape": "rect",
       "ic": "st7789v3",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-1.9-170x320-spi_i80-st7789"
     },
     {
@@ -384,6 +397,7 @@
       ],
       "shape": "rect",
       "ic": "co5300",
+      "corner": "rounded",
       "url": "https://github.com/osptek/amoled-1.96-410x502-qspi-co5300"
     },
     {
@@ -398,6 +412,7 @@
       ],
       "shape": "rect",
       "ic": "co5300",
+      "corner": "rounded",
       "url": "https://github.com/osptek/amoled-2.0-460x460-mipi-co5300"
     },
     {
@@ -412,6 +427,7 @@
       ],
       "shape": "rect",
       "ic": "co5300af-16 / co5300",
+      "corner": "rounded",
       "url": "https://github.com/osptek/amoled-2.0-460x460-qspi-co5300"
     },
     {
@@ -426,6 +442,7 @@
       ],
       "shape": "rect",
       "ic": "st7789v2",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-2.0-240x320-spi-st7789v2"
     },
     {
@@ -440,6 +457,7 @@
       ],
       "shape": "rect",
       "ic": "icna3306",
+      "corner": "rounded",
       "url": "https://github.com/osptek/amoled-2.01-240x296-qspi-icna3306"
     },
     {
@@ -454,6 +472,7 @@
       ],
       "shape": "rect",
       "ic": "st7701s",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-2.1-480x480-mipi-st7701"
     },
     {
@@ -482,6 +501,7 @@
       ],
       "shape": "rect",
       "ic": "st7801n",
+      "corner": "rounded",
       "url": "https://github.com/osptek/amoled-2.13-410x502-mipi-st7801"
     },
     {
@@ -496,6 +516,7 @@
       ],
       "shape": "rect",
       "ic": "co5300",
+      "corner": "rounded",
       "url": "https://github.com/osptek/amoled-2.13-410x502-qspi-co5300"
     },
     {
@@ -510,6 +531,7 @@
       ],
       "shape": "rect",
       "ic": "st7305",
+      "corner": "rounded",
       "url": "https://github.com/osptek/lcd-2.13-122x250-spi-st7305"
     },
     {
@@ -540,6 +562,7 @@
       ],
       "shape": "rect",
       "ic": "rm690b0",
+      "corner": "sharp",
       "url": "https://github.com/osptek/amoled-2.4-450x600-mipi_spi_i80-rm690b0"
     },
     {
@@ -552,7 +575,7 @@
       "interfaces": [
         "mipi"
       ],
-      "shape": "rect",
+      "shape": "round",
       "ic": "st7701s",
       "url": "https://github.com/osptek/tft-2.76-480x480-mipi-st7701"
     },
@@ -568,6 +591,7 @@
       ],
       "shape": "rect",
       "ic": "nv3007a",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-2.79-142x428-spi-nv3007"
     },
     {
@@ -582,6 +606,7 @@
       ],
       "shape": "rect",
       "ic": "st7305",
+      "corner": "sharp",
       "url": "https://github.com/osptek/lcd-2.9-168x384-spi-st7305"
     },
     {
@@ -596,6 +621,7 @@
       ],
       "shape": "rect",
       "ic": "st7701s",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-2.95-480x854-mipi-st7701"
     },
     {
@@ -610,6 +636,7 @@
       ],
       "shape": "rect",
       "ic": "axs15231b",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-3.02-170x560-qspi-axs15231b"
     },
     {
@@ -638,6 +665,7 @@
       ],
       "shape": "rect",
       "ic": "gc9503cv",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-3.13-376x960-mipi-gc9503cv"
     },
     {
@@ -652,6 +680,7 @@
       ],
       "shape": "rect",
       "ic": "gc9503cv",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-3.13-376x960-rgb-gc9503cv"
     },
     {
@@ -666,6 +695,7 @@
       ],
       "shape": "rect",
       "ic": "co6300",
+      "corner": "rounded",
       "url": "https://github.com/osptek/amoled-3.19-262x928-mipi-co6300"
     },
     {
@@ -680,6 +710,7 @@
       ],
       "shape": "rect",
       "ic": "st7789p3",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-3.2-240x320-spi-st7789"
     },
     {
@@ -694,6 +725,7 @@
       ],
       "shape": "rect",
       "ic": "axs15231b",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-3.42-258x960-mipi-axs15231b"
     },
     {
@@ -708,6 +740,7 @@
       ],
       "shape": "rect",
       "ic": "axs15231b",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-3.48-172x640-qspi-axs15231b"
     },
     {
@@ -736,6 +769,7 @@
       ],
       "shape": "rect",
       "ic": "jd7601",
+      "corner": "sharp",
       "url": "https://github.com/osptek/epd-3.7-480x720-spi-jd7601"
     },
     {
@@ -750,6 +784,7 @@
       ],
       "shape": "rect",
       "ic": "axs15231b",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-3.82-280x1020-mipi-axs15231b"
     },
     {
@@ -764,6 +799,7 @@
       ],
       "shape": "rect",
       "ic": "st7102",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-3.95-480x480-mipi-st7102"
     },
     {
@@ -778,6 +814,7 @@
       ],
       "shape": "rect",
       "ic": "st7102",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-3.95-480x480-rgb-st7102"
     },
     {
@@ -792,6 +829,7 @@
       ],
       "shape": "rect",
       "ic": "st7701s",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-3.95-480x480-rgb-st7701"
     },
     {
@@ -820,6 +858,7 @@
       ],
       "shape": "rect",
       "ic": "gc9503cv",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-3.97-480x800-mipi-gc9503cv"
     },
     {
@@ -834,6 +873,7 @@
       ],
       "shape": "rect",
       "ic": "st7703",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-4.0-720x720-mipi-st7703"
     },
     {
@@ -848,6 +888,7 @@
       ],
       "shape": "rect",
       "ic": "st7305",
+      "corner": "rounded",
       "url": "https://github.com/osptek/lcd-4.2-300x400-spi-st7305"
     },
     {
@@ -876,6 +917,7 @@
       ],
       "shape": "rect",
       "ic": "ssd1677",
+      "corner": "sharp",
       "url": "https://github.com/osptek/epd-4.26-480x800-spi-ssd1677"
     },
     {
@@ -890,6 +932,7 @@
       ],
       "shape": "rect",
       "ic": "st7102",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-4.3-480x800-mipi-st7102"
     },
     {
@@ -904,6 +947,7 @@
       ],
       "shape": "rect",
       "ic": "gc9503cv",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-4.45-480x854-mipi-gc9503"
     },
     {
@@ -918,6 +962,7 @@
       ],
       "shape": "rect",
       "ic": "st7701s",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-4.45-480x854-mipi-st7701"
     },
     {
@@ -932,6 +977,7 @@
       ],
       "shape": "rect",
       "ic": "jd9261t",
+      "corner": "sharp",
       "url": "https://github.com/osptek/tft-4.58-424x1280-mipi-jd9261"
     },
     {
@@ -960,6 +1006,7 @@
       ],
       "shape": "rect",
       "ic": "tbd",
+      "corner": "rounded",
       "url": "https://github.com/osptek/epd-7.09-1200x1600-spi-tbd"
     },
     {
@@ -974,6 +1021,7 @@
       ],
       "shape": "rect",
       "ic": "jd9366",
+      "corner": "rounded",
       "url": "https://github.com/osptek/tft-10.1-800x1280-mipi-jd9366"
     },
     {

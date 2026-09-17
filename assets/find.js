@@ -2,6 +2,7 @@
 (() => {
   const PANEL = { amoled: 'AMOLED', tft: 'TFT', lcd: 'LCD', oled: 'OLED', epd: 'EPD' };
   const SHAPE = { round: 'Round', rect: 'Rect' };
+  const CORNER = { sharp: 'Sharp corners', rounded: 'Rounded corners' };
 
   const uniq = (values) => [...new Set(values)];
   // short lists read best by how common they are, long ones in their own order
@@ -18,6 +19,8 @@
     Array.isArray(row.interfaces) && row.interfaces.length
       ? row.interfaces
       : String(row.interface || '').split(/[_ ]/).filter(Boolean);
+  const specsOf = (row) =>
+    Object.values(row.specs || {}).flatMap((value) => Array.isArray(value) ? value : [value]);
 
   // which filters a category offers, and how each one reads its rows;
   // a category with no entry here is searched but not filtered
@@ -29,6 +32,14 @@
       { key: 'size', label: 'Size', cols: 4, even: true, of: (r) => [r.size], sort: byInch, text: (v) => `${v}"` },
       { key: 'ic', label: 'Driver', cols: 3, of: (r) => [r.ic], sort: byName, text: (v) => v.toUpperCase() },
     ],
+    'dev-boards': [
+      { key: 'mcu', label: 'Chip', cols: 2, of: (r) => [r.specs?.mcu], sort: byName, text: (v) => v },
+    ],
+  };
+
+  const SEARCH_HINTS = {
+    displays: 'Search model, size, interface, driver…',
+    'dev-boards': 'Search board, chip or version…',
   };
 
   const box = document.querySelector('#q');
@@ -73,10 +84,12 @@
       label(row.category),
       PANEL[row.panel] || row.panel,
       SHAPE[row.shape] || row.shape,
+      CORNER[row.corner] || row.corner,
       row.size,
       row.resolution,
       row.ic,
       ...ifacesOf(row),
+      ...specsOf(row),
     ]
       .filter(Boolean)
       .join(' ')
@@ -96,6 +109,7 @@
   function screenPreview(row) {
     const stage = el('span', 'screen-preview');
     const shape = SHAPE[row.shape] ? row.shape : 'rect';
+    const corner = row.corner === 'sharp' ? 'sharp' : 'rounded';
     const [rw, rh] = String(row.resolution || '').split('x').map(Number);
     const maxW = 66;
     const maxH = 66;
@@ -144,14 +158,14 @@
       draw('circle', 'sketch-outline', { cx, cy, r: radius });
       draw('circle', 'sketch-active', { cx, cy, r: radius - 3 });
     } else {
-      const radius = 4;
+      const radius = corner === 'sharp' ? 0 : 4;
       draw('rect', 'sketch-ghost', {
-        x: x + 0.8, y: y - 0.6, width, height, rx: radius + 1,
+        x: x + 0.8, y: y - 0.6, width, height, rx: radius ? radius + 1 : 0,
       });
       draw('rect', 'sketch-outline', { x, y, width, height, rx: radius });
       draw('rect', 'sketch-active', {
         x: x + 3, y: y + 3, width: width - 6, height: height - 6,
-        rx: Math.max(1, radius - 1),
+        rx: radius ? Math.max(1, radius - 1) : 0,
       });
     }
 
@@ -177,7 +191,8 @@
       transform: `rotate(-90 ${leftDim - 3} ${cy})`,
     }, rh || '');
 
-    stage.title = `${SHAPE[shape]} screen · ${row.resolution}`;
+    const cornerText = shape === 'round' ? '' : ` · ${CORNER[corner]}`;
+    stage.title = `${SHAPE[shape]} screen${cornerText} · ${row.resolution}`;
     stage.setAttribute('aria-hidden', 'true');
     stage.append(svg);
     return stage;
@@ -267,6 +282,7 @@
     const scope = items.filter(inCat);
     const found = scope.filter(fits);
     cards.classList.toggle('is-display-grid', cat === 'displays');
+    box.placeholder = SEARCH_HINTS[cat] || 'Search model or specification…';
     const noun = cat === 'all' ? 'products' : label(cat).toLowerCase();
     tally.textContent =
       found.length === scope.length

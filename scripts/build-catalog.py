@@ -260,12 +260,17 @@ def row_from_meta(meta: dict, folder_category: str, name: str) -> dict:
                 "ic": " / ".join(ics).lower(),
             }
         )
+        if meta.get("corner") in {"sharp", "rounded"}:
+            row["corner"] = meta["corner"]
     else:
         row["title"] = meta.get("title") or title_from_repo(repo, category)
         ifaces = as_list(meta.get("interface"))
         if ifaces:
             row["interface"] = " ".join(ifaces).upper()
         row["summary"] = meta.get("summary", "")
+        specs = meta.get("specs")
+        if isinstance(specs, dict) and specs:
+            row["specs"] = specs
     return row
 
 
