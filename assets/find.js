@@ -1,6 +1,7 @@
 // product finder: reads products/catalog.json, switches category and filters in the page
 (() => {
   const PANEL = { amoled: 'AMOLED', tft: 'TFT', lcd: 'LCD', oled: 'OLED', epd: 'EPD' };
+  const SHAPE = { round: 'Round', rect: 'Rect' };
 
   const uniq = (values) => [...new Set(values)];
   // short lists read best by how common they are, long ones in their own order
@@ -23,6 +24,7 @@
   const FACETS = {
     displays: [
       { key: 'panel', label: 'Panel', cols: 2, of: (r) => [r.panel], sort: byUse, text: (v) => PANEL[v] || v.toUpperCase() },
+      { key: 'shape', label: 'Shape', cols: 2, of: (r) => [r.shape], sort: byUse, text: (v) => SHAPE[v] || v },
       { key: 'iface', label: 'Interface', cols: 3, of: ifacesOf, sort: byUse, text: (v) => v.toUpperCase() },
       { key: 'size', label: 'Size', cols: 4, even: true, of: (r) => [r.size], sort: byInch, text: (v) => `${v}"` },
       { key: 'ic', label: 'Driver', cols: 3, of: (r) => [r.ic], sort: byName, text: (v) => v.toUpperCase() },
@@ -70,6 +72,7 @@
       row.summary,
       label(row.category),
       PANEL[row.panel] || row.panel,
+      SHAPE[row.shape] || row.shape,
       row.size,
       row.resolution,
       row.ic,
@@ -90,20 +93,135 @@
     });
   }
 
+  function screenPreview(row) {
+    const stage = el('span', 'screen-preview');
+    const shape = SHAPE[row.shape] ? row.shape : 'rect';
+    const [rw, rh] = String(row.resolution || '').split('x').map(Number);
+    const maxW = 66;
+    const maxH = 66;
+    let width = maxW;
+    let height = maxH;
+
+    if (shape === 'round') {
+      width = height = 64;
+    } else if (rw > 0 && rh > 0) {
+      const scale = Math.min(maxW / rw, maxH / rh);
+      width = Math.max(12, Math.round(rw * scale));
+      height = Math.max(12, Math.round(rh * scale));
+    }
+
+    const NS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('class', 'screen-diagram');
+    svg.setAttribute('viewBox', '0 0 92 90');
+    const draw = (tag, cls, attrs, text) => {
+      const node = document.createElementNS(NS, tag);
+      node.setAttribute('class', cls);
+      Object.entries(attrs || {}).forEach(([key, value]) => node.setAttribute(key, value));
+      if (text != null) node.textContent = text;
+      svg.append(node);
+      return node;
+    };
+
+    // Centre the complete engineering figure, including the vertical
+    // dimension line on its left. This keeps narrow portrait screens from
+    // appearing pinned to the right edge.
+    const x = (102 - width) / 2;
+    const right = x + width;
+    const y = 50 - height / 2;
+    const cx = x + width / 2;
+    const cy = y + height / 2;
+    const topDim = y - 10;
+    const leftDim = x - 10;
+
+    // faint construction axes
+    draw('line', 'sketch-axis', { x1: x - 4, y1: cy, x2: right + 3, y2: cy });
+    draw('line', 'sketch-axis', { x1: cx, y1: y - 4, x2: cx, y2: y + height + 4 });
+
+    if (shape === 'round') {
+      const radius = width / 2;
+      draw('circle', 'sketch-ghost', { cx: cx + 0.8, cy: cy - 0.4, r: radius + 0.4 });
+      draw('circle', 'sketch-outline', { cx, cy, r: radius });
+      draw('circle', 'sketch-active', { cx, cy, r: radius - 3 });
+    } else {
+      const radius = 4;
+      draw('rect', 'sketch-ghost', {
+        x: x + 0.8, y: y - 0.6, width, height, rx: radius + 1,
+      });
+      draw('rect', 'sketch-outline', { x, y, width, height, rx: radius });
+      draw('rect', 'sketch-active', {
+        x: x + 3, y: y + 3, width: width - 6, height: height - 6,
+        rx: Math.max(1, radius - 1),
+      });
+    }
+
+    // engineering-sketch dimensions: extension lines, arrows and pixel labels
+    draw('line', 'sketch-dim-guide', { x1: x, y1: y - 3, x2: x, y2: topDim - 2 });
+    draw('line', 'sketch-dim-guide', { x1: right, y1: y - 3, x2: right, y2: topDim - 2 });
+    draw('line', 'sketch-dim', { x1: x, y1: topDim, x2: right, y2: topDim });
+    draw('path', 'sketch-arrow', {
+      d: `M ${x + 3} ${topDim - 2} L ${x} ${topDim} L ${x + 3} ${topDim + 2}
+          M ${right - 3} ${topDim - 2} L ${right} ${topDim} L ${right - 3} ${topDim + 2}`,
+    });
+    draw('text', 'sketch-label', { x: cx, y: topDim - 2.5, 'text-anchor': 'middle' }, rw || '');
+
+    draw('line', 'sketch-dim-guide', { x1: x - 3, y1: y, x2: leftDim - 2, y2: y });
+    draw('line', 'sketch-dim-guide', { x1: x - 3, y1: y + height, x2: leftDim - 2, y2: y + height });
+    draw('line', 'sketch-dim', { x1: leftDim, y1: y, x2: leftDim, y2: y + height });
+    draw('path', 'sketch-arrow', {
+      d: `M ${leftDim - 2} ${y + 3} L ${leftDim} ${y} L ${leftDim + 2} ${y + 3}
+          M ${leftDim - 2} ${y + height - 3} L ${leftDim} ${y + height} L ${leftDim + 2} ${y + height - 3}`,
+    });
+    draw('text', 'sketch-label', {
+      x: leftDim - 3, y: cy, 'text-anchor': 'middle',
+      transform: `rotate(-90 ${leftDim - 3} ${cy})`,
+    }, rh || '');
+
+    stage.title = `${SHAPE[shape]} screen · ${row.resolution}`;
+    stage.setAttribute('aria-hidden', 'true');
+    stage.append(svg);
+    return stage;
+  }
+
+  function specIcon(kind) {
+    const icon = el('span', 'spec-icon');
+    const paths = {
+      resolution:
+        '<path d="M7 3H3v4M17 7V3h-4M13 17h4v-4M3 13v4h4"/><path d="M7 10h6M10 7v6"/>',
+      interface:
+        '<rect x="5" y="5" width="10" height="10" rx="1.5"/><path d="M7 2v3M10 2v3M13 2v3M7 15v3M10 15v3M13 15v3M2 7h3M2 10h3M2 13h3M15 7h3M15 10h3M15 13h3"/><path d="M8 8h4v4H8z"/>',
+      driver:
+        '<path d="M10 2.5 18 6.5 10 10.5 2 6.5 10 2.5Z"/><path d="m3 10.5 7 3.5 7-3.5M3 14l7 3.5 7-3.5"/>',
+    };
+    icon.innerHTML = `<svg viewBox="0 0 20 20" aria-hidden="true">${paths[kind]}</svg>`;
+    return icon;
+  }
+
+  function displaySpec(kind, text) {
+    const row = el('span', 'display-spec-row');
+    row.append(specIcon(kind), el('span', 'display-spec-text', text));
+    return row;
+  }
+
   function displayCard(row) {
-    const top = el('span', 'card-top');
-    top.append(
-      el('span', 'size', `${row.size}"`),
-      el('span', 'tag', PANEL[row.panel] || row.panel.toUpperCase())
+    const identity = el('span', 'display-identity');
+    identity.append(
+      el('span', 'display-size', `${row.size}"`),
+      el('span', 'display-panel', PANEL[row.panel] || row.panel.toUpperCase())
     );
 
-    const specs = el('span', 'specs');
+    const specs = el('span', 'display-specs');
     specs.append(
-      el('span', null, row.resolution.replace('x', ' × ')),
-      el('span', null, ifacesOf(row).map((x) => x.toUpperCase()).join(' / ')),
-      el('span', null, row.ic.toUpperCase())
+      displaySpec('resolution', row.resolution.replace('x', ' × ')),
+      displaySpec('interface', ifacesOf(row).map((x) => x.toUpperCase()).join(' / ')),
+      displaySpec('driver', row.ic.toUpperCase())
     );
-    return [top, specs];
+
+    const copy = el('span', 'display-copy');
+    copy.append(identity, specs);
+    const main = el('span', 'display-main');
+    main.append(copy, screenPreview(row));
+    return [main];
   }
 
   function otherCard(row) {
@@ -118,13 +236,14 @@
 
   function card(row) {
     const link = el('a', 'card');
+    if (row.category === 'displays') link.classList.add('display-card');
     link.href = row.url;
     link.target = '_blank';
     link.rel = 'noopener';
     // the name is clipped in the card, so keep it readable on hover
     link.title = row.repo;
     link.append(...(row.category === 'displays' ? displayCard(row) : otherCard(row)));
-    link.append(el('span', 'repo', row.repo));
+    if (row.category !== 'displays') link.append(el('span', 'repo', row.repo));
     return link;
   }
 
@@ -147,6 +266,7 @@
   function render() {
     const scope = items.filter(inCat);
     const found = scope.filter(fits);
+    cards.classList.toggle('is-display-grid', cat === 'displays');
     const noun = cat === 'all' ? 'products' : label(cat).toLowerCase();
     tally.textContent =
       found.length === scope.length

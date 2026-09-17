@@ -248,8 +248,14 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 14px;
+}
+
+.cards.is-display-grid {
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  justify-content: start;
+  gap: 16px;
 }
 
 .card {
@@ -271,11 +277,184 @@
   box-shadow: 0 10px 24px rgba(17, 17, 17, 0.06);
 }
 
+.display-card {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  min-height: 220px;
+  overflow: hidden;
+  padding: 16px 18px;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 78% 112%, rgba(113, 128, 160, 0.045) 0 36%, transparent 36.5%),
+    radial-gradient(circle at 88% -28%, rgba(113, 128, 160, 0.04) 0 42%, transparent 42.5%),
+    var(--card);
+}
+
+.display-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 48%;
+  align-items: center;
+  gap: 8px;
+  min-height: 188px;
+}
+
+.display-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.display-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.display-size {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  font-variant-numeric: tabular-nums;
+}
+
+.display-panel {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 14px;
+  border: 1px solid rgba(113, 113, 122, 0.09);
+  border-radius: 999px;
+  background: rgba(113, 113, 122, 0.08);
+  color: #3f3f46;
+  font: 500 13px/1 var(--mono);
+  letter-spacing: 0.05em;
+}
+
+.display-specs {
+  display: grid;
+  gap: 4px;
+  width: calc(100% + 8px);
+  margin-left: -8px;
+}
+
+.display-spec-row {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  color: #3f3f46;
+  font: 400 14px/1.25 var(--mono);
+}
+
+.spec-icon {
+  flex: 0 0 44px;
+  width: 44px;
+  margin-right: 9px;
+  border-right: 1px solid rgba(113, 113, 122, 0.16);
+}
+
+.spec-icon svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background: rgba(113, 113, 122, 0.1);
+  fill: none;
+  stroke: #3f3f46;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.display-spec-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .card-top {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 10px;
+}
+
+/* miniature industrial-design sketch: dimensions, axes and loose pencil lines */
+.screen-preview {
+  width: 100%;
+  min-height: 152px;
+  display: grid;
+  align-items: center;
+  justify-items: end;
+}
+
+.screen-diagram {
+  display: block;
+  width: 100%;
+  height: 160px;
+  overflow: visible;
+}
+
+.screen-diagram :is(line, rect, circle, path) {
+  vector-effect: non-scaling-stroke;
+}
+
+.sketch-outline,
+.sketch-ghost,
+.sketch-active,
+.sketch-axis,
+.sketch-dim,
+.sketch-dim-guide,
+.sketch-arrow {
+  fill: none;
+}
+
+.sketch-outline {
+  stroke: rgba(39, 39, 42, 0.72);
+  stroke-width: 1.55;
+}
+
+.sketch-ghost {
+  stroke: rgba(82, 82, 91, 0.3);
+  stroke-width: 1;
+}
+
+.sketch-active {
+  stroke: rgba(63, 63, 70, 0.38);
+  stroke-width: 0.9;
+}
+
+.sketch-axis {
+  stroke: rgba(82, 82, 91, 0.2);
+  stroke-width: 0.75;
+  stroke-dasharray: 2.4 2.8;
+}
+
+.sketch-dim,
+.sketch-arrow {
+  stroke: rgba(63, 63, 70, 0.48);
+  stroke-width: 1;
+}
+
+.sketch-dim-guide {
+  stroke: rgba(82, 82, 91, 0.3);
+  stroke-width: 0.75;
+}
+
+.sketch-label {
+  fill: rgba(63, 63, 70, 0.62);
+  font: italic 7px/1 var(--mono);
+}
+
+.card:hover .sketch-outline {
+  stroke: rgba(24, 24, 27, 0.9);
 }
 
 .size {
@@ -373,5 +552,21 @@
 
 @media (max-width: 640px) {
   .finder { padding: 4vh 18px 56px; }
-  .cards { grid-template-columns: 1fr; }
+  .cards,
+  .cards.is-display-grid { grid-template-columns: 1fr; }
+  .display-card { max-width: none; min-height: 216px; padding: 18px; }
+  .display-main { min-height: 176px; gap: 12px; }
+  .display-copy { flex: 1 1 auto; }
+  .display-size { font-size: 42px; }
+  .display-panel { min-height: 30px; padding: 0 13px; font-size: 11px; }
+  .screen-preview { flex-basis: 132px; width: 132px; min-height: 132px; }
+  .screen-diagram { width: 132px; height: 132px; }
+  .spec-icon { flex-basis: 44px; width: 44px; margin-right: 9px; }
+  .display-spec-row { font-size: 12px; }
+}
+
+@media (max-width: 380px) {
+  .display-card { padding-inline: 18px; }
+  .screen-preview { flex-basis: 112px; width: 112px; }
+  .screen-diagram { width: 112px; height: 112px; }
 }
