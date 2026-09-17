@@ -1,5 +1,5 @@
 {
-  "generated_from": "workstation",
+  "generated_from": "github:osptek.yml",
   "count": 77,
   "categories": [
     {
@@ -100,7 +100,7 @@
       "interfaces": [
         "spi"
       ],
-      "shape": "bar",
+      "shape": "rect",
       "ic": "icna3306",
       "url": "https://github.com/osptek/amoled-1.1-126x294-spi-icna3306"
     },
@@ -592,7 +592,7 @@
       "interfaces": [
         "qspi"
       ],
-      "shape": "bar",
+      "shape": "rect",
       "ic": "axs15231b",
       "url": "https://github.com/osptek/tft-3.02-170x560-qspi-axs15231b"
     },
@@ -606,7 +606,7 @@
       "interfaces": [
         "spi"
       ],
-      "shape": "bar",
+      "shape": "rect",
       "ic": "axs15231b",
       "url": "https://github.com/osptek/tft-3.02-170x560-spi-axs15231b"
     },
@@ -620,7 +620,7 @@
       "interfaces": [
         "mipi"
       ],
-      "shape": "bar",
+      "shape": "rect",
       "ic": "gc9503cv",
       "url": "https://github.com/osptek/tft-3.13-376x960-mipi-gc9503cv"
     },
@@ -634,7 +634,7 @@
       "interfaces": [
         "rgb"
       ],
-      "shape": "bar",
+      "shape": "rect",
       "ic": "gc9503cv",
       "url": "https://github.com/osptek/tft-3.13-376x960-rgb-gc9503cv"
     },
@@ -648,7 +648,7 @@
       "interfaces": [
         "mipi"
       ],
-      "shape": "bar",
+      "shape": "rect",
       "ic": "co6300",
       "url": "https://github.com/osptek/amoled-3.19-262x928-mipi-co6300"
     },
@@ -676,7 +676,7 @@
       "interfaces": [
         "mipi"
       ],
-      "shape": "bar",
+      "shape": "rect",
       "ic": "axs15231b",
       "url": "https://github.com/osptek/tft-3.42-258x960-mipi-axs15231b"
     },
@@ -690,7 +690,7 @@
       "interfaces": [
         "qspi"
       ],
-      "shape": "bar",
+      "shape": "rect",
       "ic": "axs15231b",
       "url": "https://github.com/osptek/tft-3.48-172x640-qspi-axs15231b"
     },
@@ -732,7 +732,7 @@
       "interfaces": [
         "mipi"
       ],
-      "shape": "bar",
+      "shape": "rect",
       "ic": "axs15231b",
       "url": "https://github.com/osptek/tft-3.82-280x1020-mipi-axs15231b"
     },
@@ -914,7 +914,7 @@
       "interfaces": [
         "mipi"
       ],
-      "shape": "bar",
+      "shape": "rect",
       "ic": "jd9261t",
       "url": "https://github.com/osptek/tft-4.58-424x1280-mipi-jd9261"
     },
@@ -961,6 +961,22 @@
       "url": "https://github.com/osptek/tft-10.1-800x1280-mipi-jd9366"
     },
     {
+      "repo": "camera-mipi-csi-ov2710",
+      "category": "cameras",
+      "title": "OV2710",
+      "interface": "MIPI CSI",
+      "summary": "MIPI CSI camera module supporting 720p60 and 1080p30 capture.",
+      "url": "https://github.com/osptek/camera-mipi-csi-ov2710"
+    },
+    {
+      "repo": "camera-mipi-csi-sc2336",
+      "category": "cameras",
+      "title": "SC2336",
+      "interface": "MIPI CSI",
+      "summary": "MIPI CSI camera module supporting 720p, 1080p, and 800x800 capture.",
+      "url": "https://github.com/osptek/camera-mipi-csi-sc2336"
+    },
+    {
       "repo": "esp32-p4-core-board",
       "category": "core-boards",
       "title": "ESP32-P4",
@@ -975,18 +991,18 @@
       "url": "https://github.com/osptek/esp32-p4c5-core-board"
     },
     {
-      "repo": "esp32-p4c6-core-board",
-      "category": "core-boards",
-      "title": "ESP32-P4C6",
-      "summary": "RISC-V dual-core (ESP32-P4 + ESP32-C6FH4), 16MB Flash, 32MB PSRAM, compact stamp-hole module.",
-      "url": "https://github.com/osptek/esp32-p4c6-core-board"
-    },
-    {
       "repo": "esp32-p4c5-module-dev-board",
       "category": "dev-boards",
       "title": "ESP32-P4C5-Module",
       "summary": "Ready-to-use carrier with MIPI display/camera, audio, USB, and full GPIO breakout.",
       "url": "https://github.com/osptek/esp32-p4c5-module-dev-board"
+    },
+    {
+      "repo": "esp32-p4c6-core-board",
+      "category": "core-boards",
+      "title": "ESP32-P4C6",
+      "summary": "RISC-V dual-core (ESP32-P4 + ESP32-C6FH4), 16MB Flash, 32MB PSRAM, compact stamp-hole module.",
+      "url": "https://github.com/osptek/esp32-p4c6-core-board"
     },
     {
       "repo": "esp32-p4c6-module-dev-board",
@@ -1015,22 +1031,6 @@
       "title": "ESP32-S3-Touch-LCD-4",
       "summary": "4\" 480×480 touch panel with ESP32-S3, RS485, and capacitive RGB display.",
       "url": "https://github.com/osptek/esp32-s3-touch-lcd-4"
-    },
-    {
-      "repo": "camera-mipi-csi-ov2710",
-      "category": "cameras",
-      "title": "OV2710",
-      "interface": "MIPI CSI",
-      "summary": "MIPI CSI camera module supporting 720p60 and 1080p30 capture.",
-      "url": "https://github.com/osptek/camera-mipi-csi-ov2710"
-    },
-    {
-      "repo": "camera-mipi-csi-sc2336",
-      "category": "cameras",
-      "title": "SC2336",
-      "interface": "MIPI CSI",
-      "summary": "MIPI CSI camera module supporting 720p, 1080p, and 800x800 capture.",
-      "url": "https://github.com/osptek/camera-mipi-csi-sc2336"
     },
     {
       "repo": "ypp8xxd",
