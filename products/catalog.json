@@ -1,11 +1,11 @@
 {
   "generated_from": "github:osptek.yml",
-  "count": 78,
+  "count": 79,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 67
+      "count": 68
     },
     {
       "key": "core-boards",
@@ -281,6 +281,20 @@
       "shape": "round",
       "ic": "ch13613",
       "url": "https://github.com/osptek/amoled-1.6-480x480-qspi-ch13613"
+    },
+    {
+      "repo": "epd-1.69-400x400-spi-ist7601",
+      "category": "displays",
+      "panel": "epd",
+      "size": "1.69",
+      "resolution": "400x400",
+      "interface": "spi",
+      "interfaces": [
+        "spi"
+      ],
+      "shape": "round",
+      "ic": "ist7601ca0",
+      "url": "https://github.com/osptek/epd-1.69-400x400-spi-ist7601"
     },
     {
       "repo": "tft-1.69-240x280-spi-st7789",
