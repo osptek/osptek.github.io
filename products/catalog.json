@@ -1,11 +1,11 @@
 {
   "generated_from": "github:osptek.yml",
-  "count": 79,
+  "count": 80,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 68
+      "count": 69
     },
     {
       "key": "core-boards",
@@ -874,6 +874,22 @@
       "ic": "gc9503cv",
       "corner": "sharp",
       "url": "https://github.com/osptek/tft-3.97-480x800-mipi-gc9503cv"
+    },
+    {
+      "repo": "tft-3.99-400x960-spi_rgb-st7701",
+      "category": "displays",
+      "panel": "tft",
+      "size": "3.99",
+      "resolution": "400x960",
+      "interface": "spi_rgb",
+      "interfaces": [
+        "spi",
+        "rgb"
+      ],
+      "shape": "rect",
+      "ic": "st7701sn-g5-1",
+      "corner": "sharp",
+      "url": "https://github.com/osptek/tft-3.99-400x960-spi_rgb-st7701"
     },
     {
       "repo": "tft-4.0-720x720-mipi-st7703",
