@@ -395,7 +395,7 @@
         "i80"
       ],
       "shape": "rect",
-      "ic": "st7789v3",
+      "ic": "st7789v3 / st7789",
       "corner": "rounded",
       "url": "https://github.com/osptek/tft-1.9-170x320-spi_i80-st7789"
     },
