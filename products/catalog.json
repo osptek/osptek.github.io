@@ -1,11 +1,11 @@
 {
   "generated_from": "workstation",
-  "count": 83,
+  "count": 84,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 72
+      "count": 73
     },
     {
       "key": "core-boards",
@@ -638,6 +638,21 @@
       "ic": "nv3007a",
       "corner": "sharp",
       "url": "https://github.com/osptek/tft-2.79-142x428-spi-nv3007"
+    },
+    {
+      "repo": "tft-2.8-240x320-i80-ili9340",
+      "category": "displays",
+      "panel": "tft",
+      "size": "2.8",
+      "resolution": "240x320",
+      "interface": "i80",
+      "interfaces": [
+        "i80"
+      ],
+      "shape": "rect",
+      "ic": "ili9340x",
+      "corner": "sharp",
+      "url": "https://github.com/osptek/tft-2.8-240x320-i80-ili9340"
     },
     {
       "repo": "tft-2.8-240x320-spi-ili9340",
