@@ -1,5 +1,5 @@
 {
-  "generated_from": "workstation",
+  "generated_from": "github:osptek.yml",
   "count": 84,
   "categories": [
     {
@@ -1116,6 +1116,34 @@
       "url": "https://github.com/osptek/tft-10.1-800x1280-mipi-jd9366"
     },
     {
+      "repo": "camera-mipi-csi-ov2710",
+      "category": "cameras",
+      "title": "OV2710",
+      "interface": "MIPI CSI",
+      "summary": "MIPI CSI camera module supporting 720p60 and 1080p30 capture.",
+      "specs": {
+        "sensor": "OV2710",
+        "interface": "MIPI CSI",
+        "configuration": "SCCB/I2C",
+        "output_modes": "1280x720@60, 1920x1080@30"
+      },
+      "url": "https://github.com/osptek/camera-mipi-csi-ov2710"
+    },
+    {
+      "repo": "camera-mipi-csi-sc2336",
+      "category": "cameras",
+      "title": "SC2336",
+      "interface": "MIPI CSI",
+      "summary": "MIPI CSI camera module supporting 720p, 1080p, and 800x800 capture.",
+      "specs": {
+        "sensor": "SC2336",
+        "interface": "MIPI CSI",
+        "configuration": "SCCB/I2C",
+        "output_modes": "1280x720, 1920x1080, 800x800"
+      },
+      "url": "https://github.com/osptek/camera-mipi-csi-sc2336"
+    },
+    {
       "repo": "esp32-p4-core-board",
       "category": "core-boards",
       "title": "ESP32-P4",
@@ -1145,6 +1173,20 @@
       "url": "https://github.com/osptek/esp32-p4c5-core-board"
     },
     {
+      "repo": "esp32-p4c5-module-dev-board",
+      "category": "dev-boards",
+      "title": "ESP32-P4C5-Module",
+      "summary": "Ready-to-use carrier with MIPI display/camera, audio, USB, and full GPIO breakout.",
+      "specs": {
+        "mcu": "ESP32-P4",
+        "wireless": "ESP32-C5HF4",
+        "clock": "400 MHz",
+        "flash": "16 MB",
+        "psram": "32 MB"
+      },
+      "url": "https://github.com/osptek/esp32-p4c5-module-dev-board"
+    },
+    {
       "repo": "esp32-p4c6-core-board",
       "category": "core-boards",
       "title": "ESP32-P4C6",
@@ -1158,20 +1200,6 @@
         "size": "25x25 mm"
       },
       "url": "https://github.com/osptek/esp32-p4c6-core-board"
-    },
-    {
-      "repo": "esp32-p4c5-module-dev-board",
-      "category": "dev-boards",
-      "title": "ESP32-P4C5-Module",
-      "summary": "Ready-to-use carrier with MIPI display/camera, audio, USB, and full GPIO breakout.",
-      "specs": {
-        "mcu": "ESP32-P4",
-        "wireless": "ESP32-C5HF4",
-        "clock": "400 MHz",
-        "flash": "16 MB",
-        "psram": "32 MB"
-      },
-      "url": "https://github.com/osptek/esp32-p4c5-module-dev-board"
     },
     {
       "repo": "esp32-p4c6-module-dev-board",
@@ -1228,34 +1256,6 @@
         "interface": "RS485"
       },
       "url": "https://github.com/osptek/esp32-s3-touch-lcd-4"
-    },
-    {
-      "repo": "camera-mipi-csi-ov2710",
-      "category": "cameras",
-      "title": "OV2710",
-      "interface": "MIPI CSI",
-      "summary": "MIPI CSI camera module supporting 720p60 and 1080p30 capture.",
-      "specs": {
-        "sensor": "OV2710",
-        "interface": "MIPI CSI",
-        "configuration": "SCCB/I2C",
-        "output_modes": "1280x720@60, 1920x1080@30"
-      },
-      "url": "https://github.com/osptek/camera-mipi-csi-ov2710"
-    },
-    {
-      "repo": "camera-mipi-csi-sc2336",
-      "category": "cameras",
-      "title": "SC2336",
-      "interface": "MIPI CSI",
-      "summary": "MIPI CSI camera module supporting 720p, 1080p, and 800x800 capture.",
-      "specs": {
-        "sensor": "SC2336",
-        "interface": "MIPI CSI",
-        "configuration": "SCCB/I2C",
-        "output_modes": "1280x720, 1920x1080, 800x800"
-      },
-      "url": "https://github.com/osptek/camera-mipi-csi-sc2336"
     },
     {
       "repo": "ypp8xxd",
