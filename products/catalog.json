@@ -1,11 +1,11 @@
 {
   "generated_from": "github:osptek.yml",
-  "count": 84,
+  "count": 83,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 73
+      "count": 72
     },
     {
       "key": "core-boards",
@@ -653,21 +653,6 @@
       "ic": "ili9340x",
       "corner": "sharp",
       "url": "https://github.com/osptek/tft-2.8-240x320-i80-ili9340"
-    },
-    {
-      "repo": "tft-2.8-240x320-spi-ili9340",
-      "category": "displays",
-      "panel": "tft",
-      "size": "2.8",
-      "resolution": "240x320",
-      "interface": "spi",
-      "interfaces": [
-        "spi"
-      ],
-      "shape": "rect",
-      "ic": "ili9340x",
-      "corner": "sharp",
-      "url": "https://github.com/osptek/tft-2.8-240x320-spi-ili9340"
     },
     {
       "repo": "lcd-2.9-168x384-spi-st7305",
