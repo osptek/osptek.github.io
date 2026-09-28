@@ -1,11 +1,11 @@
 {
   "generated_from": "workstation",
-  "count": 82,
+  "count": 83,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 71
+      "count": 72
     },
     {
       "key": "core-boards",
@@ -78,6 +78,22 @@
       "ic": "ssd1315",
       "corner": "sharp",
       "url": "https://github.com/osptek/oled-0.96-128x64-i2c-ssd1315"
+    },
+    {
+      "repo": "oled-0.96-128x64-spi_i2c-ssd1315",
+      "category": "displays",
+      "panel": "oled",
+      "size": "0.96",
+      "resolution": "128x64",
+      "interface": "spi_i2c",
+      "interfaces": [
+        "spi",
+        "i2c"
+      ],
+      "shape": "rect",
+      "ic": "ssd1315",
+      "corner": "sharp",
+      "url": "https://github.com/osptek/oled-0.96-128x64-spi_i2c-ssd1315"
     },
     {
       "repo": "amoled-1.04-340x340-qspi-co5300",
