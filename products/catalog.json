@@ -1,11 +1,11 @@
 {
   "generated_from": "workstation",
-  "count": 81,
+  "count": 82,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 70
+      "count": 71
     },
     {
       "key": "core-boards",
@@ -208,6 +208,21 @@
       "shape": "round",
       "ic": "co5300",
       "url": "https://github.com/osptek/amoled-1.51-466x466-qspi-co5300"
+    },
+    {
+      "repo": "epd-1.54-240x240-spi-ist7513",
+      "category": "displays",
+      "panel": "epd",
+      "size": "1.54",
+      "resolution": "240x240",
+      "interface": "spi",
+      "interfaces": [
+        "spi"
+      ],
+      "shape": "rect",
+      "ic": "ist7513",
+      "corner": "rounded",
+      "url": "https://github.com/osptek/epd-1.54-240x240-spi-ist7513"
     },
     {
       "repo": "oled-1.54-128x64-spi-ssd1309",
