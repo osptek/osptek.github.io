@@ -1,11 +1,11 @@
 {
   "generated_from": "github:osptek.yml",
-  "count": 83,
+  "count": 84,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 72
+      "count": 73
     },
     {
       "key": "core-boards",
@@ -816,6 +816,20 @@
       "shape": "rect",
       "ic": "axs15231e",
       "url": "https://github.com/osptek/tft-3.5-320x480-mipi-axs15231"
+    },
+    {
+      "repo": "tft-3.5-320x480-rgb-st7365",
+      "category": "displays",
+      "panel": "tft",
+      "size": "3.5",
+      "resolution": "320x480",
+      "interface": "rgb",
+      "interfaces": [
+        "rgb"
+      ],
+      "shape": "rect",
+      "ic": "st7365p",
+      "url": "https://github.com/osptek/tft-3.5-320x480-rgb-st7365"
     },
     {
       "repo": "epd-3.7-480x720-spi-jd7601",
