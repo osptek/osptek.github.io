@@ -1,11 +1,11 @@
 {
   "generated_from": "github:osptek.yml",
-  "count": 84,
+  "count": 85,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 73
+      "count": 74,
     },
     {
       "key": "core-boards",
@@ -1113,6 +1113,21 @@
       "ic": "jd9366",
       "corner": "rounded",
       "url": "https://github.com/osptek/tft-10.1-800x1280-mipi-jd9366"
+    },
+    {
+      "repo": "epd-13.3-1200x1600-spi-pv61522",
+      "category": "displays",
+      "panel": "epd",
+      "size": "13.3",
+      "resolution": "1200x1600",
+      "interface": "spi",
+      "interfaces": [
+        "spi"
+      ],
+      "shape": "rect",
+      "ic": "pv61522 / ek73601ba",
+      "corner": "rounded",
+      "url": "https://github.com/osptek/epd-13.3-1200x1600-spi-pv61522"
     },
     {
       "repo": "camera-mipi-csi-ov2710",
