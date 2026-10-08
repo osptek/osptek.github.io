@@ -1085,7 +1085,7 @@
       "url": "https://github.com/osptek/tft-5.0-720x1280-mipi-jd9365"
     },
     {
-      "repo": "epd-7.09-1200x1600-spi-tbd",
+      "repo": "epd-7.09-1200x1600-spi-pv61522",
       "category": "displays",
       "panel": "epd",
       "size": "7.09",
@@ -1095,9 +1095,9 @@
         "spi"
       ],
       "shape": "rect",
-      "ic": "tbd",
+      "ic": "pv61522 / ek73601ba",
       "corner": "rounded",
-      "url": "https://github.com/osptek/epd-7.09-1200x1600-spi-tbd"
+      "url": "https://github.com/osptek/epd-7.09-1200x1600-spi-pv61522"
     },
     {
       "repo": "tft-10.1-800x1280-mipi-jd9366",
