@@ -1,11 +1,11 @@
 {
   "generated_from": "github:osptek.yml",
-  "count": 86,
+  "count": 87,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 75
+      "count": 76
     },
     {
       "key": "core-boards",
@@ -1039,6 +1039,21 @@
       "ic": "st7102",
       "corner": "rounded",
       "url": "https://github.com/osptek/tft-4.3-480x800-mipi-st7102"
+    },
+    {
+      "repo": "tft-4.3-480x800-rgb-tbd",
+      "category": "displays",
+      "panel": "tft",
+      "size": "4.3",
+      "resolution": "480x800",
+      "interface": "rgb",
+      "interfaces": [
+        "rgb"
+      ],
+      "shape": "rect",
+      "ic": "tbd",
+      "corner": "sharp",
+      "url": "https://github.com/osptek/tft-4.3-480x800-rgb-tbd"
     },
     {
       "repo": "tft-4.45-480x854-mipi-gc9503",
