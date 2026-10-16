@@ -1,11 +1,11 @@
 {
   "generated_from": "github:osptek.yml",
-  "count": 87,
+  "count": 88,
   "categories": [
     {
       "key": "displays",
       "label": "Displays",
-      "count": 76
+      "count": 77
     },
     {
       "key": "core-boards",
@@ -519,6 +519,21 @@
       "ic": "icna3306",
       "corner": "rounded",
       "url": "https://github.com/osptek/amoled-2.01-240x296-qspi-icna3306"
+    },
+    {
+      "repo": "tft-2.01-240x296-spi-st7789",
+      "category": "displays",
+      "panel": "tft",
+      "size": "2.01",
+      "resolution": "240x296",
+      "interface": "spi",
+      "interfaces": [
+        "spi"
+      ],
+      "shape": "rect",
+      "ic": "st7789p3",
+      "corner": "rounded",
+      "url": "https://github.com/osptek/tft-2.01-240x296-spi-st7789"
     },
     {
       "repo": "tft-2.1-480x480-mipi-st7701",
