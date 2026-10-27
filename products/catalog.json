@@ -1,6 +1,6 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 382,
+  "count": 383,
   "repos": 135,
   "items": [
     {
@@ -302,7 +302,7 @@
       ],
       "driver": "SH8501A",
       "touch": "",
-      "outline": "12.80 x 27.35 x 1.08 mm",
+      "outline": "12.80 x 27.35 mm",
       "active_area": "10.80 x 21.60 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-0.95inch-120x240/tree/main/versions/AM095Q120240LK1"
@@ -645,6 +645,22 @@
       "url": "https://github.com/osptek/display-tft-0.99inch-40x160/tree/main/versions/YDP099H003-V2"
     },
     {
+      "id": "AM104Q340340LK",
+      "repo": "display-amoled-1.04inch-340x340",
+      "panel": "amoled",
+      "size": "1.04",
+      "resolution": "340x340",
+      "interfaces": [
+        "qspi"
+      ],
+      "driver": "SH8601A",
+      "touch": "CST820",
+      "outline": "29.25 x 30.00 mm",
+      "active_area": "26.35 x 26.35 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-amoled-1.04inch-340x340/tree/main/versions/AM104Q340340LK"
+    },
+    {
       "id": "AM104Q340340LK1",
       "repo": "display-amoled-1.04inch-340x340",
       "panel": "amoled",
@@ -653,7 +669,7 @@
       "interfaces": [
         "qspi"
       ],
-      "driver": "CO5300AF-60",
+      "driver": "CO5300",
       "touch": "CST820",
       "outline": "29.25 x 30.00 mm",
       "active_area": "26.35 x 26.35 mm",
@@ -767,7 +783,7 @@
       ],
       "driver": "ICNA3306",
       "touch": "CHSC6417",
-      "outline": "15.40 x 38.97 x 1.88 mm",
+      "outline": "15.40 x 38.97 mm",
       "active_area": "10.96 x 25.58 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-1.1inch-126x294/tree/main/versions/AM110Q126294LK1"
