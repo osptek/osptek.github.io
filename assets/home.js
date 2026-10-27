@@ -125,21 +125,23 @@
   }, HOLD);
 })();
 
-// the category cards ship with the counts of the last build; correct them from
-// the catalogue so nobody has to keep the numbers in the markup up to date
+// the displays card ships with the numbers of the last build; correct them from
+// the catalogue so nobody has to keep the markup up to date
 (() => {
-  const cards = [...document.querySelectorAll('.cat-card[data-cat]')];
-  if (!cards.length) return;
+  const count = document.querySelector('.cat-count');
+  const range = document.querySelector('.cat-range');
+  if (!count) return;
 
   fetch('products/catalog.json')
     .then((r) => r.json())
     .then((data) => {
-      const counts = new Map((data.categories || []).map((c) => [c.key, c.count]));
-      cards.forEach((card) => {
-        const n = counts.get(card.dataset.cat);
-        const slot = card.querySelector('.cat-count');
-        if (n && slot) slot.textContent = n;
-      });
+      const items = data.items || [];
+      if (!items.length) return;
+      count.textContent = items.length;
+      const sizes = items.map((row) => parseFloat(row.size)).filter((n) => n > 0);
+      if (range && sizes.length) {
+        range.textContent = `${Math.min(...sizes)}" to ${Math.max(...sizes)}"`;
+      }
     })
     .catch(() => {});
 })();

@@ -192,7 +192,8 @@
 
 .cat-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(264px, 360px));
+  justify-content: center;
   gap: 14px;
 }
 

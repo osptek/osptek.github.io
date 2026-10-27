@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Find a Product — OSPTEK</title>
-  <meta name="description" content="OSPTEK product catalog: displays, core boards, dev boards, panels, cameras and sensors" />
+  <title>Find a Display — OSPTEK</title>
+  <meta name="description" content="OSPTEK display catalog: TFT, AMOLED, OLED, RLCD and EPD modules by size, interface, driver and touch" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/base.css?v=2" />
-  <link rel="stylesheet" href="../assets/find.css?v=30" />
+  <link rel="stylesheet" href="../assets/find.css?v=31" />
 </head>
 <body>
   <header class="topbar">
@@ -22,18 +22,17 @@
   </header>
   <main class="finder">
     <div class="finder-head">
-      <h1>Find a Product</h1>
+      <h1>Find a Display</h1>
       <p class="lede" id="lede">Specs and examples in each repository</p>
     </div>
 
     <div class="search">
-      <label class="sr-only" for="q">Search products</label>
+      <label class="sr-only" for="q">Search displays</label>
       <input id="q" type="search" autocomplete="off" spellcheck="false"
-             placeholder="Search model, size, interface, driver…" />
+             placeholder="Search model, size, interface, driver, touch…" />
     </div>
 
-    <!-- find.js fills both rows: the categories, then the filters that category offers -->
-    <nav class="cats" id="cats" aria-label="Product category"></nav>
+    <!-- find.js fills the filters from the catalogue -->
     <div class="filters" id="filters"></div>
 
     <p class="tally">
@@ -53,6 +52,6 @@
     </div>
   </footer>
   <script src="../assets/topbar.js?v=1"></script>
-  <script src="../assets/find.js?v=31"></script>
+  <script src="../assets/find.js?v=33"></script>
 </body>
 </html>
