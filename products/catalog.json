@@ -1,6 +1,6 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 383,
+  "count": 385,
   "repos": 135,
   "items": [
     {
@@ -274,6 +274,22 @@
       "active_area": "23.04 x 23.03 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-0.9inch-128x128/tree/main/versions/YDP090BG003-V1"
+    },
+    {
+      "id": "YDP090BT001-V1",
+      "repo": "display-tft-0.9inch-128x128",
+      "panel": "tft",
+      "size": "0.9",
+      "resolution": "128x128",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "ST7735",
+      "touch": "CST816D",
+      "outline": "31.95 x 63.46 mm",
+      "active_area": "23.04 x 23.03 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-0.9inch-128x128/tree/main/versions/YDP090BT001-V1"
     },
     {
       "id": "ODM091-12832B102-P4",
@@ -2932,6 +2948,22 @@
       "active_area": "31.37 x 38.40 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-1.96inch-410x502/tree/main/versions/AM196Q410502LK"
+    },
+    {
+      "id": "AM196Q410502LK2",
+      "repo": "display-amoled-1.96inch-410x502",
+      "panel": "amoled",
+      "size": "1.96",
+      "resolution": "410x502",
+      "interfaces": [
+        "qspi"
+      ],
+      "driver": "ST7801N",
+      "touch": "CST820",
+      "outline": "33.07 x 41.21 mm",
+      "active_area": "31.37 x 38.40 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-amoled-1.96inch-410x502/tree/main/versions/AM196Q410502LK2"
     },
     {
       "id": "YDP199B001-V1",
