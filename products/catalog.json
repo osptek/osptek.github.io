@@ -1,40 +1,8 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 385,
-  "repos": 135,
+  "count": 250,
+  "repos": 110,
   "items": [
-    {
-      "id": "YDP042B001-V1",
-      "repo": "display-tft-0.42inch-96x54",
-      "panel": "tft",
-      "size": "0.42",
-      "resolution": "96x54",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735P3",
-      "touch": "",
-      "outline": "12.22 x 11.38 mm",
-      "active_area": "9.216 x 5.184 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.42inch-96x54/tree/main/versions/YDP042B001-V1"
-    },
-    {
-      "id": "YDP060B001-V2",
-      "repo": "display-tft-0.6inch-128x150",
-      "panel": "tft",
-      "size": "0.6",
-      "resolution": "128x150",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735P3",
-      "touch": "",
-      "outline": "12.16 x 15.43 x 1.41 mm",
-      "active_area": "9.29 x 10.89 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.6inch-128x150/tree/main/versions/YDP060B001-V2"
-    },
     {
       "id": "YDP071B001-V2",
       "repo": "display-tft-0.71inch-160x160",
@@ -68,182 +36,6 @@
       "url": "https://github.com/osptek/display-tft-0.71inch-160x160/tree/main/versions/YDP071B002-V2"
     },
     {
-      "id": "YDP071B004-V3",
-      "repo": "display-tft-0.71inch-160x160",
-      "panel": "tft",
-      "size": "0.71",
-      "resolution": "160x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9D01N",
-      "touch": "",
-      "outline": "20.21 x 22.35 mm",
-      "active_area": "18 x 18 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.71inch-160x160/tree/main/versions/YDP071B004-V3"
-    },
-    {
-      "id": "YDP071BG002-V2",
-      "repo": "display-tft-0.71inch-160x160",
-      "panel": "tft",
-      "size": "0.71",
-      "resolution": "160x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9D01",
-      "touch": "",
-      "outline": "20.12 x 22.3 mm",
-      "active_area": "17.99 x 18.0 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.71inch-160x160/tree/main/versions/YDP071BG002-V2"
-    },
-    {
-      "id": "YDP072B001-V1",
-      "repo": "display-tft-0.72inch-60x160",
-      "panel": "tft",
-      "size": "0.72",
-      "resolution": "60x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9D01",
-      "touch": "",
-      "outline": "8.52 x 21.695 mm",
-      "active_area": "6.41 x 17.09 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.72inch-60x160/tree/main/versions/YDP072B001-V1"
-    },
-    {
-      "id": "YDP072B002-V2",
-      "repo": "display-tft-0.72inch-60x160",
-      "panel": "tft",
-      "size": "0.72",
-      "resolution": "60x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9D01",
-      "touch": "",
-      "outline": "8.52 x 21.695 mm",
-      "active_area": "6.41 x 17.09 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.72inch-60x160/tree/main/versions/YDP072B002-V2"
-    },
-    {
-      "id": "YDP085B001-V2",
-      "repo": "display-tft-0.85inch-128x128",
-      "panel": "tft",
-      "size": "0.85",
-      "resolution": "128x128",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9107",
-      "touch": "",
-      "outline": "17.58 x 20.82 mm",
-      "active_area": "15.2064 x 15.2064 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.85inch-128x128/tree/main/versions/YDP085B001-V2"
-    },
-    {
-      "id": "YDP085B003-V2",
-      "repo": "display-tft-0.85inch-128x128",
-      "panel": "tft",
-      "size": "0.85",
-      "resolution": "128x128",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9107",
-      "touch": "",
-      "outline": "17.58 x 20.82 x 1.5 mm",
-      "active_area": "15.2064 x 15.2064 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.85inch-128x128/tree/main/versions/YDP085B003-V2"
-    },
-    {
-      "id": "YDP085B004-V2",
-      "repo": "display-tft-0.85inch-128x128",
-      "panel": "tft",
-      "size": "0.85",
-      "resolution": "128x128",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9107",
-      "touch": "",
-      "outline": "17.58 x 20.82 mm",
-      "active_area": "15.21 x 15.21 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.85inch-128x128/tree/main/versions/YDP085B004-V2"
-    },
-    {
-      "id": "YDP085B005-V2",
-      "repo": "display-tft-0.85inch-128x128",
-      "panel": "tft",
-      "size": "0.85",
-      "resolution": "128x128",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9107",
-      "touch": "",
-      "outline": "17.58 x 20.82 mm",
-      "active_area": "15.21 x 15.21 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.85inch-128x128/tree/main/versions/YDP085B005-V2"
-    },
-    {
-      "id": "YDP085B006-V2",
-      "repo": "display-tft-0.85inch-128x128",
-      "panel": "tft",
-      "size": "0.85",
-      "resolution": "128x128",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9107",
-      "touch": "",
-      "outline": "17.58 x 20.82 mm",
-      "active_area": "15.2064 x 15.2064 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.85inch-128x128/tree/main/versions/YDP085B006-V2"
-    },
-    {
-      "id": "YDP087B001-V2",
-      "repo": "display-tft-0.87inch-50x120",
-      "panel": "tft",
-      "size": "0.87",
-      "resolution": "50x120",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9D01",
-      "touch": "",
-      "outline": "10.8 x 25.38 mm",
-      "active_area": "8.49 x 20.37 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.87inch-50x120/tree/main/versions/YDP087B001-V2"
-    },
-    {
-      "id": "YDP090B001-V1",
-      "repo": "display-tft-0.9inch-128x128",
-      "panel": "tft",
-      "size": "0.9",
-      "resolution": "128x128",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735P3",
-      "touch": "",
-      "outline": "25.24 x 27.14 mm",
-      "active_area": "23.038 x 23.034 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.9inch-128x128/tree/main/versions/YDP090B001-V1"
-    },
-    {
       "id": "YDP090BG002-V1",
       "repo": "display-tft-0.9inch-128x128",
       "panel": "tft",
@@ -274,22 +66,6 @@
       "active_area": "23.04 x 23.03 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-0.9inch-128x128/tree/main/versions/YDP090BG003-V1"
-    },
-    {
-      "id": "YDP090BT001-V1",
-      "repo": "display-tft-0.9inch-128x128",
-      "panel": "tft",
-      "size": "0.9",
-      "resolution": "128x128",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735",
-      "touch": "CST816D",
-      "outline": "31.95 x 63.46 mm",
-      "active_area": "23.04 x 23.03 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.9inch-128x128/tree/main/versions/YDP090BT001-V1"
     },
     {
       "id": "ODM091-12832B102-P4",
@@ -373,22 +149,6 @@
       "url": "https://github.com/osptek/display-oled-0.96inch-128x64/tree/main/versions/OED096-12864W009-C30"
     },
     {
-      "id": "YDP096B001-V1",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9107",
-      "touch": "",
-      "outline": "13.5 x 27.95 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B001-V1"
-    },
-    {
       "id": "YDP096B002-V1",
       "repo": "display-tft-0.96inch-80x160",
       "panel": "tft",
@@ -421,22 +181,6 @@
       "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B002-V1C0"
     },
     {
-      "id": "YDP096B005-V1",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "14.04 x 27.95 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B005-V1"
-    },
-    {
       "id": "YDP096B007-V2",
       "repo": "display-tft-0.96inch-80x160",
       "panel": "tft",
@@ -451,214 +195,6 @@
       "active_area": "10.8 x 21.7 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B007-V2"
-    },
-    {
-      "id": "YDP096B011-V2",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "13.5 x 27.95 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B011-V2"
-    },
-    {
-      "id": "YDP096B013-V2",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9107",
-      "touch": "",
-      "outline": "13.5 x 27.95 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B013-V2"
-    },
-    {
-      "id": "YDP096B014-V2",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "14.04 x 27.95 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B014-V2"
-    },
-    {
-      "id": "YDP096B015-V2",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9107",
-      "touch": "",
-      "outline": "14.04 x 27.95 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B015-V2"
-    },
-    {
-      "id": "YDP096B016-V1",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9107",
-      "touch": "",
-      "outline": "14.05 x 27.94 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B016-V1"
-    },
-    {
-      "id": "YDP096B018-V2",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9107",
-      "touch": "",
-      "outline": "13.5 x 27.90 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B018-V2"
-    },
-    {
-      "id": "YDP096B019-V1",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9109",
-      "touch": "",
-      "outline": "13.50 x 27.95 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B019-V1"
-    },
-    {
-      "id": "YDP096H002-V1",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "14.04 x 27.94 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096H002-V1"
-    },
-    {
-      "id": "YDP096H004-V1",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "13.5 x 27.95 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096H004-V1"
-    },
-    {
-      "id": "YDP096H010-V1",
-      "repo": "display-tft-0.96inch-80x160",
-      "panel": "tft",
-      "size": "0.96",
-      "resolution": "80x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "13.5 x 27.95 mm",
-      "active_area": "10.8 x 21.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096H010-V1"
-    },
-    {
-      "id": "YDP099H001-V2",
-      "repo": "display-tft-0.99inch-40x160",
-      "panel": "tft",
-      "size": "0.99",
-      "resolution": "40x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9D01",
-      "touch": "",
-      "outline": "8.6 x 29.8 mm",
-      "active_area": "6.096 x 24.384 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.99inch-40x160/tree/main/versions/YDP099H001-V2"
-    },
-    {
-      "id": "YDP099H002-V2",
-      "repo": "display-tft-0.99inch-40x160",
-      "panel": "tft",
-      "size": "0.99",
-      "resolution": "40x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9D01",
-      "touch": "",
-      "outline": "8.6 x 29.8 mm",
-      "active_area": "6.096 x 24.384 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.99inch-40x160/tree/main/versions/YDP099H002-V2"
-    },
-    {
-      "id": "YDP099H003-V2",
-      "repo": "display-tft-0.99inch-40x160",
-      "panel": "tft",
-      "size": "0.99",
-      "resolution": "40x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9D01",
-      "touch": "",
-      "outline": "8.6 x 29.8 mm",
-      "active_area": "6.096 x 24.384 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-0.99inch-40x160/tree/main/versions/YDP099H003-V2"
     },
     {
       "id": "AM104Q340340LK",
@@ -709,86 +245,6 @@
       "url": "https://github.com/osptek/display-amoled-1.04inch-340x340/tree/main/versions/AM104Q340340LK2"
     },
     {
-      "id": "YDP106B001-V1",
-      "repo": "display-tft-1.06inch-96x160",
-      "panel": "tft",
-      "size": "1.06",
-      "resolution": "96x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "16.12 x 29.76 mm",
-      "active_area": "13.82 x 23.04 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.06inch-96x160/tree/main/versions/YDP106B001-V1"
-    },
-    {
-      "id": "YDP106B002-V1",
-      "repo": "display-tft-1.06inch-96x160",
-      "panel": "tft",
-      "size": "1.06",
-      "resolution": "96x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "16.12 x 29.76 mm",
-      "active_area": "13.82 x 23.04 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.06inch-96x160/tree/main/versions/YDP106B002-V1"
-    },
-    {
-      "id": "YDP108B001-V2",
-      "repo": "display-tft-1.08inch-128x220",
-      "panel": "tft",
-      "size": "1.08",
-      "resolution": "128x220",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9203",
-      "touch": "",
-      "outline": "16.12 x 29.76 mm",
-      "active_area": "13.824 x 23.76 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.08inch-128x220/tree/main/versions/YDP108B001-V2"
-    },
-    {
-      "id": "YDP108B002-V2",
-      "repo": "display-tft-1.08inch-128x220",
-      "panel": "tft",
-      "size": "1.08",
-      "resolution": "128x220",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9203",
-      "touch": "",
-      "outline": "16.12 x 29.76 mm",
-      "active_area": "13.824 x 23.76 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.08inch-128x220/tree/main/versions/YDP108B002-V2"
-    },
-    {
-      "id": "YDP108B003-V2",
-      "repo": "display-tft-1.08inch-128x220",
-      "panel": "tft",
-      "size": "1.08",
-      "resolution": "128x220",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9203",
-      "touch": "",
-      "outline": "16.12 x 29.76 mm",
-      "active_area": "13.82 x 23.76 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.08inch-128x220/tree/main/versions/YDP108B003-V2"
-    },
-    {
       "id": "AM110Q126294LK1",
       "repo": "display-amoled-1.1inch-126x294",
       "panel": "amoled",
@@ -819,22 +275,6 @@
       "active_area": "8.49 x 27.17 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.12inch-50x160/tree/main/versions/YDP112B001-V2"
-    },
-    {
-      "id": "YDP112B002-V2",
-      "repo": "display-tft-1.12inch-50x160",
-      "panel": "tft",
-      "size": "1.12",
-      "resolution": "50x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9D01",
-      "touch": "",
-      "outline": "10.8 x 32.18 mm",
-      "active_area": "8.49 x 27.17 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.12inch-50x160/tree/main/versions/YDP112B002-V2"
     },
     {
       "id": "YDP114H003-V2",
@@ -869,38 +309,6 @@
       "url": "https://github.com/osptek/display-tft-1.14inch-135x240/tree/main/versions/YDP114H004-V2"
     },
     {
-      "id": "YDP114H006-V2",
-      "repo": "display-tft-1.14inch-135x240",
-      "panel": "tft",
-      "size": "1.14",
-      "resolution": "135x240",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "ST7789V",
-      "touch": "",
-      "outline": "17.6 x 31.0 mm",
-      "active_area": "14.864 x 24.912 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.14inch-135x240/tree/main/versions/YDP114H006-V2"
-    },
-    {
-      "id": "YDP114HT002-V3",
-      "repo": "display-tft-1.14inch-135x240",
-      "panel": "tft",
-      "size": "1.14",
-      "resolution": "135x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V2",
-      "touch": "",
-      "outline": "17.6 x 31.0 mm",
-      "active_area": "14.864 x 24.912 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.14inch-135x240/tree/main/versions/YDP114HT002-V3"
-    },
-    {
       "id": "AM119Q390390FLS2",
       "repo": "display-amoled-1.19inch-390x390",
       "panel": "amoled",
@@ -915,54 +323,6 @@
       "active_area": "Φ30.42 mm",
       "shape": "round",
       "url": "https://github.com/osptek/display-amoled-1.19inch-390x390/tree/main/versions/AM119Q390390FLS2"
-    },
-    {
-      "id": "YDP122B001-V9",
-      "repo": "display-tft-1.22inch-240x240",
-      "panel": "tft",
-      "size": "1.22",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "25.76 x 28.16 mm",
-      "active_area": "21.96 x 21.96 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.22inch-240x240/tree/main/versions/YDP122B001-V9"
-    },
-    {
-      "id": "YDP126BT001-V12",
-      "repo": "display-tft-1.26inch-240x240",
-      "panel": "tft",
-      "size": "1.26",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "NV3006A",
-      "touch": "CST816D",
-      "outline": "38.00 x 38.15 mm",
-      "active_area": "32.19 x 32.19 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.26inch-240x240/tree/main/versions/YDP126BT001-V12"
-    },
-    {
-      "id": "YDP128H003-V3",
-      "repo": "display-tft-1.28inch-240x240",
-      "panel": "tft",
-      "size": "1.28",
-      "resolution": "240x240",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "GC9A01",
-      "touch": "",
-      "outline": "35.6 x 37.74 mm",
-      "active_area": "Φ32.4 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.28inch-240x240/tree/main/versions/YDP128H003-V3"
     },
     {
       "id": "YDP128H004-V3",
@@ -981,22 +341,6 @@
       "url": "https://github.com/osptek/display-tft-1.28inch-240x240/tree/main/versions/YDP128H004-V3"
     },
     {
-      "id": "YDP128H005-V3",
-      "repo": "display-tft-1.28inch-240x240",
-      "panel": "tft",
-      "size": "1.28",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9A01",
-      "touch": "",
-      "outline": "35.6 x 38.1 mm",
-      "active_area": "Φ32.4 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.28inch-240x240/tree/main/versions/YDP128H005-V3"
-    },
-    {
       "id": "YDP128H010-V2",
       "repo": "display-tft-1.28inch-240x240",
       "panel": "tft",
@@ -1011,86 +355,6 @@
       "active_area": "Φ32.4 mm",
       "shape": "round",
       "url": "https://github.com/osptek/display-tft-1.28inch-240x240/tree/main/versions/YDP128H010-V2"
-    },
-    {
-      "id": "YDP128H011-V3",
-      "repo": "display-tft-1.28inch-240x240",
-      "panel": "tft",
-      "size": "1.28",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9A01",
-      "touch": "",
-      "outline": "35.6 x 37.74 mm",
-      "active_area": "Φ32.4 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.28inch-240x240/tree/main/versions/YDP128H011-V3"
-    },
-    {
-      "id": "YDP128H012-V3",
-      "repo": "display-tft-1.28inch-240x240",
-      "panel": "tft",
-      "size": "1.28",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9A01",
-      "touch": "",
-      "outline": "35.6 x 38.1 mm",
-      "active_area": "Φ32.4 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.28inch-240x240/tree/main/versions/YDP128H012-V3"
-    },
-    {
-      "id": "YDP128HB001-P8",
-      "repo": "display-tft-1.28inch-240x240",
-      "panel": "tft",
-      "size": "1.28",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9A01",
-      "touch": "",
-      "outline": "35.6 x 38.1 mm",
-      "active_area": "Φ32.4 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.28inch-240x240/tree/main/versions/YDP128HB001-P8"
-    },
-    {
-      "id": "YDP128HG004-V3",
-      "repo": "display-tft-1.28inch-240x240",
-      "panel": "tft",
-      "size": "1.28",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9A01",
-      "touch": "",
-      "outline": "35.6 x 37.74 mm",
-      "active_area": "Φ32.4 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.28inch-240x240/tree/main/versions/YDP128HG004-V3"
-    },
-    {
-      "id": "YDP128HG005-V3",
-      "repo": "display-tft-1.28inch-240x240",
-      "panel": "tft",
-      "size": "1.28",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "GC9A01",
-      "touch": "",
-      "outline": "35.6 x 38.1 mm",
-      "active_area": "Φ32.4 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.28inch-240x240/tree/main/versions/YDP128HG005-V3"
     },
     {
       "id": "YDP128HT001-V3",
@@ -1126,117 +390,6 @@
       "url": "https://github.com/osptek/display-tft-1.28inch-240x240/tree/main/versions/YDP128HT011-V3"
     },
     {
-      "id": "YDP130B001-V1",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi",
-        "mcu"
-      ],
-      "driver": "ST7789V",
-      "touch": "",
-      "outline": "26.16 x 29.22 mm",
-      "active_area": "23.40 x 23.40 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130B001-V1"
-    },
-    {
-      "id": "YDP130B004-V1",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V",
-      "touch": "",
-      "outline": "26.16 x 29.22 mm",
-      "active_area": "23.4 x 23.4 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130B004-V1"
-    },
-    {
-      "id": "YDP130B010-V1",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "ST7789V",
-      "touch": "",
-      "outline": "26.17 x 29.22 mm",
-      "active_area": "23.40 x 23.40 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130B010-V1"
-    },
-    {
-      "id": "YDP130B013-V2",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789",
-      "touch": "",
-      "outline": "26.16 x 29.22 mm",
-      "active_area": "23.4 x 23.4 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130B013-V2"
-    },
-    {
-      "id": "YDP130B014-V2",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789T3",
-      "touch": "",
-      "outline": "26.16 x 29.22 mm",
-      "active_area": "23.40 x 23.47 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130B014-V2"
-    },
-    {
-      "id": "YDP130B022-V1",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [],
-      "driver": "ST7789V3+ST7789V2+ST7789V+ST7789H2+ST77911+JD9851+JD9852",
-      "touch": "",
-      "outline": "25.4 x 28.2 mm",
-      "active_area": "23.4 x 23.4 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130B022-V1"
-    },
-    {
-      "id": "YDP130BT006-V1",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "ST7789V",
-      "touch": "",
-      "outline": "27.40 x 34.06 mm",
-      "active_area": "23.4 x 23.4 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130BT006-V1"
-    },
-    {
       "id": "YDP130BT010-V1",
       "repo": "display-tft-1.3inch-240x240",
       "panel": "tft",
@@ -1252,140 +405,6 @@
       "active_area": "23.4 x 23.4 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130BT010-V1"
-    },
-    {
-      "id": "YDP130BT016-V2",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "mcu",
-        "spi"
-      ],
-      "driver": "ST7789V",
-      "touch": "CST816",
-      "outline": "27.40 x 34.06 mm",
-      "active_area": "23.4 x 23.4 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130BT016-V2"
-    },
-    {
-      "id": "YDP130BT017-V2",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi",
-        "mcu"
-      ],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "34.6 x 40.1 mm",
-      "active_area": "23.40 x 23.40 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130BT017-V2"
-    },
-    {
-      "id": "YDP130BT020-V2",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "mcu",
-        "spi"
-      ],
-      "driver": "ST7789V",
-      "touch": "CST816D",
-      "outline": "27.40 x 34.06 mm",
-      "active_area": "23.4 x 23.4 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130BT020-V2"
-    },
-    {
-      "id": "YDP130F004-V3",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "mcu",
-        "spi"
-      ],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "26.16 x 29.22 mm",
-      "active_area": "23.4 x 23.4 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130F004-V3"
-    },
-    {
-      "id": "YDP130F005-V2",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "mcu",
-        "spi"
-      ],
-      "driver": "ST7789V3",
-      "touch": "",
-      "outline": "26.16 x 29.22 mm",
-      "active_area": "23.4 x 23.4 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130F005-V2"
-    },
-    {
-      "id": "YDP130FT001-V2",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi",
-        "mcu"
-      ],
-      "driver": "ST7789T3",
-      "touch": "",
-      "outline": "32.0 x 38.15 mm",
-      "active_area": "23.40 x 23.40 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130FT001-V2"
-    },
-    {
-      "id": "YDP130H001-V1",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789",
-      "touch": "",
-      "outline": "26.2 x 29.22 mm",
-      "active_area": "23.4 x 23.4 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130H001-V1"
-    },
-    {
-      "id": "YDP130H005-V3",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V3",
-      "touch": "",
-      "outline": "26.0 x 29.15 x 1.45 mm",
-      "active_area": "23.4 x 23.4 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130H005-V3"
     },
     {
       "id": "YDP130H006-V2",
@@ -1404,22 +423,6 @@
       "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130H006-V2"
     },
     {
-      "id": "YDP130H007-V1",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V",
-      "touch": "",
-      "outline": "26.20 x 29.22 mm",
-      "active_area": "23.40 x 23.40 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130H007-V1"
-    },
-    {
       "id": "YDP130H009-V2",
       "repo": "display-tft-1.3inch-240x240",
       "panel": "tft",
@@ -1435,23 +438,6 @@
       "active_area": "23.4 x 23.4 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130H009-V2"
-    },
-    {
-      "id": "YDP130HT003-V2",
-      "repo": "display-tft-1.3inch-240x240",
-      "panel": "tft",
-      "size": "1.3",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi",
-        "mcu"
-      ],
-      "driver": "ST7789T3",
-      "touch": "",
-      "outline": "32.0 x 38.15 mm",
-      "active_area": "23.40 x 23.40 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.3inch-240x240/tree/main/versions/YDP130HT003-V2"
     },
     {
       "id": "YDP130HT004-V3",
@@ -1486,22 +472,6 @@
       "url": "https://github.com/osptek/display-tft-1.32inch-360x360/tree/main/versions/YDP132H001-V3"
     },
     {
-      "id": "YDP132H002-V3",
-      "repo": "display-tft-1.32inch-360x360",
-      "panel": "tft",
-      "size": "1.32",
-      "resolution": "360x360",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "GC9C01",
-      "touch": "",
-      "outline": "35.98 x 38.54 mm",
-      "active_area": "Φ33.48 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.32inch-360x360/tree/main/versions/YDP132H002-V3"
-    },
-    {
       "id": "YDP132H004-V10",
       "repo": "display-tft-1.32inch-360x360",
       "panel": "tft",
@@ -1516,22 +486,6 @@
       "active_area": "33.48 x 33.48 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.32inch-360x360/tree/main/versions/YDP132H004-V10"
-    },
-    {
-      "id": "YDP138B001-V1",
-      "repo": "display-tft-1.38inch-240x240",
-      "panel": "tft",
-      "size": "1.38",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "NV3002A",
-      "touch": "",
-      "outline": "37.54 x 39.12 mm",
-      "active_area": "Φ35.14 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.38inch-240x240/tree/main/versions/YDP138B001-V1"
     },
     {
       "id": "AM139Q454454FLS1",
@@ -1550,89 +504,6 @@
       "url": "https://github.com/osptek/display-amoled-1.39inch-454x454/tree/main/versions/AM139Q454454FLS1"
     },
     {
-      "id": "YDP139B001-V10",
-      "repo": "display-tft-1.39inch-360x360",
-      "panel": "tft",
-      "size": "1.39",
-      "resolution": "360x360",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "GC9B71",
-      "touch": "",
-      "outline": "37.80 x 39.77 mm",
-      "active_area": "35.30 x 35.30 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.39inch-360x360/tree/main/versions/YDP139B001-V10"
-    },
-    {
-      "id": "YDP144F001-V1",
-      "repo": "display-tft-1.44inch-128x128",
-      "panel": "tft",
-      "size": "1.44",
-      "resolution": "128x128",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "29.0 x 34.41 mm",
-      "active_area": "25.5 x 26.5 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.44inch-128x128/tree/main/versions/YDP144F001-V1"
-    },
-    {
-      "id": "YDP144F002-V10",
-      "repo": "display-tft-1.44inch-128x128",
-      "panel": "tft",
-      "size": "1.44",
-      "resolution": "128x128",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "29.50 x 36.50 mm",
-      "active_area": "25.5 x 26.51 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.44inch-128x128/tree/main/versions/YDP144F002-V10"
-    },
-    {
-      "id": "YDP144H001-V1",
-      "repo": "display-tft-1.44inch-128x128",
-      "panel": "tft",
-      "size": "1.44",
-      "resolution": "128x128",
-      "interfaces": [
-        "spi",
-        "mcu"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "29.0 x 34.41 mm",
-      "active_area": "25.5 x 26.5 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.44inch-128x128/tree/main/versions/YDP144H001-V1"
-    },
-    {
-      "id": "YDP145B001-V5",
-      "repo": "display-tft-1.45inch-412x412",
-      "panel": "tft",
-      "size": "1.45",
-      "resolution": "412x412",
-      "interfaces": [
-        "spi",
-        "mipi",
-        "qspi"
-      ],
-      "driver": "SPD2010",
-      "touch": "SPD2010",
-      "outline": "39.36 x 41.53 mm",
-      "active_area": "36.96 x 36.96 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.45inch-412x412/tree/main/versions/YDP145B001-V5"
-    },
-    {
       "id": "YDP146B001-V10",
       "repo": "display-tft-1.46inch-360x360",
       "panel": "tft",
@@ -1649,22 +520,6 @@
       "url": "https://github.com/osptek/display-tft-1.46inch-360x360/tree/main/versions/YDP146B001-V10"
     },
     {
-      "id": "YDP146BT003-V10",
-      "repo": "display-tft-1.46inch-360x360",
-      "panel": "tft",
-      "size": "1.46",
-      "resolution": "360x360",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "ST77916",
-      "touch": "",
-      "outline": "39.30 x 40.96 mm",
-      "active_area": "36.93 x 36.93 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.46inch-360x360/tree/main/versions/YDP146BT003-V10"
-    },
-    {
       "id": "YDP146BT002-V12",
       "repo": "display-tft-1.46inch-70x160",
       "panel": "tft",
@@ -1679,22 +534,6 @@
       "active_area": "14.15 x 32.35 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.46inch-70x160/tree/main/versions/YDP146BT002-V12"
-    },
-    {
-      "id": "YDP147B003-V2",
-      "repo": "display-tft-1.47inch-172x320",
-      "panel": "tft",
-      "size": "1.47",
-      "resolution": "172x320",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "19.39 x 36.28 mm",
-      "active_area": "17.39 x 32.35 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.47inch-172x320/tree/main/versions/YDP147B003-V2"
     },
     {
       "id": "YDP147BT001-V12",
@@ -1777,38 +616,6 @@
       "url": "https://github.com/osptek/display-tft-1.47inch-172x320/tree/main/versions/YDP147H004-V3"
     },
     {
-      "id": "YDP147H005-V3",
-      "repo": "display-tft-1.47inch-172x320",
-      "panel": "tft",
-      "size": "1.47",
-      "resolution": "172x320",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "19.39 x 36.28 mm",
-      "active_area": "17.3892 x 32.352 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.47inch-172x320/tree/main/versions/YDP147H005-V3"
-    },
-    {
-      "id": "YDP147H007-V3",
-      "repo": "display-tft-1.47inch-172x320",
-      "panel": "tft",
-      "size": "1.47",
-      "resolution": "172x320",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "19.39 x 36.28 mm",
-      "active_area": "17.3892 x 32.352 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.47inch-172x320/tree/main/versions/YDP147H007-V3"
-    },
-    {
       "id": "YDP147H009-V2",
       "repo": "display-tft-1.47inch-172x320",
       "panel": "tft",
@@ -1855,20 +662,6 @@
       "active_area": "17.9 x 32.35 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.47inch-172x320/tree/main/versions/YDP147HT003-V3"
-    },
-    {
-      "id": "YDP150H001-V12",
-      "repo": "display-tft-1.5inch-240x240",
-      "panel": "tft",
-      "size": "1.5",
-      "resolution": "240x240",
-      "interfaces": [],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "39.59 x 41.37 mm",
-      "active_area": "37.59 x 37.59 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.5inch-240x240/tree/main/versions/YDP150H001-V12"
     },
     {
       "id": "AM151Q466466LK",
@@ -1937,87 +730,6 @@
       "url": "https://github.com/osptek/display-oled-1.54inch-128x64/tree/main/versions/OED154-12864W002-C24"
     },
     {
-      "id": "YDP154H008-V3",
-      "repo": "display-tft-1.54inch-200x200",
-      "panel": "tft",
-      "size": "1.54",
-      "resolution": "200x200",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7305",
-      "touch": "",
-      "outline": "29.46 x 31.71 mm",
-      "active_area": "27.66 x 27.66 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.54inch-200x200/tree/main/versions/YDP154H008-V3"
-    },
-    {
-      "id": "YDP154B001-V2",
-      "repo": "display-tft-1.54inch-240x240",
-      "panel": "tft",
-      "size": "1.54",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789T3",
-      "touch": "",
-      "outline": "31.52 x 33.72 mm",
-      "active_area": "27.72 x 27.72 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.54inch-240x240/tree/main/versions/YDP154B001-V2"
-    },
-    {
-      "id": "YDP154BG001-V1",
-      "repo": "display-tft-1.54inch-240x240",
-      "panel": "tft",
-      "size": "1.54",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "31.52 x 33.72 mm",
-      "active_area": "27.72 x 27.72 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.54inch-240x240/tree/main/versions/YDP154BG001-V1"
-    },
-    {
-      "id": "YDP154BT003-V1",
-      "repo": "display-tft-1.54inch-240x240",
-      "panel": "tft",
-      "size": "1.54",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789T3",
-      "touch": "CST816D",
-      "outline": "37.95 x 44.85 mm",
-      "active_area": "27.72 x 27.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.54inch-240x240/tree/main/versions/YDP154BT003-V1"
-    },
-    {
-      "id": "YDP154H001-V1",
-      "repo": "display-tft-1.54inch-240x240",
-      "panel": "tft",
-      "size": "1.54",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi",
-        "mcu"
-      ],
-      "driver": "ST7789",
-      "touch": "",
-      "outline": "31.52 x 33.72 mm",
-      "active_area": "27.72 x 27.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.54inch-240x240/tree/main/versions/YDP154H001-V1"
-    },
-    {
       "id": "YDP154H002-V1",
       "repo": "display-tft-1.54inch-240x240",
       "panel": "tft",
@@ -2034,54 +746,6 @@
       "url": "https://github.com/osptek/display-tft-1.54inch-240x240/tree/main/versions/YDP154H002-V1"
     },
     {
-      "id": "YDP154H003-V3",
-      "repo": "display-tft-1.54inch-240x240",
-      "panel": "tft",
-      "size": "1.54",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V2",
-      "touch": "",
-      "outline": "31.52 x 33.72 mm",
-      "active_area": "27.72 x 27.72 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.54inch-240x240/tree/main/versions/YDP154H003-V3"
-    },
-    {
-      "id": "YDP154H004-V3",
-      "repo": "display-tft-1.54inch-240x240",
-      "panel": "tft",
-      "size": "1.54",
-      "resolution": "240x240",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "ST7789V2",
-      "touch": "",
-      "outline": "31.52 x 33.72 mm",
-      "active_area": "27.72 x 27.72 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.54inch-240x240/tree/main/versions/YDP154H004-V3"
-    },
-    {
-      "id": "YDP154H007-V3",
-      "repo": "display-tft-1.54inch-240x240",
-      "panel": "tft",
-      "size": "1.54",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "31.52 x 33.72 mm",
-      "active_area": "27.72 x 27.72 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.54inch-240x240/tree/main/versions/YDP154H007-V3"
-    },
-    {
       "id": "YDP154H009-V2",
       "repo": "display-tft-1.54inch-240x240",
       "panel": "tft",
@@ -2096,22 +760,6 @@
       "active_area": "27.72 x 27.72 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.54inch-240x240/tree/main/versions/YDP154H009-V2"
-    },
-    {
-      "id": "YDP154HT006-V1",
-      "repo": "display-tft-1.54inch-240x240",
-      "panel": "tft",
-      "size": "1.54",
-      "resolution": "240x240",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V",
-      "touch": "CST816D",
-      "outline": "50.0 x 47.7 mm",
-      "active_area": "27.72 x 27.7 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.54inch-240x240/tree/main/versions/YDP154HT006-V1"
     },
     {
       "id": "AM160Q320360ZS",
@@ -2210,213 +858,6 @@
       "url": "https://github.com/osptek/display-tft-1.6inch-400x400/tree/main/versions/YDP160B001-V1"
     },
     {
-      "id": "YDP160B001-V6",
-      "repo": "display-tft-1.6inch-400x400",
-      "panel": "tft",
-      "size": "1.6",
-      "resolution": "400x400",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "ST77903",
-      "touch": "",
-      "outline": "42.92 x 45.89 mm",
-      "active_area": "39.840 x 39.840 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.6inch-400x400/tree/main/versions/YDP160B001-V6"
-    },
-    {
-      "id": "YDP160B002-V1",
-      "repo": "display-tft-1.6inch-400x400",
-      "panel": "tft",
-      "size": "1.6",
-      "resolution": "400x400",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "ST77903",
-      "touch": "",
-      "outline": "42.14 x 44.24 mm",
-      "active_area": "Φ39.84 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.6inch-400x400/tree/main/versions/YDP160B002-V1"
-    },
-    {
-      "id": "YDP160B002-V6",
-      "repo": "display-tft-1.6inch-400x400",
-      "panel": "tft",
-      "size": "1.6",
-      "resolution": "400x400",
-      "interfaces": [
-        "mipi"
-      ],
-      "driver": "ST7797",
-      "touch": "",
-      "outline": "42.92 x 45.89 mm",
-      "active_area": "39.840 x 39.840 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.6inch-400x400/tree/main/versions/YDP160B002-V6"
-    },
-    {
-      "id": "YDP160B004-V1",
-      "repo": "display-tft-1.6inch-400x400",
-      "panel": "tft",
-      "size": "1.6",
-      "resolution": "400x400",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "ST77903",
-      "touch": "",
-      "outline": "42.14 x 44.24 mm",
-      "active_area": "Φ39.84 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.6inch-400x400/tree/main/versions/YDP160B004-V1"
-    },
-    {
-      "id": "YDP160B005-V1",
-      "repo": "display-tft-1.6inch-400x400",
-      "panel": "tft",
-      "size": "1.6",
-      "resolution": "400x400",
-      "interfaces": [
-        "mipi"
-      ],
-      "driver": "ST7797",
-      "touch": "",
-      "outline": "42.14 x 44.24 mm",
-      "active_area": "Φ39.84 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.6inch-400x400/tree/main/versions/YDP160B005-V1"
-    },
-    {
-      "id": "YDP160BG003-V1",
-      "repo": "display-tft-1.6inch-400x400",
-      "panel": "tft",
-      "size": "1.6",
-      "resolution": "400x400",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "ST77903",
-      "touch": "",
-      "outline": "53.00 x 53.00 mm",
-      "active_area": "Φ39.84 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.6inch-400x400/tree/main/versions/YDP160BG003-V1"
-    },
-    {
-      "id": "YDP160BT001-V1",
-      "repo": "display-tft-1.6inch-400x400",
-      "panel": "tft",
-      "size": "1.6",
-      "resolution": "400x400",
-      "interfaces": [],
-      "driver": "ST7797+ST77903",
-      "touch": "",
-      "outline": "640.36 x 355.72 mm",
-      "active_area": "39.84 x 39.84 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.6inch-400x400/tree/main/versions/YDP160BT001-V1"
-    },
-    {
-      "id": "YDP160BT003-V6",
-      "repo": "display-tft-1.6inch-400x400",
-      "panel": "tft",
-      "size": "1.6",
-      "resolution": "400x400",
-      "interfaces": [
-        "mipi"
-      ],
-      "driver": "ST7797",
-      "touch": "",
-      "outline": "51.00 x 51.00 mm",
-      "active_area": "39.840 x 39.840 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.6inch-400x400/tree/main/versions/YDP160BT003-V6"
-    },
-    {
-      "id": "YDP165B001-V2",
-      "repo": "display-tft-1.65inch-142x428",
-      "panel": "tft",
-      "size": "1.65",
-      "resolution": "142x428",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "NV3007",
-      "touch": "",
-      "outline": "16.3 x 44.96 mm",
-      "active_area": "13.16 x 39.68 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.65inch-142x428/tree/main/versions/YDP165B001-V2"
-    },
-    {
-      "id": "YDP165B002-V2",
-      "repo": "display-tft-1.65inch-142x428",
-      "panel": "tft",
-      "size": "1.65",
-      "resolution": "142x428",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "NV3007",
-      "touch": "",
-      "outline": "16.3 x 44.96 mm",
-      "active_area": "13.16 x 39.68 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.65inch-142x428/tree/main/versions/YDP165B002-V2"
-    },
-    {
-      "id": "YDP165H002-V3",
-      "repo": "display-tft-1.65inch-240x295",
-      "panel": "tft",
-      "size": "1.65",
-      "resolution": "240x295",
-      "interfaces": [
-        "mcu",
-        "spi"
-      ],
-      "driver": "ST7789V2",
-      "touch": "",
-      "outline": "28.13 x 36.93 mm",
-      "active_area": "25.92 x 31.86 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.65inch-240x295/tree/main/versions/YDP165H002-V3"
-    },
-    {
-      "id": "YDP165H003-V3",
-      "repo": "display-tft-1.65inch-240x295",
-      "panel": "tft",
-      "size": "1.65",
-      "resolution": "240x295",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V3",
-      "touch": "",
-      "outline": "28.13 x 36.93 mm",
-      "active_area": "25.92 x 31.86 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.65inch-240x295/tree/main/versions/YDP165H003-V3"
-    },
-    {
-      "id": "YDP165H004-V3",
-      "repo": "display-tft-1.65inch-240x295",
-      "panel": "tft",
-      "size": "1.65",
-      "resolution": "240x295",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "ST7789V3",
-      "touch": "",
-      "outline": "28.13 x 36.93 mm",
-      "active_area": "25.92 x 31.86 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.65inch-240x295/tree/main/versions/YDP165H004-V3"
-    },
-    {
       "id": "EPD0169A06",
       "repo": "display-epd-1.69inch-400x400",
       "panel": "epd",
@@ -2431,22 +872,6 @@
       "active_area": "43 x 43 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-epd-1.69inch-400x400/tree/main/versions/EPD0169A06"
-    },
-    {
-      "id": "YDP169F001-V2",
-      "repo": "display-tft-1.69inch-240x280",
-      "panel": "tft",
-      "size": "1.69",
-      "resolution": "240x280",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789",
-      "touch": "",
-      "outline": "30.07 x 37.43 mm",
-      "active_area": "27.97 x 32.63 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.69inch-240x280/tree/main/versions/YDP169F001-V2"
     },
     {
       "id": "YDP169H001-V3",
@@ -2481,38 +906,6 @@
       "url": "https://github.com/osptek/display-tft-1.69inch-240x280/tree/main/versions/YDP169HB001-P8"
     },
     {
-      "id": "YDP169HT001-V3",
-      "repo": "display-tft-1.69inch-240x280",
-      "panel": "tft",
-      "size": "1.69",
-      "resolution": "240x280",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V3",
-      "touch": "",
-      "outline": "30.07 x 37.43 mm",
-      "active_area": "27.972 x 32.634 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.69inch-240x280/tree/main/versions/YDP169HT001-V3"
-    },
-    {
-      "id": "YDP169HT002-V3",
-      "repo": "display-tft-1.69inch-240x280",
-      "panel": "tft",
-      "size": "1.69",
-      "resolution": "240x280",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V3",
-      "touch": "",
-      "outline": "30.07 x 37.43 mm",
-      "active_area": "27.972 x 32.634 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.69inch-240x280/tree/main/versions/YDP169HT002-V3"
-    },
-    {
       "id": "YDP169HT003-V1",
       "repo": "display-tft-1.69inch-240x280",
       "panel": "tft",
@@ -2527,22 +920,6 @@
       "active_area": "27.97 x 32.63 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.69inch-240x280/tree/main/versions/YDP169HT003-V1"
-    },
-    {
-      "id": "YDP169HT004-V3",
-      "repo": "display-tft-1.69inch-240x280",
-      "panel": "tft",
-      "size": "1.69",
-      "resolution": "240x280",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "30.07 x 37.43 mm",
-      "active_area": "27.97 x 32.63 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.69inch-240x280/tree/main/versions/YDP169HT004-V3"
     },
     {
       "id": "YDP169HT006-V1",
@@ -2644,86 +1021,6 @@
       "url": "https://github.com/osptek/display-amoled-1.73inch-466x466/tree/main/versions/AM173Q466466FLS32"
     },
     {
-      "id": "YDP177BRT001-V1",
-      "repo": "display-tft-1.77inch-128x160",
-      "panel": "tft",
-      "size": "1.77",
-      "resolution": "128x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "34.70 x 46.60 mm",
-      "active_area": "28.03 x 35.04 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.77inch-128x160/tree/main/versions/YDP177BRT001-V1"
-    },
-    {
-      "id": "YDP177F001-V1",
-      "repo": "display-tft-1.77inch-128x160",
-      "panel": "tft",
-      "size": "1.77",
-      "resolution": "128x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "34.7 x 46.7 mm",
-      "active_area": "28.03 x 35.04 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.77inch-128x160/tree/main/versions/YDP177F001-V1"
-    },
-    {
-      "id": "YDP177F002-V1",
-      "repo": "display-tft-1.77inch-128x160",
-      "panel": "tft",
-      "size": "1.77",
-      "resolution": "128x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735P3",
-      "touch": "",
-      "outline": "34.7 x 46.7 mm",
-      "active_area": "28.03 x 35.04 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.77inch-128x160/tree/main/versions/YDP177F002-V1"
-    },
-    {
-      "id": "YDP177F005-V1",
-      "repo": "display-tft-1.77inch-128x160",
-      "panel": "tft",
-      "size": "1.77",
-      "resolution": "128x160",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "ST7735S",
-      "touch": "",
-      "outline": "34.7 x 46.7 mm",
-      "active_area": "28.03 x 35.04 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.77inch-128x160/tree/main/versions/YDP177F005-V1"
-    },
-    {
-      "id": "YDP177F006-V1",
-      "repo": "display-tft-1.77inch-128x160",
-      "panel": "tft",
-      "size": "1.77",
-      "resolution": "128x160",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "GC9106",
-      "touch": "",
-      "outline": "34.7 x 46.7 mm",
-      "active_area": "28.03 x 35.04 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.77inch-128x160/tree/main/versions/YDP177F006-V1"
-    },
-    {
       "id": "AM178Q368448LK",
       "repo": "display-amoled-1.78inch-368x448",
       "panel": "amoled",
@@ -2740,38 +1037,6 @@
       "url": "https://github.com/osptek/display-amoled-1.78inch-368x448/tree/main/versions/AM178Q368448LK"
     },
     {
-      "id": "YDP180B001-V1A",
-      "repo": "display-tft-1.8inch-240x284",
-      "panel": "tft",
-      "size": "1.8",
-      "resolution": "240x284",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "NV3030B",
-      "touch": "",
-      "outline": "31.62 x 39.13 mm",
-      "active_area": "29.52 x 34.93 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.8inch-240x284/tree/main/versions/YDP180B001-V1A"
-    },
-    {
-      "id": "YDP180BT001-V1",
-      "repo": "display-tft-1.8inch-240x284",
-      "panel": "tft",
-      "size": "1.8",
-      "resolution": "240x284",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "NV3030B",
-      "touch": "",
-      "outline": "31.62 x 39.13 mm",
-      "active_area": "29.52 x 34.93 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.8inch-240x284/tree/main/versions/YDP180BT001-V1"
-    },
-    {
       "id": "YDP180B005-V3",
       "repo": "display-tft-1.8inch-360x360",
       "panel": "tft",
@@ -2786,70 +1051,6 @@
       "active_area": "Φ45.684 mm",
       "shape": "round",
       "url": "https://github.com/osptek/display-tft-1.8inch-360x360/tree/main/versions/YDP180B005-V3"
-    },
-    {
-      "id": "YDP180B006-V10",
-      "repo": "display-tft-1.8inch-360x360",
-      "panel": "tft",
-      "size": "1.8",
-      "resolution": "360x360",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "ST77916",
-      "touch": "CST816D",
-      "outline": "49.34 x 49.34 mm",
-      "active_area": "45.68 x 45.68 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.8inch-360x360/tree/main/versions/YDP180B006-V10"
-    },
-    {
-      "id": "YDP180B007-V10",
-      "repo": "display-tft-1.8inch-360x360",
-      "panel": "tft",
-      "size": "1.8",
-      "resolution": "360x360",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "JD9855",
-      "touch": "",
-      "outline": "47.99 x 49.80 mm",
-      "active_area": "45.68 x 45.68 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.8inch-360x360/tree/main/versions/YDP180B007-V10"
-    },
-    {
-      "id": "YDP180B007-V3",
-      "repo": "display-tft-1.8inch-360x360",
-      "panel": "tft",
-      "size": "1.8",
-      "resolution": "360x360",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "JD9855A",
-      "touch": "",
-      "outline": "48.08 x 49.95 x 1.92 mm",
-      "active_area": "Φ45.68 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.8inch-360x360/tree/main/versions/YDP180B007-V3"
-    },
-    {
-      "id": "YDP180BT006-V10",
-      "repo": "display-tft-1.8inch-360x360",
-      "panel": "tft",
-      "size": "1.8",
-      "resolution": "360x360",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "ST77916",
-      "touch": "CST816D",
-      "outline": "49.34 x 49.34 mm",
-      "active_area": "45.68 x 45.68 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.8inch-360x360/tree/main/versions/YDP180BT006-V10"
     },
     {
       "id": "YDP180BT007-V3",
@@ -2900,40 +1101,6 @@
       "url": "https://github.com/osptek/display-tft-1.83inch-240x280/tree/main/versions/YDP183H001-V3"
     },
     {
-      "id": "YDP190H001-V2",
-      "repo": "display-tft-1.9inch-170x320",
-      "panel": "tft",
-      "size": "1.9",
-      "resolution": "170x320",
-      "interfaces": [
-        "mcu",
-        "spi"
-      ],
-      "driver": "ST7789",
-      "touch": "",
-      "outline": "25.8 x 49.72 mm",
-      "active_area": "22.695 x 42.72 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.9inch-170x320/tree/main/versions/YDP190H001-V2"
-    },
-    {
-      "id": "YDP190H002-V2",
-      "repo": "display-tft-1.9inch-170x320",
-      "panel": "tft",
-      "size": "1.9",
-      "resolution": "170x320",
-      "interfaces": [
-        "mcu",
-        "spi"
-      ],
-      "driver": "ST7789",
-      "touch": "",
-      "outline": "25.8 x 49.72 mm",
-      "active_area": "22.695 x 42.72 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.9inch-170x320/tree/main/versions/YDP190H002-V2"
-    },
-    {
       "id": "AM196Q410502LK",
       "repo": "display-amoled-1.96inch-410x502",
       "panel": "amoled",
@@ -2964,36 +1131,6 @@
       "active_area": "31.37 x 38.40 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-1.96inch-410x502/tree/main/versions/AM196Q410502LK2"
-    },
-    {
-      "id": "YDP199B001-V1",
-      "repo": "display-tft-1.99inch-170x320",
-      "panel": "tft",
-      "size": "1.99",
-      "resolution": "170x320",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "NV3030B",
-      "touch": "",
-      "outline": "25.8 x 49.72 mm",
-      "active_area": "22.695 x 42.72 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.99inch-170x320/tree/main/versions/YDP199B001-V1"
-    },
-    {
-      "id": "YDP199B002-V1",
-      "repo": "display-tft-1.99inch-170x320",
-      "panel": "tft",
-      "size": "1.99",
-      "resolution": "170x320",
-      "interfaces": [],
-      "driver": "ST7789V2+ST7789V3+ST7789P3+ST7785M+ILI9340X+JD9851+JD9852",
-      "touch": "",
-      "outline": "639 x 351.64 mm",
-      "active_area": "24.8 x 45.92 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-1.99inch-170x320/tree/main/versions/YDP199B002-V1"
     },
     {
       "id": "AM200MT460460FLS2",
@@ -3044,87 +1181,6 @@
       "url": "https://github.com/osptek/display-amoled-2inch-460x460/tree/main/versions/AM200Q460460LK"
     },
     {
-      "id": "YDP200B001-V2",
-      "repo": "display-tft-2inch-128x160",
-      "panel": "tft",
-      "size": "2",
-      "resolution": "128x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "3023A",
-      "touch": "",
-      "outline": "35.27 x 47.14 mm",
-      "active_area": "31.87 x 39.84 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2inch-128x160/tree/main/versions/YDP200B001-V2"
-    },
-    {
-      "id": "YDP200FT002-V1",
-      "repo": "display-tft-2inch-176x220",
-      "panel": "tft",
-      "size": "2",
-      "resolution": "176x220",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7775R",
-      "touch": "",
-      "outline": "37.68 x 51.30 mm",
-      "active_area": "31.68 x 39.60 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2inch-176x220/tree/main/versions/YDP200FT002-V1"
-    },
-    {
-      "id": "YDP200B001-V1",
-      "repo": "display-tft-2inch-240x320",
-      "panel": "tft",
-      "size": "2",
-      "resolution": "240x320",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "ST7789V2",
-      "touch": "",
-      "outline": "35.70 x 51.20 mm",
-      "active_area": "30.60 x 40.80 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2inch-240x320/tree/main/versions/YDP200B001-V1"
-    },
-    {
-      "id": "YDP200B002-V1",
-      "repo": "display-tft-2inch-240x320",
-      "panel": "tft",
-      "size": "2",
-      "resolution": "240x320",
-      "interfaces": [
-        "spi",
-        "mcu"
-      ],
-      "driver": "ST7789V2",
-      "touch": "",
-      "outline": "36.2 x 51.80 mm",
-      "active_area": "30.60 x 40.80 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2inch-240x320/tree/main/versions/YDP200B002-V1"
-    },
-    {
-      "id": "YDP200B003-V1",
-      "repo": "display-tft-2inch-240x320",
-      "panel": "tft",
-      "size": "2",
-      "resolution": "240x320",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V2",
-      "touch": "",
-      "outline": "34.6 x 47.8 mm",
-      "active_area": "30.60 x 40.80 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2inch-240x320/tree/main/versions/YDP200B003-V1"
-    },
-    {
       "id": "YDP200B006-V1",
       "repo": "display-tft-2inch-240x320",
       "panel": "tft",
@@ -3157,55 +1213,6 @@
       "url": "https://github.com/osptek/display-tft-2inch-240x320/tree/main/versions/YDP200BT006-V1"
     },
     {
-      "id": "YDP200H001-V2",
-      "repo": "display-tft-2inch-240x320",
-      "panel": "tft",
-      "size": "2",
-      "resolution": "240x320",
-      "interfaces": [
-        "mcu"
-      ],
-      "driver": "ST7789",
-      "touch": "",
-      "outline": "34.6 x 47.8 mm",
-      "active_area": "30.6 x 40.8 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2inch-240x320/tree/main/versions/YDP200H001-V2"
-    },
-    {
-      "id": "YDP200H001-V3",
-      "repo": "display-tft-2inch-240x320",
-      "panel": "tft",
-      "size": "2",
-      "resolution": "240x320",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789V2",
-      "touch": "",
-      "outline": "35.7 x 51.2 mm",
-      "active_area": "30.6 x 40.8 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2inch-240x320/tree/main/versions/YDP200H001-V3"
-    },
-    {
-      "id": "YDP200H003-V2",
-      "repo": "display-tft-2inch-240x320",
-      "panel": "tft",
-      "size": "2",
-      "resolution": "240x320",
-      "interfaces": [
-        "mcu",
-        "spi"
-      ],
-      "driver": "ST7789V",
-      "touch": "",
-      "outline": "34.6 x 47.8 mm",
-      "active_area": "30.6 x 40.8 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2inch-240x320/tree/main/versions/YDP200H003-V2"
-    },
-    {
       "id": "YDP200B004-V4",
       "repo": "display-tft-2inch-320x240",
       "panel": "tft",
@@ -3223,23 +1230,6 @@
       "url": "https://github.com/osptek/display-tft-2inch-320x240/tree/main/versions/YDP200B004-V4"
     },
     {
-      "id": "YDP200H002-V9",
-      "repo": "display-tft-2inch-320x240",
-      "panel": "tft",
-      "size": "2",
-      "resolution": "320x240",
-      "interfaces": [
-        "mcu",
-        "spi"
-      ],
-      "driver": "",
-      "touch": "",
-      "outline": "45.8 x 40.2 mm",
-      "active_area": "40.8 x 30.6 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2inch-320x240/tree/main/versions/YDP200H002-V9"
-    },
-    {
       "id": "YDP200H005-V9",
       "repo": "display-tft-2inch-320x240",
       "panel": "tft",
@@ -3255,22 +1245,6 @@
       "active_area": "40.8 x 30.6 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-2inch-320x240/tree/main/versions/YDP200H005-V9"
-    },
-    {
-      "id": "YDP200B001-V9",
-      "repo": "display-tft-2inch-480x360",
-      "panel": "tft",
-      "size": "2",
-      "resolution": "480x360",
-      "interfaces": [
-        "mipi"
-      ],
-      "driver": "ST7701S",
-      "touch": "",
-      "outline": "45.8 x 40.2 mm",
-      "active_area": "40.82 x 30.62 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2inch-480x360/tree/main/versions/YDP200B001-V9"
     },
     {
       "id": "AM201Q240296LK",
@@ -3337,55 +1311,6 @@
       "url": "https://github.com/osptek/display-tft-2.01inch-240x296/tree/main/versions/YDP201H001-V3"
     },
     {
-      "id": "YDP201HT003-V3",
-      "repo": "display-tft-2.01inch-240x296",
-      "panel": "tft",
-      "size": "2.01",
-      "resolution": "240x296",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7789P3",
-      "touch": "",
-      "outline": "34.04 x 43.32 mm",
-      "active_area": "32.04 x 39.516 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2.01inch-240x296/tree/main/versions/YDP201HT003-V3"
-    },
-    {
-      "id": "YDP210B001-V4",
-      "repo": "display-tft-2.1inch-480x480",
-      "panel": "tft",
-      "size": "2.1",
-      "resolution": "480x480",
-      "interfaces": [
-        "spi",
-        "rgb"
-      ],
-      "driver": "ST7701S",
-      "touch": "",
-      "outline": "56.18 x 59.71 mm",
-      "active_area": "53.28 x 53.28 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2.1inch-480x480/tree/main/versions/YDP210B001-V4"
-    },
-    {
-      "id": "YDP210B001-V9",
-      "repo": "display-tft-2.1inch-480x480",
-      "panel": "tft",
-      "size": "2.1",
-      "resolution": "480x480",
-      "interfaces": [
-        "mipi"
-      ],
-      "driver": "ST7701S/JD9161Z",
-      "touch": "",
-      "outline": "56.18 x 59.71 mm",
-      "active_area": "53.28 x 53.28 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2.1inch-480x480/tree/main/versions/YDP210B001-V9"
-    },
-    {
       "id": "YDP210B002-V6",
       "repo": "display-tft-2.1inch-480x480",
       "panel": "tft",
@@ -3401,22 +1326,6 @@
       "active_area": "53.28 x 53.28 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-2.1inch-480x480/tree/main/versions/YDP210B002-V6"
-    },
-    {
-      "id": "YDP210B003-V6",
-      "repo": "display-tft-2.1inch-480x480",
-      "panel": "tft",
-      "size": "2.1",
-      "resolution": "480x480",
-      "interfaces": [
-        "mipi"
-      ],
-      "driver": "ST7701S",
-      "touch": "",
-      "outline": "56.18 x 59.71 mm",
-      "active_area": "53.28 x 53.28 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2.1inch-480x480/tree/main/versions/YDP210B003-V6"
     },
     {
       "id": "YDP210B004-V6",
@@ -3612,22 +1521,6 @@
       "active_area": "36.72 x 48.96 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-2.36inch-128x160/tree/main/versions/YDP236B002-V1"
-    },
-    {
-      "id": "YDP236BRT001-V1",
-      "repo": "display-tft-2.36inch-128x160",
-      "panel": "tft",
-      "size": "2.36",
-      "resolution": "128x160",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7735P3",
-      "touch": "",
-      "outline": "42.72 x 60.2 mm",
-      "active_area": "36.72 x 48.96 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2.36inch-128x160/tree/main/versions/YDP236BRT001-V1"
     },
     {
       "id": "AM240M450600ZS",
@@ -3873,22 +1766,6 @@
       "url": "https://github.com/osptek/display-tft-2.4inch-240x320/tree/main/versions/YDP240FT005-V1"
     },
     {
-      "id": "YDP276B002-V1",
-      "repo": "display-tft-2.76inch-480x480",
-      "panel": "tft",
-      "size": "2.76",
-      "resolution": "480x480",
-      "interfaces": [
-        "mipi"
-      ],
-      "driver": "ST7701S",
-      "touch": "",
-      "outline": "73.03 x 76.48 mm",
-      "active_area": "Φ70.13 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-2.76inch-480x480/tree/main/versions/YDP276B002-V1"
-    },
-    {
       "id": "YDP276B004-V1",
       "repo": "display-tft-2.76inch-480x480",
       "panel": "tft",
@@ -3903,23 +1780,6 @@
       "active_area": "Φ70.13 mm",
       "shape": "round",
       "url": "https://github.com/osptek/display-tft-2.76inch-480x480/tree/main/versions/YDP276B004-V1"
-    },
-    {
-      "id": "YDP276BT001-V1",
-      "repo": "display-tft-2.76inch-480x480",
-      "panel": "tft",
-      "size": "2.76",
-      "resolution": "480x480",
-      "interfaces": [
-        "spi",
-        "rgb"
-      ],
-      "driver": "ST7701S",
-      "touch": "",
-      "outline": "73.37 x 76.82 mm",
-      "active_area": "Φ70.128 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-tft-2.76inch-480x480/tree/main/versions/YDP276BT001-V1"
     },
     {
       "id": "YDP276BT004-V1",
@@ -4298,22 +2158,6 @@
       "url": "https://github.com/osptek/display-tft-2.95inch-480x854/tree/main/versions/YDP295B002-V9"
     },
     {
-      "id": "YDP299H001-V9",
-      "repo": "display-tft-2.99inch-268x800",
-      "panel": "tft",
-      "size": "2.99",
-      "resolution": "268x800",
-      "interfaces": [
-        "mipi"
-      ],
-      "driver": "ST7701S",
-      "touch": "",
-      "outline": "26.96 x 80.08 mm",
-      "active_area": "24.12 x 72 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2.99inch-268x800/tree/main/versions/YDP299H001-V9"
-    },
-    {
       "id": "YDP299H002-V9",
       "repo": "display-tft-2.99inch-268x800",
       "panel": "tft",
@@ -4328,20 +2172,6 @@
       "active_area": "24.12 x 72 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-2.99inch-268x800/tree/main/versions/YDP299H002-V9"
-    },
-    {
-      "id": "YDP299H003-V7",
-      "repo": "display-tft-2.99inch-268x800",
-      "panel": "tft",
-      "size": "2.99",
-      "resolution": "268x800",
-      "interfaces": [],
-      "driver": "ST7701",
-      "touch": "",
-      "outline": "26.52 x 78.2 mm",
-      "active_area": "24.12 x 72 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-2.99inch-268x800/tree/main/versions/YDP299H003-V7"
     },
     {
       "id": "YDP300B001-V9",
