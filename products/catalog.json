@@ -1,6 +1,6 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 156,
+  "count": 157,
   "repos": 80,
   "items": [
     {
@@ -956,23 +956,6 @@
       "url": "https://github.com/osptek/display-tft-1.72inch-356x400/tree/main/versions/YDP172H001-V3"
     },
     {
-      "id": "AM173M466466FLS31",
-      "repo": "display-amoled-1.73inch-466x466",
-      "panel": "amoled",
-      "size": "1.73",
-      "resolution": "466x466",
-      "interfaces": [
-        "qspi",
-        "mipi"
-      ],
-      "driver": "CO5300",
-      "touch": "CST9217",
-      "outline": "51.30 x 51.30 mm",
-      "active_area": "Φ43.76 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-amoled-1.73inch-466x466/tree/main/versions/AM173M466466FLS31"
-    },
-    {
       "id": "AM173Q466466FLS",
       "repo": "display-amoled-1.73inch-466x466",
       "panel": "amoled",
@@ -1000,7 +983,7 @@
       ],
       "driver": "CO5300",
       "touch": "CST9217",
-      "outline": "51.30 x 51.30 x 2.06 mm",
+      "outline": "51.30 x 51.30 mm",
       "active_area": "Φ43.76 mm",
       "shape": "round",
       "url": "https://github.com/osptek/display-amoled-1.73inch-466x466/tree/main/versions/AM173Q466466FLS31"
@@ -1016,7 +999,7 @@
       ],
       "driver": "CO5300",
       "touch": "CST820",
-      "outline": "51.30 x 51.30 x 2.06 mm",
+      "outline": "51.30 x 51.30 mm",
       "active_area": "Φ43.76 mm",
       "shape": "round",
       "url": "https://github.com/osptek/display-amoled-1.73inch-466x466/tree/main/versions/AM173Q466466FLS32"
@@ -1112,7 +1095,7 @@
       ],
       "driver": "CO5300AF-32",
       "touch": "CST820",
-      "outline": "35.36 x 44.07 x 2.57 mm",
+      "outline": "35.36 x 44.07 mm",
       "active_area": "31.37 x 38.40 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-1.96inch-410x502/tree/main/versions/AM196Q410502LK"
@@ -1144,7 +1127,7 @@
       ],
       "driver": "CO5300",
       "touch": "",
-      "outline": "38.50 x 39.20 x 2.28 mm",
+      "outline": "38.50 x 39.20 mm",
       "active_area": "35.88 x 35.88 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-2inch-460x460/tree/main/versions/AM200MT460460FLS2"
@@ -1160,7 +1143,7 @@
       ],
       "driver": "CO5300",
       "touch": "",
-      "outline": "38.50 x 39.20 x 2.28 mm",
+      "outline": "38.50 x 39.20 mm",
       "active_area": "35.88 x 35.88 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-2inch-460x460/tree/main/versions/AM200Q460460FLS1"
@@ -1274,7 +1257,7 @@
       ],
       "driver": "ICNA3306",
       "touch": "",
-      "outline": "36.40 x 43.57 x 2.33 mm",
+      "outline": "36.40 x 43.57 mm",
       "active_area": "32.04 x 39.52 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-2.01inch-240x296/tree/main/versions/AM201Q240296LK1"
@@ -1406,7 +1389,7 @@
       ],
       "driver": "CO5300AF-51",
       "touch": "CST820",
-      "outline": "37.50 x 46.30 x 2.28 mm",
+      "outline": "37.50 x 46.30 mm",
       "active_area": "33.09 x 40.51 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-2.13inch-410x502/tree/main/versions/AM213Q410502LK"
@@ -1926,7 +1909,7 @@
         "mipi"
       ],
       "driver": "CO6300",
-      "touch": "ZT2628",
+      "touch": "CST3530",
       "outline": "26.50 x 82.45 mm",
       "active_area": "22.008 x 77.952 mm",
       "shape": "rect",
@@ -1947,6 +1930,22 @@
       "active_area": "47.88 x 63.84 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-3.2inch-240x320/tree/main/versions/YDP320B002-V1"
+    },
+    {
+      "id": "YDP320B006-V1",
+      "repo": "display-tft-3.2inch-240x320",
+      "panel": "tft",
+      "size": "3.2",
+      "resolution": "240x320",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "ST7789P3",
+      "touch": "",
+      "outline": "53.6 x 76 mm",
+      "active_area": "48.6 x 64.8 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-3.2inch-240x320/tree/main/versions/YDP320B006-V1"
     },
     {
       "id": "YDP342B001-V13",
@@ -2170,6 +2169,22 @@
       "active_area": "51.84 x 86.40 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-3.97inch-480x800/tree/main/versions/YDP397B006-V1"
+    },
+    {
+      "id": "YDP397BET009-V1",
+      "repo": "display-tft-3.97inch-480x800",
+      "panel": "tft",
+      "size": "3.97",
+      "resolution": "480x800",
+      "interfaces": [
+        "mipi"
+      ],
+      "driver": "AXS15260D",
+      "touch": "",
+      "outline": "64.60 x 106.2 mm",
+      "active_area": "51.84 x 86.40 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-3.97inch-480x800/tree/main/versions/YDP397BET009-V1"
     },
     {
       "id": "YDP399B002-V4",
