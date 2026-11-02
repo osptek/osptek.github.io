@@ -1,7 +1,7 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
   "count": 158,
-  "repos": 81,
+  "repos": 82,
   "items": [
     {
       "id": "YDP071B001-V2",
@@ -1111,7 +1111,7 @@
       ],
       "driver": "ST7801N",
       "touch": "CST820",
-      "outline": "33.07 x 41.21 mm",
+      "outline": "35.36 x 44.07 mm",
       "active_area": "31.37 x 38.40 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-1.96inch-410x502/tree/main/versions/AM196Q410502LK2"
@@ -1571,6 +1571,22 @@
       "active_area": "21.28 x 64.14 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-2.79inch-142x428/tree/main/versions/YDP279B001-V2"
+    },
+    {
+      "id": "YDP280BT003-V1",
+      "repo": "display-tft-2.8inch-240x320",
+      "panel": "tft",
+      "size": "2.8",
+      "resolution": "240x320",
+      "interfaces": [
+        "mcu"
+      ],
+      "driver": "ILI9340X",
+      "touch": "FT6336U",
+      "outline": "60.7 x 77.88 mm",
+      "active_area": "43.2 x 57.5 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-2.8inch-240x320/tree/main/versions/YDP280BT003-V1"
     },
     {
       "id": "YDP280F002-V1",
@@ -2269,38 +2285,6 @@
       "url": "https://github.com/osptek/display-rlcd-4.2inch-300x400/tree/main/versions/YDP420H001-V3"
     },
     {
-      "id": "YDP420H002-V3",
-      "repo": "display-rlcd-4.2inch-300x400",
-      "panel": "rlcd",
-      "size": "4.2",
-      "resolution": "300x400",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7306",
-      "touch": "",
-      "outline": "67.6 x 91.0 mm",
-      "active_area": "63.6 x 84.8 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-rlcd-4.2inch-300x400/tree/main/versions/YDP420H002-V3"
-    },
-    {
-      "id": "YDP420H003-V3",
-      "repo": "display-rlcd-4.2inch-300x400",
-      "panel": "rlcd",
-      "size": "4.2",
-      "resolution": "300x400",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "ST7306",
-      "touch": "",
-      "outline": "67.6 x 91.0 x 1.1 mm",
-      "active_area": "63.6 x 84.8 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-rlcd-4.2inch-300x400/tree/main/versions/YDP420H003-V3"
-    },
-    {
       "id": "YDP420H005-V3",
       "repo": "display-rlcd-4.2inch-300x400",
       "panel": "rlcd",
@@ -2326,7 +2310,7 @@
         "spi"
       ],
       "driver": "ST7305",
-      "touch": "",
+      "touch": "FT3269",
       "outline": "",
       "active_area": "",
       "shape": "rect",
@@ -2460,6 +2444,22 @@
       "active_area": "61.78 x 109.85 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-5inch-720x1280/tree/main/versions/YDP500BT004-V1"
+    },
+    {
+      "id": "YDP700BT007-V1",
+      "repo": "display-tft-7inch-1024x600",
+      "panel": "tft",
+      "size": "7",
+      "resolution": "1024x600",
+      "interfaces": [
+        "mipi"
+      ],
+      "driver": "JD9165BA",
+      "touch": "GT1151QM",
+      "outline": "175.88 x 112.58 mm",
+      "active_area": "154.2144 x 85.92 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-7inch-1024x600/tree/main/versions/YDP700BT007-V1"
     },
     {
       "id": "YDP700B001-V1",
