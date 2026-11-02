@@ -1,7 +1,7 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 157,
-  "repos": 80,
+  "count": 158,
+  "repos": 81,
   "items": [
     {
       "id": "YDP071B001-V2",
@@ -1149,22 +1149,6 @@
       "url": "https://github.com/osptek/display-amoled-2inch-460x460/tree/main/versions/AM200Q460460FLS1"
     },
     {
-      "id": "AM200Q460460LK",
-      "repo": "display-amoled-2inch-460x460",
-      "panel": "amoled",
-      "size": "2",
-      "resolution": "460x460",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "CO5300",
-      "touch": "CST820",
-      "outline": "38.50 x 39.20 mm",
-      "active_area": "35.88 x 35.88 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-amoled-2inch-460x460/tree/main/versions/AM200Q460460LK"
-    },
-    {
       "id": "YDP200B006-V1",
       "repo": "display-tft-2inch-240x320",
       "panel": "tft",
@@ -1425,6 +1409,22 @@
       "active_area": "23.668 x 48.5 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-rlcd-2.13inch-122x250/tree/main/versions/YDP213H001-V3"
+    },
+    {
+      "id": "AM214Q480480LK2",
+      "repo": "display-amoled-2.14inch-480x480",
+      "panel": "amoled",
+      "size": "2.14",
+      "resolution": "480x480",
+      "interfaces": [
+        "qspi"
+      ],
+      "driver": "ST7801N",
+      "touch": "CST9220",
+      "outline": "44.59 x 44.59 mm",
+      "active_area": "38.39 x 38.39 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-amoled-2.14inch-480x480/tree/main/versions/AM214Q480480LK2"
     },
     {
       "id": "YDP236B002-V1",
@@ -2317,6 +2317,22 @@
       "url": "https://github.com/osptek/display-rlcd-4.2inch-300x400/tree/main/versions/YDP420H005-V3"
     },
     {
+      "id": "YDP420HT004-V3",
+      "repo": "display-rlcd-4.2inch-300x400",
+      "panel": "rlcd",
+      "size": "4.2",
+      "resolution": "300x400",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "ST7305",
+      "touch": "",
+      "outline": "",
+      "active_area": "",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-rlcd-4.2inch-300x400/tree/main/versions/YDP420HT004-V3"
+    },
+    {
       "id": "EPD0426A02",
       "repo": "display-epd-4.26inch-480x800",
       "panel": "epd",
@@ -2359,8 +2375,8 @@
         "i2c"
       ],
       "driver": "ST7102",
-      "touch": "",
-      "outline": "66.8 x 114.4 x 3.12 mm",
+      "touch": "ST7102",
+      "outline": "66.8 x 114.4 mm",
       "active_area": "56.16 x 93.60 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-4.3inch-480x800/tree/main/versions/YDP430BT009-V1"
