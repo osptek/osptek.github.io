@@ -1,7 +1,7 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 158,
-  "repos": 82,
+  "count": 159,
+  "repos": 83,
   "items": [
     {
       "id": "YDP071B001-V2",
@@ -2100,7 +2100,7 @@
         "rgb"
       ],
       "driver": "ST7102",
-      "touch": "",
+      "touch": "ST7102",
       "outline": "74.66 x 76.54 mm",
       "active_area": "71.86 x 70.18 mm",
       "shape": "rect",
@@ -2132,7 +2132,7 @@
         "mipi"
       ],
       "driver": "ST7102",
-      "touch": "",
+      "touch": "ST7102",
       "outline": "83.85 x 83.85 mm",
       "active_area": "71.86 x 70.18 mm",
       "shape": "rect",
@@ -2267,6 +2267,23 @@
       "active_area": "71.93 x 71.93 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-4inch-720x720/tree/main/versions/YDP400BT001-V4"
+    },
+    {
+      "id": "EPD042A02A0",
+      "repo": "display-epd-4.2inch-400x300",
+      "panel": "epd",
+      "size": "4.2",
+      "resolution": "400x300",
+      "interfaces": [
+        "spi",
+        "i2c"
+      ],
+      "driver": "SSD2693ZA",
+      "touch": "",
+      "outline": "91.00 x 77.00 mm",
+      "active_area": "84.8 x 63.6 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-epd-4.2inch-400x300/tree/main/versions/EPD042A02A0"
     },
     {
       "id": "YDP420H001-V3",
