@@ -1,6 +1,6 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 159,
+  "count": 161,
   "repos": 83,
   "items": [
     {
@@ -130,6 +130,22 @@
       "active_area": "21.74 x 11.18 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-oled-0.96inch-128x64/tree/main/versions/ODM096-12864W009-P4"
+    },
+    {
+      "id": "ODM096-12864W013-P4",
+      "repo": "display-oled-0.96inch-128x64",
+      "panel": "oled",
+      "size": "0.96",
+      "resolution": "128x64",
+      "interfaces": [
+        "i2c"
+      ],
+      "driver": "SSD1315",
+      "touch": "",
+      "outline": "26.00 x 27.00 mm",
+      "active_area": "21.74 x 11.18 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-oled-0.96inch-128x64/tree/main/versions/ODM096-12864W013-P4"
     },
     {
       "id": "OED096-12864W009-C30",
@@ -2177,7 +2193,7 @@
       "size": "3.97",
       "resolution": "480x800",
       "interfaces": [
-        "spi"
+        "rgb"
       ],
       "driver": "AXS15260_D",
       "touch": "",
@@ -2364,6 +2380,23 @@
       "active_area": "95.04 x 53.86 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-4.3inch-480x272/tree/main/versions/YDP430B001-V1"
+    },
+    {
+      "id": "YDP430BET010-V1",
+      "repo": "display-tft-4.3inch-480x800",
+      "panel": "tft",
+      "size": "4.3",
+      "resolution": "480x800",
+      "interfaces": [
+        "rgb",
+        "i2c"
+      ],
+      "driver": "ST7102",
+      "touch": "ST7102",
+      "outline": "66.8 x 114.4 mm",
+      "active_area": "56.16 x 93.60 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-4.3inch-480x800/tree/main/versions/YDP430BET010-V1"
     },
     {
       "id": "YDP430BT009-V1",
