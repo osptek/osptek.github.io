@@ -1,6 +1,6 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 161,
+  "count": 162,
   "repos": 83,
   "items": [
     {
@@ -970,6 +970,22 @@
       "active_area": "29.10 x 32.70 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.72inch-356x400/tree/main/versions/YDP172H001-V3"
+    },
+    {
+      "id": "AM173M466466FLS2",
+      "repo": "display-amoled-1.73inch-466x466",
+      "panel": "amoled",
+      "size": "1.73",
+      "resolution": "466x466",
+      "interfaces": [
+        "mipi"
+      ],
+      "driver": "CO5300",
+      "touch": "CST9217",
+      "outline": "50.00 x 50.00 mm",
+      "active_area": "Φ43.76 mm",
+      "shape": "round",
+      "url": "https://github.com/osptek/display-amoled-1.73inch-466x466/tree/main/versions/AM173M466466FLS2"
     },
     {
       "id": "AM173Q466466FLS",
@@ -2050,11 +2066,13 @@
       "panel": "tft",
       "size": "3.5",
       "resolution": "320x480",
-      "interfaces": [],
+      "interfaces": [
+        "mipi"
+      ],
       "driver": "AXS15231E",
       "touch": "",
-      "outline": "",
-      "active_area": "",
+      "outline": "54.48 x 84.71 mm",
+      "active_area": "48.96 x 73.44 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-3.5inch-320x480/tree/main/versions/YDP350TE011-V1"
     },
