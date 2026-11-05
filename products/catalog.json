@@ -1,6 +1,6 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 162,
+  "count": 161,
   "repos": 83,
   "items": [
     {
@@ -1882,22 +1882,6 @@
       "url": "https://github.com/osptek/display-tft-3.02inch-170x560/tree/main/versions/YDP302BG001-V6"
     },
     {
-      "id": "YDP302BT001-V6",
-      "repo": "display-tft-3.02inch-170x560",
-      "panel": "tft",
-      "size": "3.02",
-      "resolution": "170x560",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "AXS15231B",
-      "touch": "",
-      "outline": "24.63 x 78.41 mm",
-      "active_area": "22.134 x 72.912 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-tft-3.02inch-170x560/tree/main/versions/YDP302BT001-V6"
-    },
-    {
       "id": "YDP313B002-V1",
       "repo": "display-tft-3.13inch-376x960",
       "panel": "tft",
@@ -2605,7 +2589,7 @@
       ],
       "driver": "JD9366",
       "touch": "",
-      "outline": "148.00 x 235.00 mm",
+      "outline": "148.00 x 235.00 x 3.64 mm",
       "active_area": "135.36 x 216.58 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-10.1inch-800x1280/tree/main/versions/YDP1010BT006-V1"
