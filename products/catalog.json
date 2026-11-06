@@ -1,6 +1,6 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 162,
+  "count": 160,
   "repos": 83,
   "items": [
     {
@@ -46,7 +46,7 @@
       ],
       "driver": "ST7735",
       "touch": "",
-      "outline": "25.24 x 27.14 x 1.55 mm",
+      "outline": "35.20 x 35.20 x 3.33 mm",
       "active_area": "23.04 x 23.03 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-0.9inch-128x128/tree/main/versions/YDP090BG002-V1"
@@ -211,38 +211,6 @@
       "active_area": "10.8 x 21.7 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-0.96inch-80x160/tree/main/versions/YDP096B007-V2"
-    },
-    {
-      "id": "AM104Q340340LK",
-      "repo": "display-amoled-1.04inch-340x340",
-      "panel": "amoled",
-      "size": "1.04",
-      "resolution": "340x340",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "SH8601A",
-      "touch": "CST820",
-      "outline": "32.00 x 32.00 x 2.08 mm",
-      "active_area": "26.35 x 26.35 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-amoled-1.04inch-340x340/tree/main/versions/AM104Q340340LK"
-    },
-    {
-      "id": "AM104Q340340LK1",
-      "repo": "display-amoled-1.04inch-340x340",
-      "panel": "amoled",
-      "size": "1.04",
-      "resolution": "340x340",
-      "interfaces": [
-        "qspi"
-      ],
-      "driver": "CO5300",
-      "touch": "CST820",
-      "outline": "31.15 x 31.15 x 2.08 mm",
-      "active_area": "26.35 x 26.35 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-amoled-1.04inch-340x340/tree/main/versions/AM104Q340340LK1"
     },
     {
       "id": "AM104Q340340LK2",
@@ -656,9 +624,9 @@
         "mcu"
       ],
       "driver": "ST7789",
-      "touch": "",
-      "outline": "19.39 x 36.28 x 1.46 mm",
-      "active_area": "17.3892 x 32.352 mm",
+      "touch": "CST816D",
+      "outline": "22.68 x 42.68 x 3.26 mm",
+      "active_area": "17.39 x 32.35 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.47inch-172x320/tree/main/versions/YDP147HT001-V3"
     },
@@ -986,6 +954,23 @@
       "url": "https://github.com/osptek/display-amoled-1.73inch-466x466/tree/main/versions/AM173M466466FLS2"
     },
     {
+      "id": "AM173M466466FLS31",
+      "repo": "display-amoled-1.73inch-466x466",
+      "panel": "amoled",
+      "size": "1.73",
+      "resolution": "466x466",
+      "interfaces": [
+        "qspi",
+        "mipi"
+      ],
+      "driver": "CO5300",
+      "touch": "CST9217",
+      "outline": "51.30 x 51.30 x 2.06 mm",
+      "active_area": "Φ43.76 mm",
+      "shape": "round",
+      "url": "https://github.com/osptek/display-amoled-1.73inch-466x466/tree/main/versions/AM173M466466FLS31"
+    },
+    {
       "id": "AM173Q466466FLS",
       "repo": "display-amoled-1.73inch-466x466",
       "panel": "amoled",
@@ -1000,23 +985,6 @@
       "active_area": "Φ43.76 mm",
       "shape": "round",
       "url": "https://github.com/osptek/display-amoled-1.73inch-466x466/tree/main/versions/AM173Q466466FLS"
-    },
-    {
-      "id": "AM173Q466466FLS31",
-      "repo": "display-amoled-1.73inch-466x466",
-      "panel": "amoled",
-      "size": "1.73",
-      "resolution": "466x466",
-      "interfaces": [
-        "qspi",
-        "mipi"
-      ],
-      "driver": "CO5300",
-      "touch": "CST9217",
-      "outline": "51.30 x 51.30 x 2.06 mm",
-      "active_area": "Φ43.76 mm",
-      "shape": "round",
-      "url": "https://github.com/osptek/display-amoled-1.73inch-466x466/tree/main/versions/AM173Q466466FLS31"
     },
     {
       "id": "AM173Q466466FLS32",
@@ -1657,8 +1625,8 @@
         "mcu"
       ],
       "driver": "ST7789V",
-      "touch": "",
-      "outline": "50 x 69.2 x 2.45 mm",
+      "touch": "GT911",
+      "outline": "54.5 x 85.17 x 4.25 mm",
       "active_area": "43.2 x 57.6 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-2.8inch-240x320/tree/main/versions/YDP280FT003-V1"
@@ -2465,7 +2433,7 @@
       ],
       "driver": "ILI9881C",
       "touch": "",
-      "outline": "64.6 x 118.5 x 1.65 mm",
+      "outline": "67.2 x 130.4 x 2.92 mm",
       "active_area": "110.42 x 61.78 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-4.96inch-720x1280/tree/main/versions/YDP496BT001-V1"
@@ -2480,8 +2448,8 @@
         "mipi"
       ],
       "driver": "JD9365",
-      "touch": "",
-      "outline": "66.4 x 120.05 x 1.67 mm",
+      "touch": "CHSC5432",
+      "outline": "75.20 x 128.49 x 4.0 mm",
       "active_area": "61.78 x 109.85 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-5inch-720x1280/tree/main/versions/YDP500BT004-V1"
