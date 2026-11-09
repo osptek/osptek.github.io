@@ -1,8 +1,24 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 163,
-  "repos": 83,
+  "count": 169,
+  "repos": 87,
   "items": [
+    {
+      "id": "YDP060B001-V2",
+      "repo": "display-tft-0.6inch-128x150",
+      "panel": "tft",
+      "size": "0.6",
+      "resolution": "128x150",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "ST7735P3",
+      "touch": "",
+      "outline": "12.16 x 15.43 x 1.41 mm",
+      "active_area": "9.29 x 10.89 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-0.6inch-128x150/tree/main/versions/YDP060B001-V2"
+    },
     {
       "id": "YDP071B001-V2",
       "repo": "display-tft-0.71inch-160x160",
@@ -34,6 +50,54 @@
       "active_area": "17.99 x 18.0 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-0.71inch-160x160/tree/main/versions/YDP071B002-V2"
+    },
+    {
+      "id": "YDP085B003-V2",
+      "repo": "display-tft-0.85inch-128x128",
+      "panel": "tft",
+      "size": "0.85",
+      "resolution": "128x128",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "GC9107",
+      "touch": "",
+      "outline": "17.58 x 20.82 x 1.46 mm",
+      "active_area": "15.2064 x 15.2064 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-0.85inch-128x128/tree/main/versions/YDP085B003-V2"
+    },
+    {
+      "id": "YDP085B005-V2",
+      "repo": "display-tft-0.85inch-128x128",
+      "panel": "tft",
+      "size": "0.85",
+      "resolution": "128x128",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "GC9107",
+      "touch": "",
+      "outline": "17.58 x 20.82 x 1.46 mm",
+      "active_area": "15.21 x 15.21 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-0.85inch-128x128/tree/main/versions/YDP085B005-V2"
+    },
+    {
+      "id": "YDP085B006-V2",
+      "repo": "display-tft-0.85inch-128x128",
+      "panel": "tft",
+      "size": "0.85",
+      "resolution": "128x128",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "GC9107",
+      "touch": "",
+      "outline": "17.58 x 20.82 x 1.46 mm",
+      "active_area": "15.2064 x 15.2064 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-0.85inch-128x128/tree/main/versions/YDP085B006-V2"
     },
     {
       "id": "YDP090B002-V1",
@@ -1035,7 +1099,7 @@
       "url": "https://github.com/osptek/display-tft-1.8inch-360x360/tree/main/versions/YDP180B005-V3"
     },
     {
-      "id": "YDP180BT007-V3",
+      "id": "YDP180B007-V3",
       "repo": "display-tft-1.8inch-360x360",
       "panel": "tft",
       "size": "1.8",
@@ -1048,7 +1112,7 @@
       "outline": "48.08 x 49.95 x 1.92 mm",
       "active_area": "Φ45.68 mm",
       "shape": "round",
-      "url": "https://github.com/osptek/display-tft-1.8inch-360x360/tree/main/versions/YDP180BT007-V3"
+      "url": "https://github.com/osptek/display-tft-1.8inch-360x360/tree/main/versions/YDP180B007-V3"
     },
     {
       "id": "YDP180BT008-V10",
@@ -1210,6 +1274,22 @@
       "active_area": "40.8 x 30.6 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-2inch-320x240/tree/main/versions/YDP200H005-V9"
+    },
+    {
+      "id": "YDP200B001-V9",
+      "repo": "display-tft-2inch-480x360",
+      "panel": "tft",
+      "size": "2",
+      "resolution": "480x360",
+      "interfaces": [
+        "mipi"
+      ],
+      "driver": "ST7701S",
+      "touch": "",
+      "outline": "45.8 x 40.2 x 2.2 mm",
+      "active_area": "40.82 x 30.62 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-2inch-480x360/tree/main/versions/YDP200B001-V9"
     },
     {
       "id": "AM201Q240296LK",
@@ -1418,6 +1498,22 @@
       "active_area": "38.39 x 38.39 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-2.14inch-480x480/tree/main/versions/AM214Q480480LK2"
+    },
+    {
+      "id": "YDP223B001-V9",
+      "repo": "display-tft-2.23inch-200x480",
+      "panel": "tft",
+      "size": "2.23",
+      "resolution": "200x480",
+      "interfaces": [
+        "mipi"
+      ],
+      "driver": "ST7797",
+      "touch": "",
+      "outline": "23.92 x 57.79 x 1.9 mm",
+      "active_area": "21.72 x 52.42 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-2.23inch-200x480/tree/main/versions/YDP223B001-V9"
     },
     {
       "id": "YDP236B002-V1",
