@@ -1,7 +1,7 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 169,
-  "repos": 87,
+  "count": 173,
+  "repos": 90,
   "items": [
     {
       "id": "YDP060B001-V2",
@@ -743,6 +743,22 @@
       "url": "https://github.com/osptek/display-amoled-1.51inch-466x466/tree/main/versions/AM151Q466466LK"
     },
     {
+      "id": "EPD0154A281A0",
+      "repo": "display-epd-1.54inch-200x200",
+      "panel": "epd",
+      "size": "1.54",
+      "resolution": "200x200",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "JD79660CA",
+      "touch": "",
+      "outline": "37.32 x 31.80 x 0.86 mm",
+      "active_area": "27.00 x 27.00 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-epd-1.54inch-200x200/tree/main/versions/EPD0154A281A0"
+    },
+    {
       "id": "EPD0154A10A3",
       "repo": "display-epd-1.54inch-240x240",
       "panel": "epd",
@@ -1145,6 +1161,22 @@
       "active_area": "30.1968 x 35.2296 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.83inch-240x280/tree/main/versions/YDP183H001-V3"
+    },
+    {
+      "id": "YDP180B001-V1A",
+      "repo": "display-tft-1.83inch-240x284",
+      "panel": "tft",
+      "size": "1.83",
+      "resolution": "240x284",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "NV3031B",
+      "touch": "",
+      "outline": "31.62 x 39.13 x 1.5 mm",
+      "active_area": "29.52 x 34.93 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-1.83inch-240x284/tree/main/versions/YDP180B001-V1A"
     },
     {
       "id": "AM196Q410502LK",
@@ -1744,6 +1776,22 @@
       "url": "https://github.com/osptek/display-tft-2.86inch-376x960/tree/main/versions/YDP286B006-V1"
     },
     {
+      "id": "EPD029A305A0",
+      "repo": "display-epd-2.9inch-128x296",
+      "panel": "epd",
+      "size": "2.9",
+      "resolution": "128x296",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "JD79651CB",
+      "touch": "",
+      "outline": "36.7 x 79.0 x 0.9 mm",
+      "active_area": "29.06 x 66.90 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-epd-2.9inch-128x296/tree/main/versions/EPD029A305A0"
+    },
+    {
       "id": "YDP290H001-V3",
       "repo": "display-rlcd-2.9inch-168x384",
       "panel": "rlcd",
@@ -1928,8 +1976,8 @@
       "size": "3.02",
       "resolution": "170x560",
       "interfaces": [
-        "spi",
-        "qspi"
+        "qspi",
+        "spi"
       ],
       "driver": "AXS15231E",
       "touch": "AXS15231E",
@@ -1945,7 +1993,7 @@
       "size": "3.02",
       "resolution": "170x560",
       "interfaces": [
-        "spi"
+        "qspi"
       ],
       "driver": "AXS15231B",
       "touch": "AXS15231B",
@@ -2261,6 +2309,22 @@
       "active_area": "71.86 x 70.18 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-3.95inch-480x480/tree/main/versions/YDP395BT009-V1"
+    },
+    {
+      "id": "YDP397B001-V1",
+      "repo": "display-tft-3.97inch-480x800",
+      "panel": "tft",
+      "size": "3.97",
+      "resolution": "480x800",
+      "interfaces": [
+        "mipi"
+      ],
+      "driver": "GC9503CV",
+      "touch": "",
+      "outline": "55.44 x 96.17 x 2.1 mm",
+      "active_area": "51.84 x 86.40 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-3.97inch-480x800/tree/main/versions/YDP397B001-V1"
     },
     {
       "id": "YDP397B005-V1",
@@ -2657,8 +2721,8 @@
       "interfaces": [
         "mipi"
       ],
-      "driver": "JD9366",
-      "touch": "JD9366",
+      "driver": "JD9366TC",
+      "touch": "JD9366TC",
       "outline": "140.36 x 226.96 x 2.37 mm",
       "active_area": "135.36 x 216.58 mm",
       "shape": "rect",
@@ -2673,8 +2737,8 @@
       "interfaces": [
         "mipi"
       ],
-      "driver": "JD9366",
-      "touch": "JD9366",
+      "driver": "JD9366TC",
+      "touch": "JD9366TC",
       "outline": "160.00 x 250.00 x 3.64 mm",
       "active_area": "135.36 x 216.58 mm",
       "shape": "rect",
@@ -2705,8 +2769,8 @@
       "interfaces": [
         "mipi"
       ],
-      "driver": "JD9366",
-      "touch": "JD9366",
+      "driver": "JD9366TC",
+      "touch": "JD9366TC",
       "outline": "160.00 x 250.00 x 3.64 mm",
       "active_area": "135.36 x 216.58 mm",
       "shape": "rect",
