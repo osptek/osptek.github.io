@@ -1,7 +1,7 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 171,
-  "repos": 88,
+  "count": 172,
+  "repos": 89,
   "items": [
     {
       "id": "YDP060B001-V2",
@@ -2630,6 +2630,22 @@
       "active_area": "61.78 x 109.85 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-5inch-720x1280/tree/main/versions/YDP500BT004-V1"
+    },
+    {
+      "id": "YDP686B002-V1",
+      "repo": "display-tft-6.86inch-480x1280",
+      "panel": "tft",
+      "size": "6.86",
+      "resolution": "480x1280",
+      "interfaces": [
+        "mipi"
+      ],
+      "driver": "ST7703I-G5-DP",
+      "touch": "",
+      "outline": "72.42 x 173.79 x 6.5 mm",
+      "active_area": "60.192 x 160.512 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-6.86inch-480x1280/tree/main/versions/YDP686B002-V1"
     },
     {
       "id": "YDP700BT007-V1",
