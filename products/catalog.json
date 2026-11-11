@@ -1,7 +1,7 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 173,
-  "repos": 90,
+  "count": 171,
+  "repos": 88,
   "items": [
     {
       "id": "YDP060B001-V2",
@@ -1776,22 +1776,6 @@
       "url": "https://github.com/osptek/display-tft-2.86inch-376x960/tree/main/versions/YDP286B006-V1"
     },
     {
-      "id": "EPD029A305A0",
-      "repo": "display-epd-2.9inch-128x296",
-      "panel": "epd",
-      "size": "2.9",
-      "resolution": "128x296",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "JD79651CB",
-      "touch": "",
-      "outline": "36.7 x 79.0 x 0.9 mm",
-      "active_area": "29.06 x 66.90 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-epd-2.9inch-128x296/tree/main/versions/EPD029A305A0"
-    },
-    {
       "id": "YDP290H001-V3",
       "repo": "display-rlcd-2.9inch-168x384",
       "panel": "rlcd",
@@ -2438,22 +2422,6 @@
       "active_area": "71.93 x 71.93 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-4inch-720x720/tree/main/versions/YDP400BT001-V4"
-    },
-    {
-      "id": "EPD042A02A0",
-      "repo": "display-epd-4.2inch-400x300",
-      "panel": "epd",
-      "size": "4.2",
-      "resolution": "400x300",
-      "interfaces": [
-        "spi"
-      ],
-      "driver": "SSD2693ZA",
-      "touch": "",
-      "outline": "91.00 x 77.00 x 0.9 mm",
-      "active_area": "84.8 x 63.6 mm",
-      "shape": "rect",
-      "url": "https://github.com/osptek/display-epd-4.2inch-400x300/tree/main/versions/EPD042A02A0"
     },
     {
       "id": "YDP420H001-V3",
