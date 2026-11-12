@@ -1,7 +1,7 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 172,
-  "repos": 89,
+  "count": 173,
+  "repos": 90,
   "items": [
     {
       "id": "YDP060B001-V2",
@@ -1177,6 +1177,23 @@
       "active_area": "29.52 x 34.93 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-1.83inch-240x284/tree/main/versions/YDP180B001-V1A"
+    },
+    {
+      "id": "YDP190HT002-V9",
+      "repo": "display-tft-1.9inch-170x320",
+      "panel": "tft",
+      "size": "1.9",
+      "resolution": "170x320",
+      "interfaces": [
+        "mcu",
+        "qspi"
+      ],
+      "driver": "ST7789",
+      "touch": "CST816D",
+      "outline": "30.00 x 65.00 x 3.51 mm",
+      "active_area": "22.7 x 42.72 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-1.9inch-170x320/tree/main/versions/YDP190HT002-V9"
     },
     {
       "id": "AM196Q410502LK",
