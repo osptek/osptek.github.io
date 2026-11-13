@@ -1,6 +1,6 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 173,
+  "count": 174,
   "repos": 90,
   "items": [
     {
@@ -1097,6 +1097,22 @@
       "active_area": "28.70 x 34.94 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-amoled-1.78inch-368x448/tree/main/versions/AM178Q368448LK"
+    },
+    {
+      "id": "AM178Q368448LK1",
+      "repo": "display-amoled-1.78inch-368x448",
+      "panel": "amoled",
+      "size": "1.78",
+      "resolution": "368x448",
+      "interfaces": [
+        "qspi"
+      ],
+      "driver": "CO5300",
+      "touch": "",
+      "outline": "34.14 x 42.74 x 2.58 mm",
+      "active_area": "28.70 x 34.94 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-amoled-1.78inch-368x448/tree/main/versions/AM178Q368448LK1"
     },
     {
       "id": "YDP180B005-V3",
