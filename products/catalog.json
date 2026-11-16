@@ -1,7 +1,7 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 174,
-  "repos": 90,
+  "count": 176,
+  "repos": 92,
   "items": [
     {
       "id": "YDP060B001-V2",
@@ -1083,6 +1083,22 @@
       "url": "https://github.com/osptek/display-amoled-1.73inch-466x466/tree/main/versions/AM173Q466466FLS32"
     },
     {
+      "id": "YDP177F001-V1",
+      "repo": "display-tft-1.77inch-128x160",
+      "panel": "tft",
+      "size": "1.77",
+      "resolution": "128x160",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "ST7735S",
+      "touch": "",
+      "outline": "34.7 x 46.7 x 2.3 mm",
+      "active_area": "28.03 x 35.04 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-1.77inch-128x160/tree/main/versions/YDP177F001-V1"
+    },
+    {
       "id": "AM178Q368448LK",
       "repo": "display-amoled-1.78inch-368x448",
       "panel": "amoled",
@@ -1677,6 +1693,23 @@
       "active_area": "36.72 x 48.96 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-2.4inch-240x320/tree/main/versions/YDP240F010-V1"
+    },
+    {
+      "id": "OED255-20636W001-C20",
+      "repo": "display-oled-2.55inch-206x36",
+      "panel": "oled",
+      "size": "2.55",
+      "resolution": "206x36",
+      "interfaces": [
+        "spi",
+        "i2c"
+      ],
+      "driver": "SSD1362",
+      "touch": "",
+      "outline": "108.77 x 15.14 x 2.027 mm",
+      "active_area": "63.84 x 11.14 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-oled-2.55inch-206x36/tree/main/versions/OED255-20636W001-C20"
     },
     {
       "id": "YDP276B004-V1",
