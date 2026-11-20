@@ -1918,7 +1918,7 @@
       "driver": "ST7701S",
       "touch": "",
       "outline": "42.70 x 74.7 x 2.1 mm",
-      "active_area": "36.72 x 74.7 mm",
+      "active_area": "36.72 x 65.28 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-2.95inch-480x854/tree/main/versions/YDP295B001-V1"
     },
