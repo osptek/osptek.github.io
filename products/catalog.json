@@ -1,7 +1,7 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 176,
-  "repos": 92,
+  "count": 177,
+  "repos": 93,
   "items": [
     {
       "id": "YDP060B001-V2",
@@ -2825,6 +2825,22 @@
       "active_area": "135.36 x 216.58 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-10.1inch-800x1280/tree/main/versions/YDP1010BT008-V1"
+    },
+    {
+      "id": "YDP1120BT001-V14",
+      "repo": "display-tft-11.2inch-140x1920",
+      "panel": "tft",
+      "size": "11.2",
+      "resolution": "140x1920",
+      "interfaces": [
+        "mipi"
+      ],
+      "driver": "SA77610-COG",
+      "touch": "CST3548",
+      "outline": "28 x 311.3 x 6.17 mm",
+      "active_area": "20.58 x 282.24 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-11.2inch-140x1920/tree/main/versions/YDP1120BT001-V14"
     },
     {
       "id": "EPD1330A01A3",
