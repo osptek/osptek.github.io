@@ -1,6 +1,6 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 177,
+  "count": 179,
   "repos": 93,
   "items": [
     {
@@ -1421,6 +1421,22 @@
       "url": "https://github.com/osptek/display-amoled-2.01inch-240x296/tree/main/versions/AM201Q240296LK3"
     },
     {
+      "id": "YDP201BT005-V1",
+      "repo": "display-tft-2.01inch-240x296",
+      "panel": "tft",
+      "size": "2.01",
+      "resolution": "240x296",
+      "interfaces": [
+        "mcu"
+      ],
+      "driver": "ST7789P3",
+      "touch": "CST810",
+      "outline": "34.04 x 43.52 x 2.0 mm",
+      "active_area": "32.04 x 39.516 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-2.01inch-240x296/tree/main/versions/YDP201BT005-V1"
+    },
+    {
       "id": "YDP201H001-V3",
       "repo": "display-tft-2.01inch-240x296",
       "panel": "tft",
@@ -2616,6 +2632,22 @@
       "active_area": "55.44 x 98.38 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-4.45inch-480x854/tree/main/versions/YDP445B001-V1"
+    },
+    {
+      "id": "YDP445B002-V1",
+      "repo": "display-tft-4.45inch-480x854",
+      "panel": "tft",
+      "size": "4.45",
+      "resolution": "480x854",
+      "interfaces": [
+        "rgb"
+      ],
+      "driver": "GC9503",
+      "touch": "",
+      "outline": "60.0 x 109.0 x 2.15 mm",
+      "active_area": "55.44 x 98.38 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-4.45inch-480x854/tree/main/versions/YDP445B002-V1"
     },
     {
       "id": "YDP445B003-V1",
