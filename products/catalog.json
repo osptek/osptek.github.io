@@ -1,7 +1,7 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 179,
-  "repos": 93,
+  "count": 180,
+  "repos": 94,
   "items": [
     {
       "id": "YDP060B001-V2",
@@ -2744,6 +2744,22 @@
       "active_area": "60.192 x 160.512 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-tft-6.86inch-480x1280/tree/main/versions/YDP686B002-V1"
+    },
+    {
+      "id": "YDP690TE001-V1",
+      "repo": "display-tft-6.9inch-720x1440",
+      "panel": "tft",
+      "size": "6.9",
+      "resolution": "720x1440",
+      "interfaces": [
+        "mipi"
+      ],
+      "driver": "ST7121P",
+      "touch": "ST7121P",
+      "outline": "80.28 x 162.34 x 2.13 mm",
+      "active_area": "78.0192 x 156.0384 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-tft-6.9inch-720x1440/tree/main/versions/YDP690TE001-V1"
     },
     {
       "id": "YDP700BT007-V1",
