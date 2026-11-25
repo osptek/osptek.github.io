@@ -1,6 +1,6 @@
 {
   "generated_from": "github:versions/*/osptek.yml",
-  "count": 180,
+  "count": 182,
   "repos": 94,
   "items": [
     {
@@ -2522,6 +2522,22 @@
       "url": "https://github.com/osptek/display-rlcd-4.2inch-300x400/tree/main/versions/YDP420H001-V3"
     },
     {
+      "id": "YDP420H004-V3",
+      "repo": "display-rlcd-4.2inch-300x400",
+      "panel": "rlcd",
+      "size": "4.2",
+      "resolution": "300x400",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "ST7305",
+      "touch": "",
+      "outline": "67.6 x 91.0 x 1.1 mm",
+      "active_area": "63.6 x 84.8 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-rlcd-4.2inch-300x400/tree/main/versions/YDP420H004-V3"
+    },
+    {
       "id": "YDP420H005-V3",
       "repo": "display-rlcd-4.2inch-300x400",
       "panel": "rlcd",
@@ -2548,10 +2564,26 @@
       ],
       "driver": "ST7305",
       "touch": "FT3269",
-      "outline": "",
-      "active_area": "",
+      "outline": "73.60 x 100.20 x 1.79 mm",
+      "active_area": "63.6 x 84.8 mm",
       "shape": "rect",
       "url": "https://github.com/osptek/display-rlcd-4.2inch-300x400/tree/main/versions/YDP420HT004-V3"
+    },
+    {
+      "id": "YDP420HT005-V3",
+      "repo": "display-rlcd-4.2inch-300x400",
+      "panel": "rlcd",
+      "size": "4.2",
+      "resolution": "300x400",
+      "interfaces": [
+        "spi"
+      ],
+      "driver": "ST7306",
+      "touch": "FT3269",
+      "outline": "73.6 x 100.2 x 2.08 mm",
+      "active_area": "63.6 x 84.8 mm",
+      "shape": "rect",
+      "url": "https://github.com/osptek/display-rlcd-4.2inch-300x400/tree/main/versions/YDP420HT005-V3"
     },
     {
       "id": "EPD0426A02",
